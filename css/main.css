@@ -1,0 +1,125 @@
+/* 컨텐츠 최대 크기 지정 width 1760px*/
+.mainTopBannerArea div, header .menuArea, .videoArea , footer {width: 100%; max-width: 1760px; margin: 0 auto;}
+/* 컨텐츠 크기 지정 width 1200px*/
+.technologyArea, .wiseChoiceArea, .selfBeautyArea ul {width: 100%; max-width: 1200px; margin: 0 auto; padding-top: 140px;}
+
+.mainTopBannerArea{height: 120px; background: url(../images/main/topBanner.png) no-repeat center center;}
+.mainTopBannerArea div{height: 100%; display: flex; justify-content: flex-end; align-items: center;}
+.mainTopBannerArea div a{text-align: right;}
+
+header .menuArea{display: flex; padding: 40px 0;}
+header .menuArea h1{margin-right: 50px;}
+header .menuArea nav{}
+header .menuArea nav ul{display: flex; height: 100%; align-items: center;}
+header .menuArea nav ul li{font-size: 20px; padding: 0 50px;}
+header .menuArea .loginArea{margin-left: auto;}
+header .menuArea .loginArea ul{display: flex; height: 100%; align-items: center;}
+header .menuArea .loginArea ul li:not(:first-of-type){width: 93px; height: 34px; background-color: #000000;  border-radius: 100px; margin-left: 10px;}
+header .menuArea .loginArea ul li:not(:first-of-type) a{font-size: 14px; color:#9e9e9e; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+
+section h2{font-size: 40px; font-weight:400; }
+section > p{font-size: 20px; font-weight: 500; }
+
+/* technologyArea */
+.technologyArea{text-align: center; margin-bottom: 210px;}
+.technologyArea h2{margin-bottom: 30px;}
+.technologyArea > p{ margin-bottom: 105px;}
+.technologyArea ol{text-align: left;}
+.technologyArea ol li{display: flex; justify-content: space-between;}
+.technologyArea ol li:not(:last-of-type){margin-bottom: 180px;}
+.technologyArea ol li div{position: relative;}
+.technologyArea ol li div:first-of-type{ display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
+.technologyArea ol li div:first-of-type h3{font-size: 30px; font-weight:700; margin-bottom: 60px}
+.technologyArea ol li div:first-of-type h3 span{display: block; font-size: 22px; font-weight: 400; margin-bottom: 25px;}
+.technologyArea ol li div:first-of-type p{font-size: 20px; line-height: 1.8; color: #9e9e9e; margin-bottom: 70px; }
+.technologyArea ol li div:first-of-type a{display: inline-block; align-self: flex-start; line-height: 60px; padding: 0 31px; color: white; background-color: black; border-radius: 50px;}
+.technologyArea ol li div:nth-of-type(2){}
+.technologyArea ol li div:nth-of-type(2) img:nth-of-type(2){position: absolute;}
+.technologyArea ol li:nth-of-type(2) div:first-of-type{order: 1; flex-basis: 520px;}
+.technologyArea ol li:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){right: -75px; bottom: -95px;}
+.technologyArea ol li:nth-of-type(2) div:nth-of-type(2) img:nth-of-type(2){right: 0; bottom: -82px;}
+.technologyArea ol li:nth-of-type(3) div:nth-of-type(2) img:nth-of-type(2){right: 50px; bottom: -40px;}
+
+
+/* videoArea */
+.videoArea{height: 900px; background-color: darkblue; margin-bottom: 140px;}
+
+
+
+/* wiseChoiceArea */
+.wiseChoiceArea{text-align: center; margin-bottom: 115px;}
+.wiseChoiceArea h2{margin-bottom: 23px;}
+.wiseChoiceArea > p{margin-bottom: 60px;}
+.wiseChoiceArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+.wiseChoiceArea ul li{float: left; width: 23.50%; margin-bottom: 105px; }
+.wiseChoiceArea ul li:nth-of-type(4n){margin-right: 2%;}
+.wiseChoiceArea ul li figure{display: flex; flex-direction: column;}
+.wiseChoiceArea ul li figure img{width: 100%; margin-bottom: 25px;}
+.wiseChoiceArea ul li figure figcaption{display: flex; flex-direction: column; height: 180px;}
+.wiseChoiceArea ul li figure figcaption h3{font-size: 20px; font-weight: 500; margin-bottom: 10px; line-height: 1.5;}
+.wiseChoiceArea ul li figure figcaption p{font-size: 28px; font-weight: 500; color: #c11b7b;}
+.wiseChoiceArea ul li figure figcaption a{align-self: center; display: inline-block; margin-top: auto; font-size: 18px; font-weight: 500; color: white; background-color: black; border-radius: 50px; width: 215px; height: 60px; }
+
+/* reviewArea */
+.reviewArea{background: url(../images/main/reviewBGImg.png) no-repeat left center; height: 1055px; margin-bottom: 140px;}
+.reviewArea > div{}
+
+
+/* selfBeautyArea */
+.selfBeautyArea{text-align: center; margin-bottom: 140px;}
+.selfBeautyArea h2{margin-bottom: 27px;}
+.selfBeautyArea > p{margin-bottom: 60px;}
+.selfBeautyArea ul{padding-top: 0; margin-bottom: 70px;}
+.selfBeautyArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+.selfBeautyArea ul li{float: left; width: 50%; max-width: 560px; text-align: left;}
+.selfBeautyArea ul li:nth-of-type(2){float: right;}
+.selfBeautyArea ul li img{width: 100%; border-top-left-radius: 50px; border-bottom-right-radius: 50px; margin-bottom: 20px; }
+.selfBeautyArea ul li span{display: block; font-style:italic; margin-bottom: 10px;}
+.selfBeautyArea ul li h3{font-size: 24px; font-weight: 700; margin-bottom: 30px;}
+.selfBeautyArea ul li p{font-size: 16px; line-height: 1.75; color: #737373;}
+
+
+/* instagramArea */
+.instagramArea{}
+.instagramArea::after{content: ''; display: block; visibility: hidden; clear: both;}
+.instagramArea > div{float: left; width: 50%; position: relative;}
+.instagramArea > div img{width: 100%;}
+.instagramArea > div > div{position: absolute; left: 0; bottom: 0; width: 62.5%; background-color: white; border-top-right-radius: 50px;}
+.instagramArea > div > div > div{display: flex; flex-direction: column; justify-content: flex-end; width: 100%; max-width: 520px; height: 180px; margin-left: auto;}
+.instagramArea > div > div > div h2{font-size: 30px; font-weight: 400;}
+.instagramArea > div > div > div p{font-size: 40px; font-weight: 400; line-height: 2;}
+.instagramArea > ul{float: left; width: 50%;}
+.instagramArea > ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+.instagramArea > ul li{float: left; width: 50%; line-height: 0;}
+.instagramArea > ul li a{line-height: 0;}
+.instagramArea > ul li img{width: 100%;}
+
+
+/* footer */
+footer{}
+footer > div:first-of-type{ margin-bottom: 45px;}
+footer > div:first-of-type h2{font-size: 18px; font-weight: 400; margin-bottom: 20px;}
+footer > div:first-of-type address{font-size: 36px; font-weight: bold; font-style: normal; margin-bottom: 30px; }
+footer > div:first-of-type ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+footer > div:first-of-type ul li{float: left; display: flex; font-size: 14px; font-weight: 500; margin-bottom: 15px;}
+footer > div:first-of-type ul li:not(:last-of-type){margin-right: 30px;}
+
+footer > div:nth-of-type(2){}
+footer > div:nth-of-type(2) h1{margin-bottom: 40px;}
+footer > div:nth-of-type(2) ul{margin-bottom: 5px;}
+footer > div:nth-of-type(2) ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+footer > div:nth-of-type(2) ul li{float: left; display: flex; font-size: 14px; font-weight: 500; letter-spacing: -1px; margin-bottom: 15px;}
+footer > div:nth-of-type(2) ul li:not(:last-of-type){position: relative; padding-right: 18px;}
+footer > div:nth-of-type(2) ul li:not(:last-of-type)::after{content: ''; width: 1px; height: 100%; background-color: black; position: absolute; right: 9px; top: 0;}
+footer > div:nth-of-type(2) > p{font-style: 14px; font-weight: 400; color: #9a9a9a; margin-bottom: 60px;}
+
+footer > hr{margin: 0; background-color: #e5e5e5; }
+
+footer div:nth-of-type(3){display: flex; justify-content: space-between;}
+footer div:nth-of-type(3) nav{}
+footer div:nth-of-type(3) nav ul{display: flex;}
+footer div:nth-of-type(3) nav ul li:not(:last-of-type){ margin-right: 30px;}
+footer div:nth-of-type(3) nav ul li a{display: block; padding: 35px 0;}
+
+
+
