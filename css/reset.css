@@ -48,6 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-.technologyArea ol li div:first-of-type h3 span, .instagramArea > div > div > div h2, .instagramArea > div > div > div p{font-family: 'Fira Sans';}
+header .mainSliderArea .swiper-slide div h2, .technologyArea ol li div:first-of-type h3 span, .instagramArea > div > div > div h2, .instagramArea > div > div > div p
+{font-family: 'Montserrat';}
 
 a{color:black; text-decoration: none;}

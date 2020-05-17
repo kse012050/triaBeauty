@@ -1,32 +1,10 @@
-/* 컨텐츠 최대 크기 지정 width 1760px*/
-.mainTopBannerArea div, header .menuArea, .videoArea , footer {width: 100%; max-width: 1760px; margin: 0 auto;}
-/* 컨텐츠 크기 지정 width 1200px*/
-.technologyArea, .wiseChoiceArea, .selfBeautyArea ul {width: 100%; max-width: 1200px; margin: 0 auto; padding-top: 140px;}
+/* 버튼 기본 설정 */
+.btn{width: 230px; height: 60px; padding: 0 30px; box-sizing: border-box; font-size: 18px; font-weight: 500; display: flex; justify-content: space-between; line-height: 60px; color: white; background-color: black; border-radius: 50px;}
+.btn::after{content: '+'; font-size: 25px; text-align: right; }
 
 .mainTopBannerArea{height: 120px; background: url(../images/main/topBanner.png) no-repeat center center;}
 .mainTopBannerArea div{height: 100%; display: flex; justify-content: flex-end; align-items: center;}
 .mainTopBannerArea div a{text-align: right;}
-
-header .menuArea{display: flex; padding: 40px 0;}
-header .menuArea h1{margin-right: 50px;}
-header .menuArea nav{}
-header .menuArea nav ul{display: flex; height: 100%; align-items: center;}
-header .menuArea nav ul li{font-size: 20px; padding: 0 50px;}
-header .menuArea .loginArea{margin-left: auto;}
-header .menuArea .loginArea ul{display: flex; height: 100%; align-items: center;}
-header .menuArea .loginArea ul li:not(:first-of-type){width: 93px; height: 34px; background-color: #000000;  border-radius: 100px; margin-left: 10px;}
-header .menuArea .loginArea ul li:not(:first-of-type) a{font-size: 14px; color:#9e9e9e; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
-header .mainSliderArea .swiper-slide{height: 100vh; background-repeat: no-repeat; background-position: center center; background-size: cover;}
-header .mainSliderArea .swiper-slide div{ width:96%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; margin-left: auto; padding-bottom: 120px; box-sizing: border-box;}
-header .mainSliderArea .swiper-slide div h2{font-size: 80px; color: white; line-height: 1.2125; margin-bottom: 60px;}
-header .mainSliderArea .swiper-slide div p{font-size: 24px; color: white; padding-top: 35px; border-top: 1px solid rgba(255,255,255,0.2);}
-header .mainSliderArea .mainsliderContentsArea01{background-image: url(../images/main/mainSliderImg01.png);}
-header .mainSliderArea .mainsliderContentsArea02{background-image: url(../images/main/mainSliderImg01.png);}
-header .mainSliderArea .mainsliderContentsArea03{background-image: url(../images/main/mainSliderImg01.png);}
-header .mainSliderArea .mainSliderNavigationArea{width: 100%; max-width: 1760px; margin: 0 auto; position: relative; bottom: 173px; }
-header .mainSliderArea .mainSliderNavigationArea div{color: black; width: 30px; height: 30px; background-color: white; border-radius: 100%;}
-header .mainSliderArea .mainSliderNavigationArea div::after{font-size: 10px; font-weight: bold;}
-header .mainSliderArea .mainSliderNavigationArea .swiper-button-prev{left: auto; right: 60px;}
 
 
 section h2{font-size: 40px; font-weight:400; }
@@ -42,9 +20,9 @@ section > p{font-size: 20px; font-weight: 500; }
 .technologyArea ol li div{position: relative;}
 .technologyArea ol li div:first-of-type{ display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
 .technologyArea ol li div:first-of-type h3{font-size: 30px; font-weight:700; margin-bottom: 60px}
-.technologyArea ol li div:first-of-type h3 span{display: block; font-size: 22px; font-weight: 400; margin-bottom: 25px;}
+.technologyArea ol li div:first-of-type h3 span{display: block; font-size: 22px; font-weight: 800; margin-bottom: 25px;}
 .technologyArea ol li div:first-of-type p{font-size: 20px; line-height: 1.8; color: #9e9e9e; margin-bottom: 70px; }
-.technologyArea ol li div:first-of-type a{display: inline-block; align-self: flex-start; line-height: 60px; padding: 0 31px; color: white; background-color: black; border-radius: 50px;}
+/* .technologyArea ol li div:first-of-type a{display: inline-block; align-self: flex-start; line-height: 60px; padding: 0 31px; color: white; background-color: black; border-radius: 50px;} */
 .technologyArea ol li div:nth-of-type(2){}
 .technologyArea ol li div:nth-of-type(2) img:nth-of-type(2){position: absolute;}
 .technologyArea ol li:nth-of-type(2) div:first-of-type{order: 1; flex-basis: 520px;}
@@ -54,7 +32,7 @@ section > p{font-size: 20px; font-weight: 500; }
 
 
 /* videoArea */
-.videoArea{height: 900px; background-color: darkblue; margin-bottom: 140px;}
+.videoArea{height: 900px; background: url(../images/main/videoImg.png) no-repeat center center; background-size: cover; border-radius: 50px; margin-bottom: 140px;}
 
 
 
@@ -70,11 +48,27 @@ section > p{font-size: 20px; font-weight: 500; }
 .wiseChoiceArea ul li figure figcaption{display: flex; flex-direction: column; height: 180px;}
 .wiseChoiceArea ul li figure figcaption h3{font-size: 20px; font-weight: 500; margin-bottom: 10px; line-height: 1.5;}
 .wiseChoiceArea ul li figure figcaption p{font-size: 28px; font-weight: 500; color: #c11b7b;}
-.wiseChoiceArea ul li figure figcaption a{align-self: center; display: inline-block; margin-top: auto; font-size: 18px; font-weight: 500; color: white; background-color: black; border-radius: 50px; width: 215px; height: 60px; }
+/* .wiseChoiceArea ul li figure figcaption a{align-self: center; display: inline-block; margin-top: auto; font-size: 18px; font-weight: 500; color: white; background-color: black; border-radius: 50px; width: 215px; height: 60px; } */
+.wiseChoiceArea ul li figure figcaption a{margin-top: auto; align-self: center; text-align: right;}
+.wiseChoiceArea ul li figure figcaption a::before{content: ''; width: 21px; height: 100%; background: url(../images/main/buyNowImg.png) no-repeat center center;}
+.wiseChoiceArea ul li figure figcaption a::after{display: none;}
 
 /* reviewArea */
 .reviewArea{background: url(../images/main/reviewBGImg.png) no-repeat left center; height: 1055px; margin-bottom: 140px;}
-.reviewArea > div{}
+.reviewArea .reviewContentsArea{height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; padding: 0; margin-left: auto;}
+.reviewArea .reviewContentsArea p{font-size: 40px; font-weight: 300; line-height: 1.5; color: white; text-align: right; margin-bottom: 50px; margin-top: 85px;}
+.reviewArea .reviewContentsArea p span{border-bottom: 1px solid white;}
+.reviewArea .reviewContentsArea > a{color: black; background-color: white; margin-bottom: 60px;}
+.reviewArea .reviewContentsArea .reviewSliderArea{width: 100%; max-width: 660px; margin-right: 0;} 
+.reviewArea .reviewContentsArea .reviewSliderArea img{width: 100%; border-radius: 50px; margin-bottom: 40px;}
+.reviewArea .reviewContentsArea .reviewSliderArea blockquote{text-align: center; font-size: 20px; font-weight: 500; line-height: 1.8; color: white; letter-spacing: -1px; margin-bottom: 50px; position: relative;}
+.reviewArea .reviewContentsArea .reviewSliderArea blockquote::before, .reviewArea .reviewContentsArea .reviewSliderArea blockquote::after{content: ''; display: inline-block; width: 36px; height: 100%; background-repeat: no-repeat; background-position: center center; background-size: contain; position: absolute; top: 0;}
+.reviewArea .reviewContentsArea .reviewSliderArea blockquote::before{background-image: url(../images/main/reviewIconL.png); left: 0;}
+.reviewArea .reviewContentsArea .reviewSliderArea blockquote::after{background-image: url(../images/main/reviewIconR.png); right: 0;}
+.reviewArea .reviewContentsArea .reviewPagination{width: 100%; max-width: 660px; margin-left: auto; text-align: center;}
+.reviewArea .reviewContentsArea .reviewPagination span{width: 15px; height: 15px;}
+.reviewArea .reviewContentsArea .reviewPagination span:not(:last-of-type){margin-right: 15px;}
+.reviewArea .reviewContentsArea .reviewPagination .swiper-pagination-bullet-active{background-color: white; box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);}
 
 
 /* selfBeautyArea */
@@ -88,7 +82,8 @@ section > p{font-size: 20px; font-weight: 500; }
 .selfBeautyArea ul li img{width: 100%; border-top-left-radius: 50px; border-bottom-right-radius: 50px; margin-bottom: 20px; }
 .selfBeautyArea ul li span{display: block; font-style:italic; margin-bottom: 10px;}
 .selfBeautyArea ul li h3{font-size: 24px; font-weight: 700; margin-bottom: 30px;}
-.selfBeautyArea ul li p{font-size: 16px; line-height: 1.75; color: #737373;}
+.selfBeautyArea ul li p{font-size: 16px; line-height: 1.75; color: #737373; white-space: normal; height: 60px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.selfBeautyArea a{margin: 0 auto;}
 
 
 /* instagramArea */
@@ -107,31 +102,7 @@ section > p{font-size: 20px; font-weight: 500; }
 .instagramArea > ul li img{width: 100%;}
 
 
-/* footer */
-footer{}
-footer > div:first-of-type{ margin-bottom: 45px;}
-footer > div:first-of-type h2{font-size: 18px; font-weight: 400; margin-bottom: 20px;}
-footer > div:first-of-type address{font-size: 36px; font-weight: bold; font-style: normal; margin-bottom: 30px; }
-footer > div:first-of-type ul::after{content: ''; display: block; visibility: hidden; clear: both;}
-footer > div:first-of-type ul li{float: left; display: flex; font-size: 14px; font-weight: 500; margin-bottom: 15px;}
-footer > div:first-of-type ul li:not(:last-of-type){margin-right: 30px;}
 
-footer > div:nth-of-type(2){}
-footer > div:nth-of-type(2) h1{margin-bottom: 40px;}
-footer > div:nth-of-type(2) ul{margin-bottom: 5px;}
-footer > div:nth-of-type(2) ul::after{content: ''; display: block; visibility: hidden; clear: both;}
-footer > div:nth-of-type(2) ul li{float: left; display: flex; font-size: 14px; font-weight: 500; letter-spacing: -1px; margin-bottom: 15px;}
-footer > div:nth-of-type(2) ul li:not(:last-of-type){position: relative; padding-right: 18px;}
-footer > div:nth-of-type(2) ul li:not(:last-of-type)::after{content: ''; width: 1px; height: 100%; background-color: black; position: absolute; right: 9px; top: 0;}
-footer > div:nth-of-type(2) > p{font-style: 14px; font-weight: 400; color: #9a9a9a; margin-bottom: 60px;}
-
-footer > hr{margin: 0; background-color: #e5e5e5; }
-
-footer div:nth-of-type(3){display: flex; justify-content: space-between;}
-footer div:nth-of-type(3) nav{}
-footer div:nth-of-type(3) nav ul{display: flex;}
-footer div:nth-of-type(3) nav ul li:not(:last-of-type){ margin-right: 30px;}
-footer div:nth-of-type(3) nav ul li a{display: block; padding: 35px 0;}
 
 
 

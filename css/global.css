@@ -1,0 +1,70 @@
+/* 컨텐츠 최대 크기 지정 width 1760px*/
+.mainTopBannerArea div, header .menuArea, .videoArea , footer {width: 100%; max-width: 1760px; margin: 0 auto;}
+/* 컨텐츠 크기 지정 width 1200px*/
+.technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul {width: 100%; max-width: 1200px; margin: 0 auto; padding-top: 140px;}
+
+
+/* header */
+header{position: relative;}
+header .menuArea{display: flex;}
+header .menuArea > *:not(nav){padding: 40px 0;}
+header .menuArea h1{margin-right: 50px;}
+header .menuArea nav{}
+header .menuArea nav:hover + .menuBgArea{height: 245px;}
+header .menuArea .menuBgArea{position: absolute; left: 0; top: 133px; width: 100%; height: 0; padding: 0; background-color: white; transition-duration: 0.5s; z-index: 10;}
+header .menuArea .menuBgArea:hover{height: 245px;}
+header .menuArea .menuBgArea.active{height: 245px;}
+header .menuArea .menuBgArea div{width: 100px; height: 100px; background-color: red; margin-left: 100px;}
+header .menuArea nav ul{display: flex; height: 100%; align-items: center;}
+header .menuArea nav ul > li{height: 100%; font-size: 20px; position: relative;}
+header .menuArea nav ul > li > a{display: flex; height: 100%; align-items: center;  padding: 0 50px;}
+header .menuArea nav ul > li ol{width: 165px; height: 0px; overflow: hidden; background-color: white; position: absolute; z-index: 11; transition-duration: 0.5s;}
+header .menuArea nav ul > li ol li a{font-size: 18px; display: block; text-align: left; padding: 15px 0; padding-left: 50px;}
+header .menuArea nav ul:hover > li ol{height: 245px;}
+header .menuArea nav ul:hover > li ol li{text-align: left;}
+header .menuArea nav ul > li:hover > a{color: #c11b7b;}
+header .menuArea nav ul > li ol.active{height: 245px;}
+header .menuArea nav ul > li ol li:hover a{color: #c11b7b;}
+header .menuArea .loginArea{margin-left: auto;}
+header .menuArea .loginArea ul{display: flex; height: 100%; align-items: center;}
+header .menuArea .loginArea ul li:not(:first-of-type){width: 93px; height: 34px; background-color: #000000;  border-radius: 100px; margin-left: 10px;}
+header .menuArea .loginArea ul li:not(:first-of-type) a{font-size: 14px; color:#9e9e9e; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+header .mainSliderArea .swiper-slide{height: 100vh; background-repeat: no-repeat; background-position: center center; background-size: cover;}
+header .mainSliderArea .swiper-slide div{ width:96%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; margin-left: auto; padding-bottom: 120px; box-sizing: border-box;}
+header .mainSliderArea .swiper-slide div h2{font-size: 80px; font-weight: 200; color: white; line-height: 1.2125; margin-bottom: 60px;}
+header .mainSliderArea .swiper-slide div p{font-size: 24px; color: white; padding-top: 35px; border-top: 1px solid rgba(255,255,255,0.2);}
+header .mainSliderArea .mainsliderContentsArea01{background-image: url(../images/main/mainSliderImg01.png);}
+header .mainSliderArea .mainsliderContentsArea02{background-image: url(../images/main/mainSliderImg01.png);}
+header .mainSliderArea .mainsliderContentsArea03{background-image: url(../images/main/mainSliderImg01.png);}
+header .mainSliderArea .mainSliderNavigationArea{width: 100%; max-width: 1760px; margin: 0 auto; position: relative; bottom: 173px; }
+header .mainSliderArea .mainSliderNavigationArea div{color: black; width: 30px; height: 30px; background-color: white; border-radius: 100%;}
+header .mainSliderArea .mainSliderNavigationArea div::after{font-size: 10px; font-weight: bold;}
+header .mainSliderArea .mainSliderNavigationArea .swiper-button-prev{left: auto; right: 60px;}
+
+
+/* footer */
+footer{}
+footer > div:first-of-type{ margin-bottom: 45px;}
+footer > div:first-of-type h2{font-size: 18px; font-weight: 400; margin-bottom: 20px;}
+footer > div:first-of-type address{font-size: 36px; font-weight: bold; font-style: normal; margin-bottom: 30px; }
+footer > div:first-of-type ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+footer > div:first-of-type ul li{float: left; display: flex; font-size: 14px; font-weight: 500; margin-bottom: 15px;}
+footer > div:first-of-type ul li:not(:last-of-type){margin-right: 30px;}
+
+footer > div:nth-of-type(2){}
+footer > div:nth-of-type(2) h1{margin-bottom: 40px;}
+footer > div:nth-of-type(2) ul{margin-bottom: 5px;}
+footer > div:nth-of-type(2) ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+footer > div:nth-of-type(2) ul li{float: left; display: flex; font-size: 14px; font-weight: 500; letter-spacing: -1px; margin-bottom: 15px;}
+footer > div:nth-of-type(2) ul li:not(:last-of-type){position: relative; padding-right: 18px;}
+footer > div:nth-of-type(2) ul li:not(:last-of-type)::after{content: ''; width: 1px; height: 100%; background-color: black; position: absolute; right: 9px; top: 0;}
+footer > div:nth-of-type(2) ul li span{display: inline-block; width: 10px; text-align: center;}
+footer > div:nth-of-type(2) > p{font-style: 14px; font-weight: 400; color: #9a9a9a; margin-bottom: 60px;}
+
+footer > hr{margin: 0; background-color: #e5e5e5; }
+
+footer div:nth-of-type(3){display: flex; justify-content: space-between;}
+footer div:nth-of-type(3) nav{}
+footer div:nth-of-type(3) nav ul{display: flex;}
+footer div:nth-of-type(3) nav ul li:not(:last-of-type){ margin-right: 30px;}
+footer div:nth-of-type(3) nav ul li a{display: block; padding: 35px 0;}

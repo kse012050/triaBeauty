@@ -13,6 +13,7 @@
     <!-- swiper css cdn -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
+    <script src="js/main.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -30,12 +31,30 @@
                 <h1><a href="#"><img src="images/main/logo.png" alt="logo"></a></h1>
                 <nav>
                     <ul>
-                        <li><a href="#">소개</a></li>
-                        <li><a href="#">제품</a></li>
-                        <li><a href="#">소식</a></li>
+                        <li><a href="#">소개</a>
+                            <ol>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">레이저제모</a></li>
+                                <li><a href="#">피부개선</a></li>
+                                <li><a href="#">여드름치료</a></li>
+                                <li><a href="#">코스메틱</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">제품</a>
+                        </li>
+                        <li><a href="#">소식</a>
+                            <ol>
+                                <li><a href="#">공지</a></li>
+                                <li><a href="#">뉴스/매거진</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ol>
+                        </li>
                         <li><a href="#">고객센터</a></li>
                     </ul>
                 </nav>
+                <div class="menuBgArea">
+
+                </div>
                 <div class="loginArea">
                     <ul>
                         <li><a href="#"></a></li>
@@ -98,7 +117,7 @@
                             트리아의 제모기들은 국내에서 유일하게 한국 식약처 허가 및<br/>
                             미국 FDA에 등록된 제품들 입니다.
                         </p>
-                        <a href="#">자세히보기</a>
+                        <a href="#" class="btn">자세히보기</a>
                     </div>
                     <div>
                         <img src="images/main/technologyBGImg01.png" alt="technologyBGImg01">
@@ -117,7 +136,7 @@
                             레이저 기술의 프락셔널 레이저 입니다. 이제, 스킨 리뉴 레이저로<br/>
                             거친 피부 결은 매끈하게, 눈가 주름은 완화시켜주세요.
                         </p>
-                        <a href="#" class="">자세히보기</a>
+                        <a href="#" class="btn">자세히보기</a>
                     </div>
                     <div>
                         <img src="images/main/technologyBGImg02.png" alt="technologyBGImg02">
@@ -135,7 +154,7 @@
                             원인이 되는 피부 속 박테리아를 제거하여 여드름을 치료하고<br/>
                             피부에 자극이 적어 매일 사용할 수 있습니다.
                         </p>
-                        <a href="#">자세히보기</a>
+                        <a href="#" class="btn">자세히보기</a>
                     </div>
                     <div>
                         <img src="images/main/technologyBGImg03.png" alt="technologyBGImg03">
@@ -159,7 +178,7 @@
                         <figcaption>
                             <h3>트리아 플러스 4X</h3>
                             <p>498,000원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -169,7 +188,7 @@
                         <figcaption>
                             <h3>트리아 미니 제모기</h3>
                             <p>185,000원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -179,7 +198,7 @@
                         <figcaption>
                             <h3>트리아 스킨 리뉴 레이저</h3>
                             <p>549,000원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -189,7 +208,7 @@
                         <figcaption>
                             <h3>트리아 아이 리뉴 레이저</h3>
                             <p>269,100원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -200,7 +219,7 @@
                             <h3>트리아 포지티블리 클리어<br/>
                                 블루 라이트</h3>
                             <p>224,100원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -210,7 +229,7 @@
                         <figcaption>
                             <h3>트리아 미니 제모기</h3>
                             <p>185,000원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -220,7 +239,7 @@
                         <figcaption>
                             <h3>트리아 스킨 리뉴 레이저</h3>
                             <p>549,000원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -230,7 +249,7 @@
                         <figcaption>
                             <h3>트리아 아이 리뉴 레이저</h3>
                             <p>269,100원</p>
-                            <a href="">바로구매</a>
+                            <a href="#" class="btn">바로구매</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -238,13 +257,36 @@
         </section>
 
         <section class="reviewArea">
-            <div>
+            <div class="reviewContentsArea">
                 <p>늘 피부 트러블이 고민이었던 그녀,<br/>
                     <span>트리아와 3개월만에</span> 피부 광채가 나게 된 사연</p>
-                <a href="#">포토리뷰 바로가기</a>
-                <div>
-
+                <a href="#" class="btn">포토리뷰 바로가기</a>
+                <div class="swiper-container reviewSliderArea">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main/reviewImg01.png" alt="reviewImg01">
+                            <blockquote>
+                                필립스 루메아도 써봤는데 그건 창이큰건 편하지만 전 효과면에선<br/>
+                                트리아가 있는거같아요. 기계도 트리아가 더 안정적인 느낌이구요
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/reviewImg01.png" alt="reviewImg01">
+                            <blockquote>
+                                필립스 루메아도 써봤는데 그건 창이큰건 편하지만 전 효과면에선<br/>
+                                트리아가 있는거같아요. 기계도 트리아가 더 안정적인 느낌이구요
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/reviewImg01.png" alt="reviewImg01">
+                            <blockquote>
+                                필립스 루메아도 써봤는데 그건 창이큰건 편하지만 전 효과면에선<br/>
+                                트리아가 있는거같아요. 기계도 트리아가 더 안정적인 느낌이구요
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
+                <div class="reviewPagination"></div>
             </div>
         </section>
 
@@ -271,7 +313,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="#">뉴스 바로가기</a>
+            <a href="#" class="btn">뉴스 바로가기</a>
         </section>
 
         <section class="instagramArea">
@@ -331,29 +373,34 @@
                         <h2>트리아뷰티코리아 유한회사</h2>
                     </li>
                     <li>
-                        <h3>대표이사 : </h3>
+                        <h3>대표이사</h3>
+                        <span>:</span>
                         <p>산딥인드라바단파텔</p>
                     </li>
                     <li>
                         <p>서울시 서초구 강남대로 311, 9층</p>
                     </li>
                     <li>
-                        <h3>메일 : </h3>
+                        <h3>메일</h3>
+                        <span>:</span>
                         <p>customercare@triabeauty.co.kr</p>
                     </li>
                     <li>
-                        <h3>사업자등록번호 : </h3>
+                        <h3>사업자등록번호</h3>
+                        <span>:</span>
                         <p>101 – 86 – 54142</p>
                     </li>
                     <li>
                         <p>의료기기판매업 신고 제 1737호</p>
                     </li>
                     <li>
-                        <h3>통신판매업 신고 : </h3>
+                        <h3>통신판매업 신고</h3>
+                        <span>:</span>
                         <p>2019-서울서초-3070</p>
                     </li>
                     <li>
-                        <h3>개인정보관리책임자 : </h3>
+                        <h3>개인정보관리책임자</h3>
+                        <span>:</span>
                         <p>권지선</p>
                     </li>
                 </ul>
@@ -388,6 +435,16 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        var mySwiper2 = new Swiper ('.reviewSliderArea', {
+            // loop:true,
+            slidesPerView: 1,
+            pagination: {
+              el: '.reviewPagination',
+            },
+
+        });
+        
     </script>
 </body>
 </html>
