@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>트라이뷰티</title>
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- swiper css cdn -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="css/import.css">
 </head>
@@ -36,8 +44,40 @@
                     </ul>
                 </div>
             </div>
-            <div class="mainSliderArea">
-
+            <div class="swiper-container mainSliderArea">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mainsliderContentsArea01">
+                        <div>
+                            <h2>
+                                SEE BEAUTY<br/>
+                                IN A NEW LIGHT
+                            </h2>
+                            <p>Revolutionary Hair Removal & Anti-aging Devices</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mainsliderContentsArea02">
+                        <div>
+                            <h2>
+                                SEE BEAUTY<br/>
+                                IN A NEW LIGHT
+                            </h2>
+                            <p>Revolutionary Hair Removal & Anti-aging Devices</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mainsliderContentsArea03">
+                        <div>
+                            <h2>
+                                SEE BEAUTY<br/>
+                                IN A NEW LIGHT
+                            </h2>
+                            <p>Revolutionary Hair Removal & Anti-aging Devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainSliderNavigationArea">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </header>
 
@@ -339,5 +379,15 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        var mySwiper = new Swiper ('.mainSliderArea', {
+            loop:true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
