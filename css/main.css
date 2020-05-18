@@ -42,7 +42,7 @@ section > p{font-size: 20px; font-weight: 500; }
 .wiseChoiceArea > p{margin-bottom: 60px;}
 .wiseChoiceArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
 .wiseChoiceArea ul li{float: left; width: 23.50%; margin-bottom: 105px; }
-.wiseChoiceArea ul li:nth-of-type(4n){margin-right: 2%;}
+.wiseChoiceArea ul li:not(:nth-of-type(4n)){margin-right: 2%;}
 .wiseChoiceArea ul li figure{display: flex; flex-direction: column;}
 .wiseChoiceArea ul li figure img{width: 100%; margin-bottom: 25px;}
 .wiseChoiceArea ul li figure figcaption{display: flex; flex-direction: column; height: 180px;}

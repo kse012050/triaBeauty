@@ -1,0 +1,31 @@
+
+input , button{outline: none;}
+input{display: inline-block; width: 100%; max-width: 400px; font-size: 22px; line-height: 48px; padding:0 5px; border: 1px solid #e5e5e5; box-sizing: border-box;}
+
+/* 필수입력 */
+.requiredInput{padding-left: 10px; box-sizing: border-box; position: relative; }
+.requiredInput::before{content: '*'; display: block; font-size: 16px; color: #c11b7b; position: absolute; left: 0; top: 4px;}
+
+/* input 크기 및 설명 글 */
+.requiredInputArea li > div{position: relative; width: 40%; max-width: 400px;}
+.requiredInputArea li > div div{position: absolute; left: 0; top: 65px;}
+.requiredInputArea li > div div span{display: block; font-size: 14px; font-weight: 300; color: #a4a4a4;}
+.requiredInputArea li > div div span:not(:last-of-type){margin-bottom: 10px; }
+.requiredInputArea li > div div span.requiredColor{font-weight: 400; color: #c11b7b;}
+
+/* 중복확인 btn */
+.doubleCheckBtn{font-size: 16px; color: white; width: 150px; line-height: 48px; background: #7b7b7b; border: none; margin-left: 10px;}
+
+
+.singUpArea fieldset legend{font-size: 40px; margin-bottom: 60px;}
+.singUpArea fieldset > span{display: block; font-size: 16px; margin-bottom: 20px;}
+
+.requiredInputArea{width: 100%; max-width: 1120px; margin: 0 auto;}
+.requiredInputArea li{display: flex; align-items: center; margin-bottom: 40px;}
+.requiredInputArea li .requiredTitleArea{}
+.requiredInputArea li label{display: inline-block; width: 18%; max-width: 200px; font-size: 18px;}
+
+.requiredInputArea li:nth-of-type(5) input{width: 130px;}
+
+.requiredInputArea li:first-of-type{margin-bottom: 92px;}
+.requiredInputArea li:nth-of-type(3), .requiredInputArea li:nth-of-type(4){margin-bottom: 70px;}

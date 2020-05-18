@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="menuArea">
+                <h1><a href="#"><img src="images/main/logo.png" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">소개</a>
+                            <ol>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">레이저제모</a></li>
+                                <li><a href="#">피부개선</a></li>
+                                <li><a href="#">여드름치료</a></li>
+                                <li><a href="#">코스메틱</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">제품</a>
+                        </li>
+                        <li><a href="#">소식</a>
+                            <ol>
+                                <li><a href="#">공지</a></li>
+                                <li><a href="#">뉴스/매거진</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="menuBgArea">
+        
+                </div>
+                <div class="loginArea">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <span class="navigationArea">HOME > 회원가입</span>
+
+        <form class="singUpArea" action="#">
+            <fieldset>
+                <legend>회원가입</legend>
+                <span class="requiredInput">체크 된 항목은 필수입력 항목입니다.</span>
+                <ul class="requiredInputArea">
+                    <li>
+                        <label class="requiredInput" for="userId">아이디</label>
+                        <div>
+                            <input type="text" id="userId">
+                            <div>
+                                <span class="requiredColor">필수 입력 사항입니다.</span>
+                                <span>※ 아이디는 4~12자 사이의 영문자,숫자를 입력해 주세요.</span>
+                            </div>
+                        </div>
+                        <button class="doubleCheckBtn">중복확인</button>
+                    </li>
+                    <li>
+                        <label class="requiredInput" for="userName">이름</label>
+                        <input type="text" id="userName">
+                    </li>
+                    <li>
+                        <label class="requiredInput" for="userPw">비밀번호</label>
+                        <div>
+                            <input type="password" id="userPw">
+                            <div>
+                                <span>※ 비밀번호는 6~16자 사이로 입력해 주세요.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="requiredInput" for="userPwCheck">비밀번호 확인</label>
+                        <div>
+                            <input type="password" id="userPwCheck">
+                            <div>
+                                <span>※ 비밀번호 확인을 위해 한번 입력해주세요.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="requiredInput" for="">생년월일</label>
+                        <input type="number" value="1990">
+                        <span>년</span>
+                        <input type="number" value="1" min="1" max="12">
+                        <span>월</span>
+                        <input type="number" value="10" min="1" max="30">
+                        <span>일</span>
+                    </li>
+                    <li>
+                        <label for="">성별</label>
+                        <div>
+                            <input type="radio" name="userGender">
+                            <label for="">여성</label>
+                            <input type="radio" name="userGender">
+                            <label for="">남성</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <input type="text">
+                        <span>@</span>
+                        <input type="text">
+                        <select name="" id="userMail">
+                            <option value="">선택</option>
+                            <optgroup label="선택">
+                                <option value="@naver.com">naver</option>
+                                <option value="@gmail.com">gmail</option>
+                                <option value="@nate.com">nate</option>
+                                <option value="@daum.net">daum</option>
+                                <option value="@hotmail.com">msn</option>
+                            </optgroup>
+                        </select>
+                        <button>중복확인</button>
+                    </li>
+                    <li>
+                        <label for="">휴대폰</label>
+                        <div>
+                            <input type="number" value="010" readonly>
+                            <span>-</span>
+                            <input type="number" max="4">
+                            <span>-</span>
+                            <input type="number" max="4">
+                            <div>
+                                <span>※ 이메일, 휴대폰 번호는 아이디 또는 비밀번호 찾기를 위해 꼭 필요한 정보이므로 정확하게 입력해주세요.</span>
+                                <span>※주소는 제품 배송 정보 입력 시 입력 가능합니다.</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">주소</label>
+                        <div>
+                            <input type="text">
+                            <div>
+                                <input type="text">
+                                <input type="text">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">SNS 수신여부</label>
+                        <div>
+                            <input type="radio" name="">
+                            <label for="">예</label>
+                            <input type="radio" name="">
+                            <label for="">아니오</label>
+                            <div>
+                                <span>※ 이벤트정보, 기타 다양한 정보를 빠르게 만나실 수 있습니다. (주문, 배송내역은 수신여부와 상관 없이 기본 발송됩니다)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">이메일수신여부</label>
+                        <div>
+                            <input type="radio" name="">
+                            <label for="">예</label>
+                            <input type="radio" name="">
+                            <label for="">아니오</label>
+                            <div>
+                                <span>※ 이벤트정보, 기타 다양한 정보를 빠르게 만나실 수 있습니다. (주문, 배송내역은 수신여부와 상관 없이 기본 발송됩니다)</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>이용약관</legend>
+                <div>
+                    <input type="checkbox">
+                    <label for="">이용약관에 동의합니다.</label>
+                </div>
+                <ol>
+                    <li>
+                        <div>
+                            <h3>제1조</h3>
+                            <span>(목적)</span>
+                        </div>
+                        <p>이 약관은 (유)내고향시푸드(전자거래 사업자)이 운영하는 홈페이지(이하 "쇼핑몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 (유)내고향시푸드와 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+                        <span>※ 「PC통신 등을 이용하는 전자거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」</span>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>제1조</h3>
+                            <span>(목적)</span>
+                        </div>
+                        <ol>
+                            <li>
+                                "쇼핑몰" 이란 사업자가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 쇼핑몰을 운영하는 사업자의 
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>개인정보 취급방침</legend>
+                <div>
+                    <input type="checkbox">
+                    <label for="">개인정보 취급방침에 동의합니다.</label>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>목적</th>
+                            <th>항목</th>
+                            <th>보존기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li>
+                                        ① 회원관리: 서비스 이용에 따른 본인확인, 개인식별, 불량 회원의 부정 이용 방지와 
+                                        비인가 사용방지, 가입의사 확인, 연령확인, 불만처리, 고지사항 전달
+                                    </li>
+                                    <li>
+                                        ② 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금 정산: 구매 및 요금 결제, 
+                                        물품배송 또는 청구서 등 발송, 금융거래 본인인증 및 금융 서비스, 요금추심</li>
+                                    <li>
+                                        ③ 마케팅 및 광고에 활용: 신규 제품(서비스) 개발 및 특화, 이벤트 등 광고성 정보 전달, 
+                                        접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+                                    </li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        - 필수: 이름, ID(이메일주소), 비밀번호, 성별, 생년월일, 주소, 핸드폰 번호, 
+                                        이메일 주소
+                                    </li>
+                                    <li>
+                                        - 선택: 피부타입, 제품에 대한 관심도, 디바이스 소유 여부
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        법령에 따른 보존기간
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <input type="submit">
+        </form>
+
+        <footer>
+            <div>
+                <h2>customer center</h2>
+                <address>080 – 369 – 3300</address>
+                <ul>
+                    <li>
+                        <h3>업무시간 : </h3>
+                        <p>평일 am09~pm06 / 주말공휴일 휴일</p>
+                    </li>
+                    <li>
+                        <h3>입금 계좌 : </h3>
+                        <p>씨티은행 881-00401-243-01</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h1><a href="#"><img src="images/main/fLogo.png" alt="logo"></a></h1>
+                <ul>
+                    <li>
+                        <h2>트리아뷰티코리아 유한회사</h2>
+                    </li>
+                    <li>
+                        <h3>대표이사</h3>
+                        <span>:</span>
+                        <p>산딥인드라바단파텔</p>
+                    </li>
+                    <li>
+                        <p>서울시 서초구 강남대로 311, 9층</p>
+                    </li>
+                    <li>
+                        <h3>메일</h3>
+                        <span>:</span>
+                        <p>customercare@triabeauty.co.kr</p>
+                    </li>
+                    <li>
+                        <h3>사업자등록번호</h3>
+                        <span>:</span>
+                        <p>101 – 86 – 54142</p>
+                    </li>
+                    <li>
+                        <p>의료기기판매업 신고 제 1737호</p>
+                    </li>
+                    <li>
+                        <h3>통신판매업 신고</h3>
+                        <span>:</span>
+                        <p>2019-서울서초-3070</p>
+                    </li>
+                    <li>
+                        <h3>개인정보관리책임자</h3>
+                        <span>:</span>
+                        <p>권지선</p>
+                    </li>
+                </ul>
+                <p>© 2020 Tria Beauty Korea Co., Ltd. All rights reserved.</p>
+            </div>
+
+            <hr/>
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
