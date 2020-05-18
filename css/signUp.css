@@ -1,13 +1,18 @@
 
-input , button{outline: none;}
-input{display: inline-block; width: 100%; max-width: 400px; font-size: 22px; line-height: 48px; padding:0 5px; border: 1px solid #e5e5e5; box-sizing: border-box;}
+.requiredInputArea input ,.requiredInputArea button{outline: none;}
+.requiredInputArea input{display: inline-block; width: 440px; font-size: 22px; line-height: 48px; padding:0 5px; border: 1px solid #e5e5e5; box-sizing: border-box;}
+.requiredInputArea input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button
+{-webkit-appearance: none;}
+.requiredInputArea input[type="radio"]{width: 20px; height: 20px; margin: 0;}
+.requiredInputArea select{ display: inline-block; width: 100%; max-width: 200px; font-size: 22px; height: 50px; line-height: 48px; padding:0 5px; border: 1px solid #e5e5e5; box-sizing: border-box; margin-left: 10px;}
+.requiredInputArea select > option{display: none;}
 
 /* 필수입력 */
 .requiredInput{padding-left: 10px; box-sizing: border-box; position: relative; }
 .requiredInput::before{content: '*'; display: block; font-size: 16px; color: #c11b7b; position: absolute; left: 0; top: 4px;}
 
 /* input 크기 및 설명 글 */
-.requiredInputArea li > div{position: relative; width: 40%; max-width: 400px;}
+.requiredInputArea li > div{position: relative; display: flex; width: 82%;}
 .requiredInputArea li > div div{position: absolute; left: 0; top: 65px;}
 .requiredInputArea li > div div span{display: block; font-size: 14px; font-weight: 300; color: #a4a4a4;}
 .requiredInputArea li > div div span:not(:last-of-type){margin-bottom: 10px; }
@@ -17,15 +22,80 @@ input{display: inline-block; width: 100%; max-width: 400px; font-size: 22px; lin
 .doubleCheckBtn{font-size: 16px; color: white; width: 150px; line-height: 48px; background: #7b7b7b; border: none; margin-left: 10px;}
 
 
-.singUpArea fieldset legend{font-size: 40px; margin-bottom: 60px;}
-.singUpArea fieldset > span{display: block; font-size: 16px; margin-bottom: 20px;}
+.singUpArea fieldset legend{display: block; width: 100%; font-size: 40px; margin-bottom: 60px;}
+.singUpArea fieldset > span{display: block; font-size: 16px; padding-bottom: 20px; border-bottom: 1px solid black;}
 
-.requiredInputArea{width: 100%; max-width: 1120px; margin: 0 auto;}
+.requiredInputArea{width: 100%; max-width: 1120px; margin: 0 auto; padding: 30px 0 25px 0;}
 .requiredInputArea li{display: flex; align-items: center; margin-bottom: 40px;}
 .requiredInputArea li .requiredTitleArea{}
-.requiredInputArea li label{display: inline-block; width: 18%; max-width: 200px; font-size: 18px;}
+.requiredInputArea li > label{display: inline-block; width: 18%; max-width: 200px; font-size: 18px;}
+.requiredInputArea li > span{display: inline-block; font-size: 18px; line-height: 48px; margin: 0 30px 0 10px;}
+.requiredInputArea li > div label{width: 60px; text-align: left; margin-left:15px;  }
+.requiredInputArea li > div label:not(:last-of-type){margin-right: 15px;}
+.requiredInputArea li > div > span{display: inline-block; font-size: 25px; line-height: 48px; margin: 0 10px;}
+.requiredInputArea li > div > div input{width: 100%;}
+.requiredInputArea li > div > div input:not(:last-of-type){margin-bottom: 10px;}
+.requiredInputArea li:nth-of-type(7) span{margin-right: 10px;}
 
+/* 개별 input */
 .requiredInputArea li:nth-of-type(5) input{width: 130px;}
+.requiredInputArea li:nth-of-type(6) > div label{text-align: center; margin-left:0px;}
+.requiredInputArea li:nth-of-type(6) > div label:not(:last-of-type){margin-right:15px;}
+.requiredInputArea li:nth-of-type(7) input{max-width: 200px;}
+.requiredInputArea li:nth-of-type(8) input{max-width: 130px;}
+.requiredInputArea li:nth-of-type(8) > div{width: 500%; max-width: 800px; display: flex; align-items: center;}
+.requiredInputArea li:nth-of-type(9) > div > input{max-width: 200px;}
+.requiredInputArea li:nth-of-type(9) > div > div{top: 60px;}
+.requiredInputArea li:nth-of-type(9) > div > div input{width: 650px;}
+.requiredInputArea li:nth-of-type(10) > div > div,.requiredInputArea li:nth-of-type(11) > div > div
+ {top: 35px;}
+
 
 .requiredInputArea li:first-of-type{margin-bottom: 92px;}
 .requiredInputArea li:nth-of-type(3), .requiredInputArea li:nth-of-type(4){margin-bottom: 70px;}
+.requiredInputArea li:nth-of-type(8){margin-bottom: 95px;}
+.requiredInputArea li:nth-of-type(9){margin-bottom: 150px;}
+.requiredInputArea li:nth-of-type(10){margin-bottom: 65px;}
+
+
+/* 이용약관 , 개인정보 취급방침 공통 */
+.legendArea{position: relative;}
+.legendArea legend{margin-bottom: 30px;}
+.legendArea div{position: absolute; right: 0; top: 70px;}
+.termsOfServiceArea > ol , .privacyStatementArea table{height: 250px; background-color: #fafafa; }
+
+/* 이용약관 */
+.termsOfServiceArea{margin-bottom: 65px;}
+.termsOfServiceArea .legendArea{padding-top: 70px; border-top: 1px solid #e5e5e5;}
+.termsOfServiceArea > ol{height: 250px; overflow-y: scroll; padding: 30px; padding-bottom: 0;}
+.termsOfServiceArea > ol li{font-size: 14px; color: rgba(0,0,0,0.7); line-height: 1.8571;}
+.termsOfServiceArea > ol li:not(:last-of-type){margin-bottom: 55px;}
+.termsOfServiceArea > ol li *{line-height: 1.8571;}
+.termsOfServiceArea > ol li div{display: flex; line-height: 1.8571;}
+.termsOfServiceArea > ol li div h3{font-weight: 400;}
+
+/* 개인정보 취급방침 */
+.privacyStatementArea{margin-bottom: 60px;}
+.privacyStatementArea .legendArea div{top: 0;}
+.privacyStatementArea table{}
+.privacyStatementArea table thead{border-bottom: 1px solid #e1e1e1;}
+.privacyStatementArea table thead tr{}
+.privacyStatementArea table thead tr th{font-size: 14px; font-weight: 400; line-height: 40px; color: rgba(0,0,0,0.7);}
+.privacyStatementArea table tbody{}
+.privacyStatementArea table tbody tr{}
+.privacyStatementArea table tbody tr td{font-size: 14px; font-weight: 400; color: rgba(0,0,0,0.7); padding-top: 16px;}
+.privacyStatementArea table tbody tr td:nth-of-type(1){width: 43.75%;}
+.privacyStatementArea table tbody tr td:nth-of-type(2){width: 40%;}
+.privacyStatementArea table tbody tr td:nth-of-type(3){width: 16.25%;}
+.privacyStatementArea table tbody tr td li{line-height: 1.8571;}
+.privacyStatementArea table tbody tr td:not(:last-of-type){padding-left: 20px; padding-right: 45px;}
+.privacyStatementArea table tbody tr td:not(:last-of-type) li:not(:last-of-type){margin-bottom: 10px;}
+.privacyStatementArea table tbody tr td:nth-of-type(2){border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5;}
+.privacyStatementArea table tbody tr td:nth-of-type(3) li{text-align: center;}
+
+
+input[type="submit"]{display: block; width: 230px; margin: 0 auto; font-size: 18px; font-weight: 500; line-height: 60px; color: white; background-color: black; border: none; border-radius: 50px; cursor: pointer; outline: none;}
+
+
+
+
