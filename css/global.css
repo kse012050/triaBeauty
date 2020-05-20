@@ -1,14 +1,27 @@
 /* 컨텐츠 최대 크기 지정 width 1760px*/
-.mainTopBannerArea div, header.mainHeader .menuArea, .videoArea , footer {width: 100%; max-width: 1760px; margin: 0 auto;}
+.mainTopBannerArea div, header.mainHeader .menuArea, .videoArea , footer.mainFooter {width: 100%; max-width: 1760px; margin: 0 auto;}
 /* 컨텐츠 크기 지정 width 1200px*/
-header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul, .navigationArea,.singUpArea
+/* 메인 */
+header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul, 
+/* 네이게이션 타이틀 */
+.navigationArea,
+/* 회원가입 */
+.singUpArea,
+/* 로그인 */
+.loginArea,
+/* 장바구니 */
+.paymentProgressArea,.orderListTitleArea,.orderListArea,
+ footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 
 .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul
 {padding-top: 140px;}
 
+/* 네이베이션 */
 .navigationArea{display: block; font-size: 14px; font-weight: 300; color: #919191; text-align: right; margin: 30px auto 58px auto;}
 
+/* btn */
+.basicBtn{display: block; width: 230px; margin: 0 auto; font-size: 18px; font-weight: 500; line-height: 60px; text-align: center; color: white; background-color: black; border: none; border-radius: 50px; cursor: pointer; outline: none;}
 
 /* header */
 header{position: relative;}

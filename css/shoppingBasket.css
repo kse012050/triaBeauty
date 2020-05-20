@@ -1,0 +1,58 @@
+/* 결제 진행 golbal */
+.paymentProgressArea h2{margin-bottom: 40px;}
+.paymentProgressArea ul{display: flex; justify-content: center; padding: 45px 0; background-color: #f7f7f7; margin-bottom: 55px;}
+.paymentProgressArea ul li{text-align: center;}
+.paymentProgressArea ul li:not(:last-of-type){margin-right: 12.5%;}
+.paymentProgressArea ul li img{margin-bottom: 25px;}
+.paymentProgressArea ul li p{font-size: 18px;}
+
+/* 진행 상황 글씨 색상 */
+.paymentProgressArea ul li:not(:first-of-type) p{color: #acacac; }
+
+
+/* 주문 리스트 타이틀 */
+.orderListTitleArea{}
+.orderListTitleArea p{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
+.orderListTitleArea h2{font-size: 16px; font-weight: 500; padding: 18px; border-top: 1px solid #000000; border-bottom: 1px solid #cccccc;}
+.orderListTitleArea ul{border-bottom: 1px solid #cccccc;}
+.orderListTitleArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+.orderListTitleArea ul li{float: left; text-align: center; line-height: 50px; }
+.orderListTitleArea ul li:nth-of-type(1){width: 4.5%;}
+.orderListTitleArea ul li:nth-of-type(2){width: 35.5%;}
+.orderListTitleArea ul li:nth-of-type(3){width: 7.5%;}
+.orderListTitleArea ul li:nth-of-type(4){width: 26.5%;}
+.orderListTitleArea ul li:nth-of-type(5){width: 14%;}
+.orderListTitleArea ul li:nth-of-type(6){width: 8.3%; float: right;}
+.orderListTitleArea ul li h3{font-size: 16PX; font-weight: 400; line-height: 50px;}
+
+
+/* 주문 리스트 */
+.orderListArea{}
+.orderListArea fieldset > div{display: flex; flex-wrap: nowrap; padding: 15px 0; border-bottom: 1px solid #f2f2f2;}
+.orderListArea fieldset > div > div{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.orderListArea fieldset > div > div h4{font-size: 18px; font-weight: bold; margin-bottom: 8px;}
+.orderListArea fieldset > div > div h5{font-size: 17px; font-weight: 500;}
+.orderListArea fieldset > div > div p{font-size: 14px; color: rgba(0,0,0,0.5);}
+.orderListArea fieldset > div > div:nth-of-type(1){width: 4.5%;}
+.orderListArea fieldset > div > div:nth-of-type(2){width: 7.5%}
+.orderListArea fieldset > div > div:nth-of-type(3){width: 28%; align-items: stretch; padding: 0 20px; box-sizing: border-box;}
+.orderListArea fieldset > div > div:nth-of-type(4){width: 7.5%;}
+.orderListArea fieldset > div > div:nth-of-type(4) > div{width: 100%; display: flex; margin-bottom: 5px;}
+.orderListArea fieldset > div > div:nth-of-type(4) > div > *{height: 30px; flex-basis: 33.3%; display: flex; justify-content: center; align-items: center;}
+.orderListArea fieldset > div > div:nth-of-type(4) > div > button{font-size: 25px; color: white; border: none; background-color: #cccccc;}
+.orderListArea fieldset > div > div:nth-of-type(4) > div > span{font-size: 16px; color: #666666;}
+.orderListArea fieldset > div > div:nth-of-type(4) > button{width: 100%; padding: 3px 0; border: 1px solid #d6d6d6; font-size:14px; font-weight: 300; color: #747474; background-color: white; display: flex; justify-content: center; align-items: center;}
+.orderListArea fieldset > div > div:nth-of-type(5){width: 26.5%;}
+.orderListArea fieldset > div > div:nth-of-type(6){width: 14%;}
+.orderListArea fieldset > div > div:nth-of-type(7){width: 8.3%; margin-left: 3.7%;}
+.orderListArea fieldset > div > div:nth-of-type(7) button{width: 100%; font-size: 16px; padding: 8px;}
+.orderListArea fieldset > div > div:nth-of-type(7) button:nth-of-type(1){color: black; border: 1px solid #d6d6d6; background-color: white;}
+.orderListArea fieldset > div > div:nth-of-type(7) button:nth-of-type(2){color: white; border: none; background-color: black;}
+.orderListArea fieldset div:nth-of-type(1) img{width: 100%;}
+
+/* 장바구니 상품 가격 정보 */
+.productPriceArea{display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #cccccc; margin-bottom: 20px;}
+.productPriceArea > p{font-size: 13px; font-weight: 300; color: #979797; display: flex; align-items: center; }
+.productPriceArea > div{font-size: 13px; display: flex; align-items: center;}
+.productPriceArea > div > span{margin:0 3px;}
+.productPriceArea > div > p{font-size: 18px; font-weight: bold; color: #ba005f; margin-left: 20px;}

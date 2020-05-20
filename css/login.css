@@ -1,0 +1,23 @@
+/* 로그인 페이지 레이아웃 */
+.loginArea{display: flex; justify-content: space-between;}
+.loginArea section{width: 50%; max-width: 560px;}
+.loginArea section h2{font-size: 40px; margin-bottom: 20px;}
+.loginArea section p{font-size: 20px; line-height: 1.8; margin-bottom: 20px;}
+
+
+/* 로그인 , 회원가입 공통 */
+.loginContentArea > div, .signUpArea > div{display: flex; flex-direction: column; height: 385px;  justify-content: center; background-color: #f7f7f7; }
+.loginContentArea > div > form, .signUpArea > div > div {width: calc(100% - 20px); max-width: 450px; margin: 0 auto; }
+
+/* 로그인 */
+.loginContentArea > div > form label{display: block; font-size: 16px;}
+/* .loginContentArea > div > form input:not([type="checkbox"]):not([type="submit"]){width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black;} */
+.loginContentArea > div > form input[type="text"],.loginContentArea > div > form input[type="password"]{width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black; outline: none;}
+.loginContentArea > div > form input[type="text"]{margin-bottom: 38px;}
+.loginContentArea > div > form input[type="password"]{margin-bottom: 30px;}
+.loginContentArea > div > form > div{display: flex; justify-content: space-between; margin-bottom: 40px;}
+.loginContentArea > div > form > div > *{display: flex; font-size: 14px;}
+.loginContentArea > div > form > div ul{display: flex;}
+.loginContentArea > div > form > div ul li:not(:first-of-type){margin-left: 15px; padding-left: 15px; position: relative;}
+.loginContentArea > div > form > div ul li:not(:first-of-type)::after{content: ''; display: block; width: 1px; height: 75%; background-color: #acacac; position: absolute; left: 0; top: 1px;}
+.loginContentArea > div > form > div ul li a{display: block;}
