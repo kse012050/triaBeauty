@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장바구니</title>
+    <title>주문완료</title>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
@@ -49,7 +49,7 @@
 
         <span class="navigationArea">HOME > 로그인</span>
 
-        <div class="shoppingBasketArea">
+        <div class="orderCompletedArea">
             <section class="paymentProgressArea">
                 <h2>
                     장바구니
@@ -74,13 +74,56 @@
                 </ul>
             </section>
 
-            <div class="orderListTitleArea">
-                <p>주문 리스트를 확인해주세요</p>
-                <h2>일반상품<span>(2)</span></h2>
+
+            <section class="orderCompletedMessageArea">
+                <h2>고객님의 주문이 완료 되었습니다.</h2>
+                <p>주문내역 및 배송에 관한 안내는 <span>주문조회</span> 를 통하여 확인 가능합니다.</p>
                 <ul>
                     <li>
-                        <input type="checkbox">
+                        <h3>주문번호</h3>
+                        <span>:</span>
+                        <p>20170112-0000013</p>
                     </li>
+                    <li>
+                        <h3>주문일자</h3>
+                        <span>:</span>
+                        <p>2017-01-12 22:34:57</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="orderInformationArea paymentInformationArea">
+                <h2>결제정보</h2>
+                <ul>
+                    <li>
+                        <h3>최종결제금액</h3>
+                        <div>
+                            <p>1,418,000원</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>결제수단</h3>
+                        <div>
+                            <h4>무통장 입금</h4>
+                            <div>
+                                <h5>입금자</h5>
+                                <span>:</span>
+                                <p>제임스</p>
+                                <span>,</span>
+                                <h5>계좌번호</h5>
+                                <span>:</span>
+                                <p>국민은행 000-00-000000 (트리아뷰티) </p>
+                            </div>
+                            <a href="#">은행 사이트 바로가기</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="orderProductInformationTitleArea">
+                <p>주문 상품 정보</p>
+                <h2>주문완료 주문 상품 정보</h2>
+                <ul>
                     <li>
                         <h3>상품정보</h3>
                     </li>
@@ -93,31 +136,24 @@
                     <li>
                         <h3>합계</h3>
                     </li>
-                    <li>
-                        <h3>선택</h3>
-                    </li>
                 </ul>
             </div>
-            <form action="#" class="orderListArea">
-                <fieldset>
+            <div class="orderProductInListArea">
+                <div class="orderProductArea">
                     <div>
                         <div>
-                            <input type="checkbox">
-                        </div>
-                        <div>
-                            <img src="images/product/productImg.png" alt="상품 img">
                             <div>
-                                <h4>트리아 미니 제모기</h4>
-                                <p>[옵션 : <span>핑크</span>]</p>
+                                <img src="images/product/productImg.png" alt="상품 img">
+                                <div>
+                                    <h4>트리아 미니 제모기</h4>
+                                    <p>[옵션 : <span>핑크</span>]</p>
+                                </div>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <button>-</button>
                                 <span>2</span>
-                                <button>+</button>
                             </div>
-                            <button>변경</button>
                         </div>
                         <div>
                             <p><span>무료</span></p>
@@ -125,16 +161,11 @@
                         <div>
                             <h5><span>129,000</span> 원</h5>
                         </div>
-                        <div>
-                            <button>삭제</button>
-                            <button>바로가기</button>
-                        </div>
                     </div>
-                </fieldset>
+                </div>
                 
 
                 <div class="productPriceArea">
-                    <p>할인 적용 금액은 주문서작성의 결제예정금액에서 확인 가능합니다.</p>
                     <div>
                         <span>[기본배송]</span>
                         상품구매금액
@@ -146,16 +177,6 @@
                     </div>
                 </div>
 
-                <div class="productManagementArea">
-                    <div>
-                        선택상품을
-                        <button>삭제</button>
-                    </div>
-                    <div>
-                        <button>장바구니 비우기</button>
-                        <button>견적서출력</button>
-                    </div>
-                </div>
 
                 <div class="priceArea">
                     <div>
@@ -163,42 +184,59 @@
                         <p><span>129,000</span> 원</p>
                     </div>
                     <div>
-                        <h3>총 배송비</h3>
-                        <p><span>0</span> 원</p>
-                    </div>
-                    <div>
                         <h2>결제예정금액</h2>
                         <p><span>2,588,000</span> 원</p>
                     </div>
                 </div>
 
+                <section class="orderInformationArea shipToInformationArea">
+                    <h2>배송지정보</h2>
+                    <ul>
+                        <li>
+                            <h3>받으시는분</h3>
+                            <div>
+                                <p>제임스</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>주소</h3>
+                            <div>
+                                <p>48094 부산광역시 해운대구 우동</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>일반전화</h3>
+                            <div>
+                                <p>070-0700-0700</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>휴대전화</h3>
+                            <div>
+                                <p>070-0700-0700</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>배송메시지</h3>
+                            <div>
+                                <p>배송전에 연락바랍니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
                 <div class="shoppingBasketFinalArea">
-                    <a href="#">쇼핑계속하기 ></a>
                     <div>
-                        <input type="button"" value="전체상품주문">
-                        <input type="button" value="선택상품주문">
+                        <button href="#">세금계산서 신청</button>
+                        <button href="#">거래 명세서 인쇄</button>
+                    </div>
+                    <div>
+                        <a href="#">쇼핑계속하기</a>
+                        <input type="button" value="주문확인하기"">
                     </div>
                 </div>
             </form>
 
-            <section class="informationUseArea">
-                <h2>이용안내</h2>
-                <h3>장바구니 이용안내</h3>
-                <ol>
-                    <li>1. 해외배송 상품과 국내배송 상품은 함께 결제하실 수 없으니 장바구니 별로 따로 결제해 주시기 바랍니다.</li>
-                    <li>2. 해외배송 가능 상품의 경우 국내배송 장바구니에 담았다가 해외배송 장바구니로 이동하여 결제하실 수 있습니다.</li>
-                    <li>3. 선택하신 상품의 수량을 변경하시려면 수량변경 후 [변경] 버튼을 누르시면 됩니다.</li>
-                    <li>4. [쇼핑계속하기] 버튼을 누르시면 쇼핑을 계속 하실 수 있습니다.</li>
-                    <li>5. 장바구니와 관심상품을 이용하여 원하시는 상품만 주문하거나 관심상품으로 등록하실 수 있습니다.</li>
-                    <li>6. 파일첨부 옵션은 동일상품을 장바구니에 추가할 경우 마지막에 업로드 한 파일로 교체됩니다.</li>
-                </ol>
-                <h3>무이자할부 이용안내</h3>
-                <ol>
-                    <li>1. 상품별 무이자할부 혜택을 받으시려면 무이자할부 상품만 선택하여 [주문하기] 버튼을 눌러 주문/결제 하시면 됩니다.</li>
-                    <li>2. [전체 상품 주문] 버튼을 누르시면 장바구니의 구분없이 선택된 모든 상품에 대한 주문/결제가 이루어집니다.</li>
-                    <li>3. 단, 전체 상품을 주문/결제하실 경우, 상품별 무이자할부 혜택을 받으실 수 없습니다</li>
-                </ol>
-            </section>
         </div>
 
         <footer>

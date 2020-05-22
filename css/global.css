@@ -10,7 +10,9 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 로그인 */
 .loginArea,
 /* 장바구니 */
-.paymentProgressArea,.orderListTitleArea,.orderListArea,
+.paymentProgressArea,.orderListTitleArea,.orderListArea,.shoppingBasketArea,
+/* 주문완료 */
+.orderCompletedArea,
  footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 

@@ -25,6 +25,11 @@
 .orderListTitleArea ul li:nth-of-type(6){width: 8.3%; float: right;}
 .orderListTitleArea ul li h3{font-size: 16PX; font-weight: 400; line-height: 50px;}
 
+.orderInformationArea ul{border-top: 1px solid black; border-bottom: 1px solid #cccccc;}
+/* 
+.orderInformationArea h2{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
+.orderInformationArea ul li{display: flex;} */
+
 
 /* 주문 리스트 */
 .orderListArea{}
@@ -34,21 +39,23 @@
 .orderListArea fieldset > div > div h5{font-size: 17px; font-weight: 500;}
 .orderListArea fieldset > div > div p{font-size: 14px; color: rgba(0,0,0,0.5);}
 .orderListArea fieldset > div > div:nth-of-type(1){width: 4.5%;}
-.orderListArea fieldset > div > div:nth-of-type(2){width: 7.5%}
-.orderListArea fieldset > div > div:nth-of-type(3){width: 28%; align-items: stretch; padding: 0 20px; box-sizing: border-box;}
-.orderListArea fieldset > div > div:nth-of-type(4){width: 7.5%;}
-.orderListArea fieldset > div > div:nth-of-type(4) > div{width: 100%; display: flex; margin-bottom: 5px;}
-.orderListArea fieldset > div > div:nth-of-type(4) > div > *{height: 30px; flex-basis: 33.3%; display: flex; justify-content: center; align-items: center;}
-.orderListArea fieldset > div > div:nth-of-type(4) > div > button{font-size: 25px; color: white; border: none; background-color: #cccccc;}
-.orderListArea fieldset > div > div:nth-of-type(4) > div > span{font-size: 16px; color: #666666;}
-.orderListArea fieldset > div > div:nth-of-type(4) > button{width: 100%; padding: 3px 0; border: 1px solid #d6d6d6; font-size:14px; font-weight: 300; color: #747474; background-color: white; display: flex; justify-content: center; align-items: center;}
-.orderListArea fieldset > div > div:nth-of-type(5){width: 26.5%;}
-.orderListArea fieldset > div > div:nth-of-type(6){width: 14%;}
-.orderListArea fieldset > div > div:nth-of-type(7){width: 8.3%; margin-left: 3.7%;}
-.orderListArea fieldset > div > div:nth-of-type(7) button{width: 100%; font-size: 16px; padding: 8px;}
-.orderListArea fieldset > div > div:nth-of-type(7) button:nth-of-type(1){color: black; border: 1px solid #d6d6d6; background-color: white;}
-.orderListArea fieldset > div > div:nth-of-type(7) button:nth-of-type(2){color: white; border: none; background-color: black;}
-.orderListArea fieldset div:nth-of-type(1) img{width: 100%;}
+/* .orderListArea fieldset > div > div:nth-of-type(2){width: 7.5%} */
+.orderListArea fieldset > div > div:nth-of-type(2){width: 35.5%; display: flex; flex-direction: row; justify-content: flex-start; padding: 0 20px; box-sizing: border-box;}
+.orderListArea fieldset > div > div:nth-of-type(2) img{width: 90px; height: 90px; margin-right: 20px;}
+.orderListArea fieldset > div > div:nth-of-type(2) div{display: flex; flex-direction: column;}
+.orderListArea fieldset > div > div:nth-of-type(3){width: 7.5%;}
+.orderListArea fieldset > div > div:nth-of-type(3) > div{width: 100%; display: flex; margin-bottom: 5px;}
+.orderListArea fieldset > div > div:nth-of-type(3) > div > *{height: 30px; flex-basis: 33.3%; display: flex; justify-content: center; align-items: center;}
+.orderListArea fieldset > div > div:nth-of-type(3) > div > button{font-size: 25px; color: white; border: none; background-color: #cccccc;}
+.orderListArea fieldset > div > div:nth-of-type(3) > div > span{font-size: 16px; color: #666666;}
+.orderListArea fieldset > div > div:nth-of-type(3) > button{width: 100%; padding: 3px 0; border: 1px solid #d6d6d6; font-size:14px; font-weight: 300; color: #747474; background-color: white; display: flex; justify-content: center; align-items: center;}
+.orderListArea fieldset > div > div:nth-of-type(4){width: 26.5%;}
+.orderListArea fieldset > div > div:nth-of-type(5){width: 14%;}
+.orderListArea fieldset > div > div:nth-of-type(6){width: 8.3%; margin-left: 3.7%;}
+.orderListArea fieldset > div > div:nth-of-type(6) button{width: 100%; font-size: 16px; padding: 8px;}
+.orderListArea fieldset > div > div:nth-of-type(6) button:nth-of-type(1){color: black; border: 1px solid #d6d6d6; background-color: white;}
+.orderListArea fieldset > div > div:nth-of-type(6) button:nth-of-type(2){color: white; border: none; background-color: black;}
+/* .orderListArea fieldset div:nth-of-type(1) img{width: 100%;} */
 
 /* 장바구니 상품 가격 정보 */
 .productPriceArea{display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #cccccc; margin-bottom: 20px;}
@@ -56,3 +63,41 @@
 .productPriceArea > div{font-size: 13px; display: flex; align-items: center;}
 .productPriceArea > div > span{margin:0 3px;}
 .productPriceArea > div > p{font-size: 18px; font-weight: bold; color: #ba005f; margin-left: 20px;}
+
+
+.productManagementArea{display: flex; justify-content: space-between; margin-bottom: 50px;}
+.productManagementArea *{font-size: 13px;}
+.productManagementArea button{ padding: 5px 7px; border: 1px solid #d6d6d6; background-color: white;}
+.productManagementArea > div:first-of-type button{padding: 5px 26px; margin-left: 5px;}
+.productManagementArea > div:not(:first-of-type){}
+
+
+
+/* 상품 금액 */
+.priceArea{display: flex; justify-content: space-around; text-align: center; border: 3px solid; padding: 52px 0; margin-bottom: 20px;}
+.priceArea h3, .priceArea h2{font-size: 16px; font-weight: 500; margin-bottom: 15px;}
+.priceArea p{font-size: 25px; font-weight: bold;}
+.priceArea > div{position: relative;}
+.priceArea > div::before{content: ''; display: block; width: 30px; height:100%; background-image: url(../images/paymentProgress/plusIcon.png); background-repeat: no-repeat; background-position: center center; position: absolute; left: -165px; top: 0;}
+.priceArea > div:first-of-type::before{display: none;}
+.priceArea > div:last-of-type::before{background-image: url(../images/paymentProgress/equalSignIcon.png);}
+.priceArea > div:last-of-type p{color: #ba005f;}
+
+
+/* 장바구니 최종 결정 btn */
+.shoppingBasketFinalArea{display: flex; justify-content: space-between; margin-bottom: 50px;}
+.shoppingBasketFinalArea a{align-self: flex-start; font-size: 13px; padding: 11px 13px; border: 1px solid #d6d6d6; }
+.shoppingBasketFinalArea div input{width: 205px; height: 62px; font-size: 20px; font-weight: 100; border: none;}
+.shoppingBasketFinalArea div input:nth-of-type(1){color: white; background-color: black;}
+.shoppingBasketFinalArea div input:nth-of-type(2){color: black; background-color: #dadada;}
+
+
+/* 이용안내 */
+.informationUseArea{padding-top: 30px; border-top: 1px solid #e5e5e5;}
+.informationUseArea h2{font-size: 16px; font-weight: 500;}
+.informationUseArea *:not(h2){font-size: 14px; font-weight: 300; line-height: 1.714;}
+.informationUseArea > h2{margin-bottom: 13px;}
+.informationUseArea > ol:not(:last-of-type){margin-bottom: 30px;}
+.informationUseArea > h3{font-weight: 500;}
+
+

@@ -8,6 +8,8 @@
 @import url(login.css);
 /* 장바구니 */
 @import url(shoppingBasket.css);
+/* 주문완료 */
+@import url(orderCompleted.css);
 
 
 /* font */

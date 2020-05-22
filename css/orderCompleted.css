@@ -1,0 +1,90 @@
+/* 주문완료 - 주문 상품 정보 */
+/* 주문완료 상품 정보 타이틀 */
+.orderProductInformationTitleArea{}
+.orderProductInformationTitleArea p{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
+.orderProductInformationTitleArea h2{font-size: 16px; font-weight: 500; padding: 18px; border-top: 1px solid #000000; border-bottom: 1px solid #cccccc; text-indent: -9999px;}
+.orderProductInformationTitleArea ul{border-bottom: 1px solid #cccccc;}
+.orderProductInformationTitleArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+.orderProductInformationTitleArea ul li{float: left; text-align: center; line-height: 50px; }
+.orderProductInformationTitleArea ul li:nth-of-type(1){width: 47%; margin-right: 8%}
+.orderProductInformationTitleArea ul li:nth-of-type(2){width: 10%;}
+.orderProductInformationTitleArea ul li:nth-of-type(3){width: 20%;}
+.orderProductInformationTitleArea ul li:nth-of-type(4){width: 15%;}
+.orderProductInformationTitleArea ul li h3{font-size: 16PX; font-weight: 400; line-height: 50px;}
+
+
+/*주문완료 주문 리스트 */
+.orderProductInListArea{}
+.orderProductInListArea > .orderProductArea > div{display: flex; flex-wrap: nowrap; padding: 15px 0; border-bottom: 1px solid #f2f2f2;}
+.orderProductInListArea > .orderProductArea > div > div{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.orderProductInListArea > .orderProductArea > div > div h4{font-size: 18px; font-weight: bold; margin-bottom: 8px;}
+.orderProductInListArea > .orderProductArea > div > div h5{font-size: 17px; font-weight: 500;}
+.orderProductInListArea > .orderProductArea > div > div p{font-size: 14px; color: rgba(0,0,0,0.5);}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(1){width: 47%; margin-right: 8%; flex-direction: row; justify-content: flex-start;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(1) > div{display: flex; align-items: center; width: calc(100% - 20px); max-width: 454px; margin: 0 auto;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(1) div img{width: 90px; height: 90px;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(1) div div{display: flex; flex-direction: column;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(2){width: 10%;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(3){width: 20%;}
+.orderProductInListArea > .orderProductArea > div > div:nth-of-type(4){width: 15%;}
+
+
+/* 주문완료 상품 가격 정보 */
+.orderCompletedArea .productPriceArea{display: flex; justify-content: flex-end; padding: 15px; border-bottom: 1px solid #cccccc; margin-bottom: 50px;}
+.orderCompletedArea .productPriceArea > div{font-size: 13px; display: flex; align-items: center;}
+.orderCompletedArea .productPriceArea > div > span{margin:0 3px;}
+.orderCompletedArea .productPriceArea > div > p{font-size: 18px; font-weight: bold; color: #ba005f; margin-left: 20px;}
+
+/* 주문완료 총 금액 */
+.orderCompletedArea .priceArea{margin-bottom: 50px;}
+
+
+/* 주문완료 주문 메세지 */
+.orderCompletedMessageArea{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 48px 0; border: 3px solid #ba005f; margin-bottom: 50px;}
+.orderCompletedMessageArea > h2{font-size: 30px; font-weight: bold; margin-bottom: 15px;}
+.orderCompletedMessageArea > p{font-size: 20px; font-weight: 300; margin-bottom: 40px;}
+.orderCompletedMessageArea > p span{display: inline-block; color: #ba005f; padding-bottom: 5px; border-bottom: 1px solid #ba005f;}
+.orderCompletedMessageArea > ul{display: flex; }
+.orderCompletedMessageArea > ul li{display: flex; position: relative;}
+.orderCompletedMessageArea > ul li:nth-of-type(2n+1){padding-right: 40px; }
+.orderCompletedMessageArea > ul li:nth-of-type(2n){padding-left: 40px;}
+.orderCompletedMessageArea > ul li:not(:first-of-type)::before{content: ''; display: inline-block; width: 1px; height: 100%; background-color: black; position: absolute; left: 0; top: 2px;}
+.orderCompletedMessageArea > ul li *{font-size: 16px; font-weight: 500;}
+.orderCompletedMessageArea > ul li h3{}
+.orderCompletedMessageArea > ul li span{display: inline-block; margin: 0 5px;}
+.orderCompletedMessageArea > ul li p{}
+
+
+/* 결제정보 , 배송지정보 공통 */
+.orderInformationArea{}
+.orderInformationArea h2{font-size: 18px; font-weight: 500; margin-bottom: 20px;}
+.orderInformationArea ul{}
+.orderInformationArea ul li{display: flex; }
+.orderInformationArea ul li:not(:last-of-type){border-bottom: 1px solid #eeeeee;}
+.orderInformationArea ul li h3{width: 17.5%; padding: 20px 30px;  background-color: #fbfbfb;}
+
+/* 결제정보 */
+.paymentInformationArea{margin-bottom: 50px;}
+.paymentInformationArea ul li h3{font-size: 14px; font-weight: 300; color: #747474; }
+.paymentInformationArea ul li > div{ padding: 15px 10px;}
+.paymentInformationArea ul li:first-of-type div p{font-size: 18px; font-weight: 500; color: #ba005f; }
+.paymentInformationArea ul li:nth-of-type(2) div{display: flex; flex-direction: column;}
+.paymentInformationArea ul li:nth-of-type(2) div h4{font-size: 16px; font-weight: 300; margin-bottom: 10px;}
+.paymentInformationArea ul li:nth-of-type(2) div div{flex-direction: row;}
+.paymentInformationArea ul li:nth-of-type(2) div div *{font-size: 13px; font-weight: 300; color: #747474; margin-bottom: 15px;}
+.paymentInformationArea ul li:nth-of-type(2) div a{align-self: flex-start; font-size: 13px; padding: 8px 14px; border: 1px solid #d6d6d6; }
+
+/* 배송지정보 */
+.shipToInformationArea{margin-bottom: 20px;}
+.shipToInformationArea ul li h3{font-size: 13px; font-weight: 300; color: #747474; }
+.shipToInformationArea ul li div{}
+.shipToInformationArea ul li div p{font-size: 13px; font-weight: 300; padding: 20px 30px;}
+
+
+.orderProductInListArea .shoppingBasketFinalArea{}
+.orderProductInListArea .shoppingBasketFinalArea div{display: flex;}
+.orderProductInListArea .shoppingBasketFinalArea div > *{display: flex; justify-content: center; align-items: center; height: 30px; font-size: 13px; padding: 0; letter-spacing: -2px; border: 1px solid #d6d6d6; box-sizing: border-box; background-color: white;}
+.orderProductInListArea .shoppingBasketFinalArea div > *:not(:first-child){margin-left: 5px;}
+.orderProductInListArea .shoppingBasketFinalArea div button{width: 105px;}
+.orderProductInListArea .shoppingBasketFinalArea div a{width: 110px;}
+.orderProductInListArea .shoppingBasketFinalArea div input[type="button"]{width: 90px; color: white; border: 1px solid black; background-color: black;}
