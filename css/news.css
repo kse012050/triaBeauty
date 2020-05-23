@@ -1,0 +1,29 @@
+.subHeader{background: url(../images/news/subHeaderBG.png) no-repeat center center; height: 400px; display: flex; flex-direction: column; justify-content: center;}
+.subHeader h2{font-size: 80px; font-weight: 100; line-height: 1.25;  color: white; }
+
+
+.newsArea{}
+.newsArea ul{display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 60px;}
+.newsArea ul li{width: calc(100%/3 - 20px); background-color: #f7f7f7; }
+.newsArea ul li:nth-last-of-type(n + 4){margin-bottom: 30px;}
+.newsArea ul li figure{position: relative;}
+.newsArea ul li figure > div{margin-bottom: 20px; position: relative;}
+.newsArea ul li figure > div img{width: 100%;}
+.newsArea ul li figure > div > span{width: 70px; height: 70px; position: absolute; right: 0; top: 0; font-size: 16px; color: white; display: flex; justify-content: center; align-items: center;}
+.newsArea ul li figure > div > span.eventScheduled{background-color: #f27200;}
+.newsArea ul li figure > div > span.eventProceeding{background-color: #0077d3;}
+.newsArea ul li figure > div > span.eventEnd{background-color: #404549;}
+.newsArea ul li figure figcaption{padding: 20px 20px 30px;}
+.newsArea ul li figure figcaption > span{display: inline-block; font-size: 16px; color: #838383; border-bottom: 1px solid #838383; padding-bottom:3px;  margin-bottom: 30px;}
+.newsArea ul li figure figcaption h2{font-size: 24px; font-weight: 300; margin-bottom: 15px; }
+.newsArea ul li figure figcaption h2 span{display: block; margin-bottom: 10px;}
+.newsArea ul li figure figcaption p{font-size: 16px; line-height: 1.5625;}
+.newsArea ul li figure figcaption a{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.newsArea > div{display: flex; justify-content: center; text-align: center;}
+.newsArea > div *{display: inline-block; font-size: 14px; }
+.newsArea > div > div:nth-of-type(2){}
+.newsArea > div > div:nth-of-type(2) a{width: 32px; color: #838383;}
+.newsArea > div > div:nth-of-type(2) a.active{color: black;}
+.newsArea > div > div:nth-of-type(1){margin-right: 25px;}
+.newsArea > div > div:nth-of-type(3){margin-left: 25px;}
+.newsArea > div > div:nth-of-type(2n + 1){width: 30px; display: flex; justify-content: space-between;}

@@ -12,6 +12,10 @@
 @import url(orderForm.css);
 /* 주문완료 */
 @import url(orderCompleted.css);
+/* 이용약관 */
+@import url(terms.css);
+/* sub 소식 - 이벤트 , 뉴스 메거진*/
+@import url(news.css);
 
 
 /* font */

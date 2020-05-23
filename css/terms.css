@@ -1,0 +1,16 @@
+/* 이용약관, 개인정보취급방침 공통 */
+.termsArea{}
+.termsArea h2{font-size: 40px; margin-bottom: 30px;}
+.termsArea > div{height: 1050px; overflow-y: scroll; padding: 30px;}
+.termsArea div *{font-size: 14px; font-weight: 400; line-height: 1.8571; color: rgba(0, 0, 0, 0.7); letter-spacing: -1px;}
+
+/* 이용약관 */
+.termsArea > div > ol{}
+.termsArea > div > ol > li{}
+.termsArea > div > ol > li:not(:last-of-type){margin-bottom: 52px;}
+.termsArea > div > ol > li > ol > li:not(:last-of-type){margin-bottom: 26px;}
+
+/* 개인정보 취급방침 */
+.termsArea > div > ul > li:not(:last-of-type){margin-bottom: 25px;}
+.termsArea > div > ul > li div{display: flex;}
+.termsArea > div > ul > li div span{margin-right: 4px;}

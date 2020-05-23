@@ -13,6 +13,10 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .paymentProgressArea,.orderListTitleArea,.orderListArea,.shoppingBasketArea,
 /* 주문완료 */
 .orderCompletedArea,
+/* 이용약관 , */
+.termsArea,
+/* 소식 뉴스 메거진 */
+.subHeader h2, .newsArea,
  footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 
@@ -47,8 +51,8 @@ header .menuArea nav ul:hover > li ol li{text-align: left;}
 header .menuArea nav ul > li:hover > a{color: #c11b7b;}
 header .menuArea nav ul > li ol.active{height: 245px;}
 header .menuArea nav ul > li ol li:hover a{color: #c11b7b;}
-header .menuArea .loginArea{margin-left: auto;}
-header .menuArea .loginArea ul{display: flex; height: 100%; align-items: center;}
+header .menuArea .loginArea{}
+header .menuArea .loginArea ul{display: flex; height: 100%; align-items: center; margin-left: auto;}
 header .menuArea .loginArea ul li:not(:first-of-type){width: 93px; height: 34px; background-color: #000000;  border-radius: 100px; margin-left: 10px;}
 header .menuArea .loginArea ul li:not(:first-of-type) a{font-size: 14px; color:#9e9e9e; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
 header .mainSliderArea .swiper-slide{height: 100vh; background-repeat: no-repeat; background-position: center center; background-size: cover;}
