@@ -56,18 +56,18 @@
 
 
 /* 결제정보 , 배송지정보 공통 */
-.orderInformationArea{}
+/* .orderInformationArea{}
 .orderInformationArea h2{font-size: 18px; font-weight: 500; margin-bottom: 20px;}
 .orderInformationArea ul{}
 .orderInformationArea ul li{display: flex; }
 .orderInformationArea ul li:not(:last-of-type){border-bottom: 1px solid #eeeeee;}
-.orderInformationArea ul li h3{width: 17.5%; padding: 20px 30px;  background-color: #fbfbfb;}
+.orderInformationArea ul li h3{width: 17.5%; padding: 20px 30px;  background-color: #fbfbfb;} */
 
 /* 결제정보 */
 .paymentInformationArea{margin-bottom: 50px;}
 .paymentInformationArea ul li h3{font-size: 14px; font-weight: 300; color: #747474; }
 .paymentInformationArea ul li > div{ padding: 15px 10px;}
-.paymentInformationArea ul li:first-of-type div p{font-size: 18px; font-weight: 500; color: #ba005f; }
+/* .paymentInformationArea ul li:first-of-type div p{font-size: 18px; font-weight: 500; color: #ba005f; } */
 .paymentInformationArea ul li:nth-of-type(2) div{display: flex; flex-direction: column;}
 .paymentInformationArea ul li:nth-of-type(2) div h4{font-size: 16px; font-weight: 300; margin-bottom: 10px;}
 .paymentInformationArea ul li:nth-of-type(2) div div{flex-direction: row;}

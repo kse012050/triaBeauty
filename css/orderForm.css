@@ -1,0 +1,79 @@
+/* 주문서 작성(비회원)  필수입력 표시*/
+.orderFormArea .requiredInput::before{left: 20px; top: 15px;}
+
+/* 주문서 작성(비회원)  주문 정보*/
+.orderFormArea .orderInformationArea {margin-bottom: 50px;}
+.orderFormArea .orderInformationArea > ul > li > label{display: inline-block; font-size: 14px; font-weight: 300; color: #747474;  width: 17.5%; padding: 15px 30px;  background-color: #fbfbfb; box-sizing: border-box;}
+.orderFormArea .orderInformationArea > ul > li > h3{display: inline-block; font-size: 14px; font-weight: 300; color: #747474;  width: 17.5%; padding: 15px 30px;  background-color: #fbfbfb; box-sizing: border-box;}
+.orderFormArea .orderInformationArea > ul > li > div{width: 82.5%; padding: 10px 10px; padding-right: 0;}
+.orderFormArea .orderInformationArea > ul > li > div > div{display: flex; }
+.orderFormArea .orderInformationArea > ul > li > div > div *{align-self: center;}
+.orderFormArea .orderInformationArea > ul > li > div > div > p{align-self: center; font-size: 13px; font-weight: 300; color: #747474;}
+.orderFormArea .orderInformationArea > ul > li > div > div > p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
+.orderFormArea .orderInformationArea > ul > li > div > div > input{height: 30px; border: 1px solid #d6d6d6; padding: 10px; box-sizing: border-box;}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="text"]{width: 250px;  margin-right: 5px;}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="button"]{width: 80px;padding: 0; font-size: 13px; font-weight: 300; color: white; border: 1px solid black; background-color: black;}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="number"]{width: 80px;  }
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="email"]{width: 100px; }
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="password"]{width: 250px;}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="radio"]{display: none;}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="radio"] ~ label{padding-left: 20px; background-image: url(../images/paymentProgress/radioBtn.png); background-repeat: no-repeat; background-position: left center; font-size: 13px; font-weight: 300; color:#747474; }
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="radio"]:checked + label{background-image: url(../images/paymentProgress/radioCKBtn.png);}
+.orderFormArea .orderInformationArea > ul > li > div > div > input[type="radio"] ~ label:not(:last-of-type){margin-right: 30px;}
+.orderFormArea .orderInformationArea > ul > li > div > div > select{display: inline-block; width: 64px; height: 30px; border: 1px solid #d6d6d6; padding-left:10px; box-sizing: border-box;}
+.orderFormArea .orderInformationArea > ul > li > div > div > span{margin: 0 5px;}
+.orderFormArea .orderInformationArea > ul > li > div > div > textarea{resize: none; width: 250px; height: 50px; border: 1px solid #d6d6d6;}
+.orderFormArea .orderInformationArea > ul > li > div > div > label{}
+.orderFormArea .orderInformationArea > ul > li > div > div:not(:last-of-type){margin-bottom: 5px;}
+.orderFormArea .orderInformationArea > ul > li > div > div dl{display: flex;}
+.orderFormArea .orderInformationArea > ul > li > div > div dl dt{font-size: 13px; font-weight: 300; color: #747474;}
+.orderFormArea .orderInformationArea > ul > li > div > div dl dt span{margin: 0 5px;}
+.orderFormArea .orderInformationArea > ul > li > div > div dl dd{font-size: 13px; font-weight: 700; color: #ba005f; }
+
+
+/* 주문서 작성(비회원)  주문 정보  */
+/* 주문서 작성(비회원)  주문 정보 - 주소*/
+.orderFormArea .orderInformationArea ul li.oderAddressArea > div > div:first-of-type{margin-bottom: 10px;}
+.orderFormArea .orderInformationArea ul li.oderAddressArea > div > div:first-of-type input[type="text"]{width: 72px; height: 30px;} 
+
+/* 주문서 작성(비회원)  주문 정보 - 일반전화 , 휴대전화*/
+
+
+/* 주문서 작성(비회원)  주문 정보 - 이메일*/
+.orderFormArea .orderInformationArea ul li > div > div > input[type="email"]:last-of-type{margin-right: 5px;}
+.orderFormArea .orderInformationArea ul li.orderEmailArea > div > div > select{width: 175px;}
+
+/* 주문서 작성(비회원)  결제정보 및 할인 혜택 - 적릭금 금액*/
+.orderFormArea .oderPIDiscountArea ul li div div input[type="number"]{width: 250px; margin-right: 5px;}
+
+/* 주문서 작성(비회원)  결제정보 및 할인 혜택 - 결제수단*/
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea{}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.verticalArea{flex-direction: column;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.verticalArea *{align-self: flex-start; letter-spacing: -1px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.verticalArea p:not(:last-of-type){margin-bottom: 10px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.verticalArea p.mBArea{margin-bottom: 25px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div input[type="radio"] ~ label{font-size: 16px; color: black;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div h3{width: 100%; padding: 0; font-size: 13px; font-weight: 300; color: #ba005f; margin-bottom: 10px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div button{width: 113px; height: 30px; color: black; background-color: #dcdcdc; border: 1px solid #dcdcdc; letter-spacing: -2px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div button:not(:last-of-type){margin-right: 5px;}
+
+/* 주문서 작성(비회원)  결제정보 및 할인 혜택 - 결제수단 개별*/
+.orderFormArea .oderPIDiscountArea ul li div div:nth-of-type(1){margin-bottom:25px; }
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div:nth-of-type(2){margin-bottom: 45px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div:nth-of-type(3){margin-bottom: 30px;}
+
+/* 주문서 작성(비회원)  결제정보 및 할인 혜택 - 결제수단 테이블*/
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table{border: 1px solid #e1e1e1;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table th:not(:last-of-type){border-right: 1px solid #e1e1e1;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table td:not(:last-of-type){border-right: 1px solid #e1e1e1;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th{font-size: 13px; font: 300; text-align: center; padding: 14px 0; border-bottom: 1px solid #e1e1e1;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(1){width: 47%;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(2){width: 32%;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(3){width: 21%;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td{padding: 20px 15px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td li{font-size: 13px; font-weight: 300; line-height: 1.6923; color: #747474; }
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td:nth-of-type(2) li:not(:last-of-type){margin-bottom: 28px;}
+.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td:last-of-type li{text-align: center;}
+
+/* 주문서 작성(비회원) - 주문 버튼*/
+.orderFormArea .shoppingBasketFinalArea{justify-content: flex-end;}

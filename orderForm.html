@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서작성</title>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="menuArea">
+                <h1><a href="index.html"><img src="images/main/logo.png" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">소개</a>
+                            <ol>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">레이저제모</a></li>
+                                <li><a href="#">피부개선</a></li>
+                                <li><a href="#">여드름치료</a></li>
+                                <li><a href="#">코스메틱</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">제품</a>
+                        </li>
+                        <li><a href="#">소식</a>
+                            <ol>
+                                <li><a href="#">공지</a></li>
+                                <li><a href="#">뉴스/매거진</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="menuBgArea">
+
+                </div>
+                <div class="loginArea">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="signUp.html">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <span class="navigationArea">HOME > 주문서 작성</span>
+
+        <div class="orderFormArea">
+            <section class="paymentProgressArea">
+                <h2>
+                    장바구니
+                </h2>
+                <ul>
+                    <li>
+                        <img src="images/paymentProgress/shoppingBasketIcon.png" alt="장바구니 icon">
+                        <p>장바구니</p>
+                    </li>
+                    <li>
+                        <img src="images/paymentProgress/orderFormCKIcon.png" alt="주문서 작성 icon">
+                        <p>주문서 작성</p>
+                    </li>
+                    <li>
+                        <img src="images/paymentProgress/paymentCompletedIcon.png" alt="결제완료 icon">
+                        <p>결제완료</p>
+                    </li>
+                    <li>
+                        <img src="images/paymentProgress/orderCompletedIcon.png" alt="주문완료 icon">
+                        <p>주문완료</p>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="orderListTitleArea">
+                <p>주문내역</p>
+                <h2>일반상품<span>(2)</span></h2>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                    </li>
+                    <li>
+                        <h3>상품정보</h3>
+                    </li>
+                    <li>
+                        <h3>수량</h3>
+                    </li>
+                    <li>
+                        <h3>배송비</h3>
+                    </li>
+                    <li>
+                        <h3>합계</h3>
+                    </li>
+                    <li>
+                        <h3>선택</h3>
+                    </li>
+                </ul>
+            </div>
+            <form action="#" class="orderListArea">
+                <fieldset>
+                    <div>
+                        <div>
+                            <input type="checkbox">
+                        </div>
+                        <div>
+                            <img src="images/product/productImg.png" alt="상품 img">
+                            <div>
+                                <h4>트리아 미니 제모기</h4>
+                                <p>[옵션 : <span>핑크</span>]</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <button>-</button>
+                                <span>2</span>
+                                <button>+</button>
+                            </div>
+                            <button>변경</button>
+                        </div>
+                        <div>
+                            <p><span>무료</span></p>
+                        </div>
+                        <div>
+                            <h5><span>129,000</span> 원</h5>
+                        </div>
+                        <div>
+                            <button>삭제</button>
+                            <button>바로가기</button>
+                        </div>
+                    </div>
+                </fieldset>
+                
+
+                <div class="productPriceArea">
+                    <p>할인 적용 금액은 주문서작성의 결제예정금액에서 확인 가능합니다.</p>
+                    <div>
+                        <span>[기본배송]</span>
+                        상품구매금액
+                        <span>144,000</span>
+                        + 배송비
+                        <span>0</span>
+                        = 합계
+                        <p><span>2,588,000</span> 원</p>
+                    </div>
+                </div>
+
+                <div class="productManagementArea">
+                    <div>
+                        선택상품을
+                        <button>삭제</button>
+                    </div>
+                    <div>
+                        <button>이전으로</button>
+                    </div>
+                </div>
+
+
+                <section class="orderInformationArea orderFormOrderInformationArea">
+                    <h2>주문 정보</h2>
+                    <ul>
+                        <li>
+                            <label for="orderName" class="requiredInput">주문하는 분</label>
+                            <div>
+                                <div>
+                                    <input type="text" id="orderName">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="oderAddressArea">
+                            <label for="oderAddress" class="requiredInput">주소</label>
+                            <div>
+                                <div>
+                                    <input type="text" id="oderAddress">
+                                    <input type="button" value="우편번호">
+                                </div>
+                                <div>
+                                    <input type="text"><p>기본주소</p>
+                                </div>
+                                <div>
+                                    <input type="text"><p>나머지주소</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="oderOrdinaryPhone" class="requiredInput">일반전화</label>
+                            <div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">02</option>
+                                    </select>
+                                    <span>-</span>
+                                    <input type="number" id="oderOrdinaryPhone">
+                                    <span>-</span>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="requiredInput" for="oderCellPhone">휴대전화</label>
+                            <div>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">02</option>
+                                    </select>
+                                    <span>-</span>
+                                    <input type="number" id="oderCellPhone" >
+                                    <span>-</span>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="orderEmailArea">
+                            <label class="requiredInput" for="oderEmail">이메일</label>
+                            <div>
+                                <div>
+                                    <input type="email" id="oderEmail">
+                                    <span>@</span>
+                                    <input type="email">
+                                    <select name="" id=""></select>
+                                </div>
+                                <div>
+                                    <p>- 이메일을 통해 주문처리과정을 보내드립니다.</p>
+                                </div>
+                                <div>
+                                    <p>- 이메일 주소란에는 반드시 수신가능한 이메일주소를 입력해 주세요</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="requiredInput" for="oderPW">주문조회 비밀번호</label>
+                            <div>
+                                <div>
+                                    <input type="password" id="oderPW">
+                                </div>
+                                <div>
+                                    <p>(주문조회시 필요합니다. 4자에서 12자 영문 또는 숫자 대소문자 구분)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="requiredInput" for="oderPWCK">주문조회 비밀번호 확인</label>
+                            <div>
+                                <div>
+                                    <input type="password" id="oderPWCK">
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                </section>    
+                
+
+                <section class="orderInformationArea oderShippingInformationArea">
+                    <h2>배송 정보</h2>
+                    <ul>
+                        <li>
+                            <h3>배송지 선택</h3>
+                            <div>
+                                <div>
+                                    <input type="radio" id="sameasOrdererInformation" name="shippingInformation">
+                                    <label for="sameasOrdererInformation">주문자 정보와 동일</label>
+                                    <input type="radio" id="newShippingDestination" name="shippingInformation">
+                                    <label for="newShippingDestination">새로운 배송지</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="" class="requiredInput">받으시는 분</label>
+                            <div>
+                                <div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="oderAddressArea">
+                            <label for="" class="requiredInput">주소</label>
+                            <div>
+                                <div>
+                                    <input type="text">
+                                    <input type="button" value="우편번호">
+                                </div>
+                                <div>
+                                    <input type="text"><p>기본주소</p>
+                                </div>
+                                <div>
+                                    <input type="text"><p>나머지주소</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">일반전화</label>
+                            <div>
+                                <div>
+                                    <select name="" id=""></select>
+                                    <span>-</span>
+                                    <input type="number">
+                                    <span>-</span>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="" class="requiredInput">휴대전화</label>
+                            <div>
+                                <div>
+                                    <select name="" id=""></select>
+                                    <span>-</span>
+                                    <input type="number">
+                                    <span>-</span>
+                                    <input type="number">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">배송메시지</label>
+                            <div>
+                                <div>
+                                    <textarea name="" id="" ></textarea>
+                                </div>
+                                <div>
+                                    <p>주문시 요청사항은 배송기사가 배송시 참고하는 사항으로서, 사전에 협의되지 않은 지정일 배송 등의 요청사항은 반영되지 않을 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                                    
+                <!-- Payment information and discount
+                    결제정보 및 할인 혜택
+                -->
+                <section class="orderInformationArea oderPIDiscountArea">
+                    <h2>결제정보 및 할인 혜택</h2>
+                    <ul>
+                        <li>
+                            <label for="">결제정보 및 할인 혜택</label>
+                            <div>
+                                <div>
+                                    <p class="priceColorPointArea"><span>1,418,000</span>원</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">적립금 금액</label>
+                            <div>
+                                <div>
+                                    <input type="number">
+                                    <dl>
+                                        <dt>보유적립금<span>:</span></dt>
+                                        <dd><span></span>원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">할인 쿠폰</label>
+                            <div>
+                                <div>
+                                    <input type="text">
+                                    <input type="button" value="인증요청">
+                                </div>
+                                <div>
+                                    <p>- 할인 쿠폰은 타 프로모션과 중복 혜택이 불가합니다. (정상 판매가 기준 적용)</p>
+                                </div>
+                                <div>
+                                    <p>- 프로모션에 따라서는, 회원 판매가가 쿠폰 할인보다 더 저렴할 수 있습니다. 신중히 사용해주세요!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="oderPIDiscountMethodOfPaymentArea">
+                            <label for="">결제수단</label>
+                            <div>
+                                <div>
+                                    <input type="radio" id="MethodOfPaymentCreditCard" name="oderMethodOfPayment">
+                                    <label for="MethodOfPaymentCreditCard">신용카드</label>
+                                    <input type="radio" id="MethodOfPaymentBankTransfer" name="oderMethodOfPayment">
+                                    <label for="MethodOfPaymentBankTransfer">실시간 계좌이체</label>
+                                    <input type="radio" id="MethodOfPaymentAPassbook" name="oderMethodOfPayment">
+                                    <label for="MethodOfPaymentAPassbook">무통장 입금(가상계좌)</label>
+                                </div>
+                                <div class="verticalArea">
+                                    <p>신용카드 결제 시 화면 아래 '결제하기'버튼을 클릭하시면 신용카드 결제 창이 나타납니다.</p>
+                                    <p>신용카드 결제 창을 통해 입력되는 고객님의 카드 정보는 128bit로 안전하게 암호화되어 전송되며, 승인 처리 후 카드 정보는 승인 성공 / 실패 여부에</p>
+                                    <p class="mBArea">상관없이 자동으로 폐기되므로, 안전합니다. 신용카드 결제 신청 시 승인 진행에 다소 시간이 소요될 수 있으므로 '중지', '새로고침'을 누르지 마시고 결과 화면이 나타 날때까지 기다려 주십시오.</p>
+                                    <p>(결제하기 버튼 클릭 시 결제창이 나타나지 않을 경우나 안전결제 모듈이 설치 되지 않을 경우 [여기]를 눌러 수동으로 플러그인을 설치하십시오.)</p>
+                                </div>
+                                <div class="verticalArea">
+                                    <h3>유의사항</h3>
+                                    <p>신용카드/ 실시간 이체는 결제 후, 무통장입금은 입금확인 후 배송이 이루어집니다.</p>
+                                    <p>국내 모든 카드 사용이 가능하며 해외에서 발행된 카드는 해외카드 3D 인증을 통해 사용 가능합니다</p>
+                                </div>
+                                <div>
+                                    <button>공인인증서 안내</button>
+                                    <button>안심클릭 안내</button>
+                                    <button>안전결제(ISP) 안내</button>
+                                </div>
+                                <div class="verticalArea">
+                                    <h3>개인정보 수집 이용 동의</h3>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>목적</th>
+                                                    <th>항목</th>
+                                                    <th>보존기간</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <ol>
+                                                            <li>
+                                                                ① 회원관리: 서비스 이용에 따른 본인확인, 개인식별, 불량 회원의 부정 이용 방지와 
+                                                                비인가 사용방지, 가입의사 확인, 연령확인, 불만처리, 고지사항 전달
+                                                            </li>
+                                                            <li>
+                                                                ② 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금 정산: 구매 및 요금 결제, 
+                                                                물품배송 또는 청구서 등 발송, 금융거래 본인인증 및 금융 서비스, 요금추심</li>
+                                                            <li>
+                                                                ③ 마케팅 및 광고에 활용: 신규 제품(서비스) 개발 및 특화, 이벤트 등 광고성 정보 전달, 
+                                                                접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+                                                            </li>
+                                                        </ol>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                - 필수: 이름, ID(이메일주소), 비밀번호, 성별, 생년월일, 주소, 핸드폰 번호, 
+                                                                이메일 주소
+                                                            </li>
+                                                            <li>
+                                                                - 선택: 피부타입, 제품에 대한 관심도, 디바이스 소유 여부
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul>
+                                                            <li>
+                                                                법령에 따른 보존기간
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <div class="priceArea">
+                    <div>
+                        <h3>총 상품금액</h3>
+                        <p><span>129,000</span> 원</p>
+                    </div>
+                    <div>
+                        <h3>총 배송비</h3>
+                        <p><span>0</span> 원</p>
+                    </div>
+                    <div>
+                        <h2>결제예정금액</h2>
+                        <p><span>2,588,000</span> 원</p>
+                    </div>
+                </div>
+
+                <div class="shoppingBasketFinalArea">
+                    <div>
+                        <input type="button"" value="전체상품주문">
+                        <input type="button" value="선택상품주문">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div>
+                <h2>customer center</h2>
+                <address>080 – 369 – 3300</address>
+                <ul>
+                    <li>
+                        <h3>업무시간 : </h3>
+                        <p>평일 am09~pm06 / 주말공휴일 휴일</p>
+                    </li>
+                    <li>
+                        <h3>입금 계좌 : </h3>
+                        <p>씨티은행 881-00401-243-01</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h1><a href="#"><img src="images/main/fLogo.png" alt="logo"></a></h1>
+                <ul>
+                    <li>
+                        <h2>트리아뷰티코리아 유한회사</h2>
+                    </li>
+                    <li>
+                        <h3>대표이사</h3>
+                        <span>:</span>
+                        <p>산딥인드라바단파텔</p>
+                    </li>
+                    <li>
+                        <p>서울시 서초구 강남대로 311, 9층</p>
+                    </li>
+                    <li>
+                        <h3>메일</h3>
+                        <span>:</span>
+                        <p>customercare@triabeauty.co.kr</p>
+                    </li>
+                    <li>
+                        <h3>사업자등록번호</h3>
+                        <span>:</span>
+                        <p>101 – 86 – 54142</p>
+                    </li>
+                    <li>
+                        <p>의료기기판매업 신고 제 1737호</p>
+                    </li>
+                    <li>
+                        <h3>통신판매업 신고</h3>
+                        <span>:</span>
+                        <p>2019-서울서초-3070</p>
+                    </li>
+                    <li>
+                        <h3>개인정보관리책임자</h3>
+                        <span>:</span>
+                        <p>권지선</p>
+                    </li>
+                </ul>
+                <p>© 2020 Tria Beauty Korea Co., Ltd. All rights reserved.</p>
+            </div>
+
+            <hr/>
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보 취급방침</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+</body>
+</html>

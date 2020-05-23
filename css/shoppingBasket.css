@@ -25,7 +25,7 @@
 .orderListTitleArea ul li:nth-of-type(6){width: 8.3%; float: right;}
 .orderListTitleArea ul li h3{font-size: 16PX; font-weight: 400; line-height: 50px;}
 
-.orderInformationArea ul{border-top: 1px solid black; border-bottom: 1px solid #cccccc;}
+.orderInformationArea > ul{border-top: 1px solid black; border-bottom: 1px solid #cccccc;}
 /* 
 .orderInformationArea h2{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
 .orderInformationArea ul li{display: flex;} */
