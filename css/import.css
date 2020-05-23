@@ -16,6 +16,8 @@
 @import url(terms.css);
 /* sub 소식 - 이벤트 , 뉴스 메거진*/
 @import url(news.css);
+/* sub 소식 - 공지사항 */
+@import url(newsNotice.css);
 
 
 /* font */

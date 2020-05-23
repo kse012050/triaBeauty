@@ -17,6 +17,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .termsArea,
 /* 소식 뉴스 메거진 */
 .subHeader h2, .newsArea,
+/* 공지사항 - 게시판 , 내용*/
+.newsNoticeArea, .newsNoticeContentsArea,
  footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 
@@ -106,3 +108,15 @@ footer div:nth-of-type(3) nav ul li a{display: block; padding: 35px 0;}
 
 /* 장바구니 , 주문서작성, 주문완료  - 가격 색상 포인트*/
 p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
+
+
+/* sub 이벤트 , 뉴스 메거진 , 공지사항 페이저 */
+.paperArea{display: flex; justify-content: center; text-align: center;}
+.paperArea *{display: inline-block; font-size: 14px; }
+.paperArea > div:nth-of-type(2){}
+.paperArea > div:nth-of-type(2) a{width: 32px; color: #838383;}
+.paperArea > div:nth-of-type(2) a:hover{color: black;}
+.paperArea > div:nth-of-type(2) a.active{color: black;}
+.paperArea > div:nth-of-type(1){margin-right: 25px;}
+.paperArea > div:nth-of-type(3){margin-left: 25px;}
+.paperArea > div:nth-of-type(2n + 1){width: 30px; display: flex; justify-content: space-between;}
