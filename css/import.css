@@ -24,6 +24,10 @@
 @import url(introduceAboutUs.css);
 /* sub 소개 - 코스메틱 */
 @import url(introduceCosmetic.css);
+/* sub 소개 - 여드름치료 */
+@import url(introduceAcneCure.css);
+/* sub 소개 - 레이저치료 */
+@import url(introduceLaser.css);
 
 
 /* font */

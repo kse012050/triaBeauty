@@ -20,11 +20,22 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 공지사항 - 게시판 , 내용*/
 .newsNoticeArea, .newsNoticeContentsArea,
 /* 소개 공통 */
-.introduceArea section:first-of-type,.introduceBannerArea > div,
+.introduceArea section:first-of-type,.introduceBannerArea > div,.introduceArea .indroduceFigureArea,.characteristicArea,
+.productCompositionArea,
 /* 소개 - 회사소개 */
 .aboutTriaBeautyArea,.medicalEquipmentArea,.introduceHistoryArea > div,
 /* 소개 - 코스메틱 */
 .calmingFormulaArea,.plantRecipeArea,.necessaryMomentArea,
+/* 소개 - 여드름치료 */
+.acneCureArea .ourSkinlaArea,.acneCureArea .penetrationArea,.acneCureArea .portabilityArea,
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/
+/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea, 
+/* 소개 - 레이저제모 , 피부개선 공통 */
+.introduceArea > ul,
+/* 소개 - 레이저제모 */
+.heatEnergyArea02,.laserArea .laserRecommendationArea,
+/* 공통 */
+.QnAArea,
  footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 
@@ -135,3 +146,14 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 .paperArea > div:nth-of-type(1){margin-right: 25px;}
 .paperArea > div:nth-of-type(3){margin-left: 25px;}
 .paperArea > div:nth-of-type(2n + 1){width: 30px; display: flex; justify-content: space-between;}
+
+/* Q & A 탭 메뉴 */
+.QnAArea h2{font-size: 30px; margin-bottom: 30px;}
+.QnAArea ul{}
+.QnAArea ul li{ border-bottom: 1px solid #dfdfdf; cursor: pointer;}
+.QnAArea ul li:first-of-type{border-top: 1px solid #dfdfdf;}
+.QnAArea ul li h3{font-size: 18px; font-weight: 400; padding: 26px 0; color: black; width: 100%; max-width: 1140px; margin: 0 auto; position: relative;}
+.QnAArea ul li h3::after{content: '+'; font-size: 35px; line-height: 0.3; position: absolute; right: 0; top: 26px;}
+.QnAArea ul li div{display: none;font-size: 16px; line-height:1.625; color: #757575; padding: 25px 20px 25px 60px; background-color:#f7f7f7;  border-top: 1px solid #dfdfdf; margin: 0;}
+.QnAArea ul li.active div{display: block;}
+.QnAArea ul li.active h3::after{content: '-';}

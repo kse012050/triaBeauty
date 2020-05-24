@@ -6,10 +6,51 @@
 .introduceArea h2{font-size: 30px; margin-bottom: 30px;}
 .introduceArea p{font-size: 20px; font-weight: 400; line-height: 1.8; letter-spacing: -1px;}
 .introduceArea span{color: #b41f77;}
+.introduceArea h3{font-size: 20px; font-weight: 500; color: #b41f77; margin-bottom: 10px;}
+
+/* 소개 이미지 설명 */
+.introduceArea .indroduceFigureArea img,
+.introduceArea .indroduceFigureArea img
+{display: inline-block; width: 100%;margin-bottom: 30px;}
+
+/* 소개 서브 내용 */
+.introduceArea .introduceSubContentsArea{padding-left: 20px; position: relative;}
+.introduceArea .introduceSubContentsArea::before{content: ''; width: 1px; height: 100%; position: absolute; left: 0; top: 0; background-color: #b2b2b2;}
+.introduceArea .introduceSubContentsArea *{font-size: 14px; line-height: 1; color: #9e9e9e;}
+.introduceArea .introduceSubContentsArea *:not(:last-child){margin-bottom: 10px; }
+.introduceArea .introduceSubContentsArea div{display: flex;}
+.introduceArea .introduceSubContentsArea a{display: block; color: #248bb2;}
+
 
 /* 소개 배너 */
 .introduceBannerArea{height: 565px; background-repeat: no-repeat; background-position: center center;}
 .introduceBannerArea > div{ height: 100%; display: flex; flex-direction: column; justify-content: center; }
 
 
+
+/* 레이저치료 , 피부개선 공통 */
+.introduceArea > ul:first-child{display: flex; justify-content: space-between;}
+.introduceArea > ul > li{width: calc(100%/2 - 40px); height: 400px; padding: 50px 60px; box-sizing: border-box; background-repeat: no-repeat; background-position: center center; background-size: cover; border-radius: 70px;}
+.introduceArea > ul > li > a{ height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;}
+.introduceArea > ul > li > a > p{font-size: 28px; margin-bottom: 30px;}
+.introduceArea > ul > li > a > div{width: 58px; height: 1px; background-color: black; position: relative;}
+.introduceArea > ul > li > a > div::after{content: ''; display: block; width: 20px; height: 1px; background-color: black; position: absolute; right: 0; top: 0; transform: rotateZ(45deg); transform-origin: right;}
+
+
+/* sub 소개 - 제품특징*/
+.characteristicArea{}
+.characteristicArea h2{}
+.characteristicArea > p{margin-bottom: 50px;}
+.characteristicArea ul li:not(:last-of-type){margin-bottom: 25px;}
+
+/* sub 소개 - 여드름치료  시술방법 */
+/* .procedureArea{margin-bottom: 65px;} */
+.procedureArea ol{display: flex; justify-content: space-between; margin-bottom: 40px;}
+.procedureArea ol li {width: calc(100%/3 - 30px);}
+.procedureArea ol li figure{height: 100%; display: flex; flex-direction: column; }
+.procedureArea ol li figure img{border-radius: 50%; margin-bottom: 40px;}
+.procedureArea ol li figure figcaption{padding-left: 30px; position: relative; flex: 1;}
+.procedureArea ol li figure figcaption::before{content: ''; display: block; width:2px; height: 100%; position: absolute; left: 0; top: 0;  background-color: #b41f77;}
+.procedureArea ol li figure figcaption h3{font-size: 20px; font-weight: 500; color: #b41f77; margin-bottom: 20px;}
+.procedureArea ol li figure figcaption p{font-size: 16px; color: #757575;}
 

@@ -1,6 +1,7 @@
 $(document).ready(function(){
     // header menu hover
     headerMenuHover();
+    QnATab();
 });
 
 
@@ -19,5 +20,12 @@ function headerMenuHover(){
     $('header .menuArea nav ul > li a').blur(function(){
         menuBg .removeClass('active');
         $('header .menuArea nav ul li ol').removeClass('active');
+    });
+}
+
+function QnATab(){
+    $('.QnAArea ul li').click(function(){
+        $('.QnAArea ul li').removeClass('active');
+        $(this).addClass('active');
     });
 }
