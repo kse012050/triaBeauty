@@ -2,6 +2,8 @@ $(document).ready(function(){
     // header menu hover
     headerMenuHover();
     QnATab();
+    // 고객센터
+    tab();
 });
 
 
@@ -28,4 +30,14 @@ function QnATab(){
         $('.QnAArea ul li').removeClass('active');
         $(this).addClass('active');
     });
+}
+
+// 고객센터
+function tab(){
+    $('.tabArea li').click(function(){
+        $('.tabArea li').removeClass('active');
+        $(this).addClass('active');
+        $('.QnAArea').removeClass('active');
+        $('.QnAArea').eq($(this).index()).addClass('active');
+    })
 }

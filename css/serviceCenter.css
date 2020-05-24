@@ -1,0 +1,8 @@
+.serviceCenterArea{}
+.serviceCenterArea > .tabArea{display: flex; margin-bottom: 30px;}
+.serviceCenterArea > .tabArea > li{flex: 1; font-size: 18px; color: #d9d9d9; text-align: center; padding:20px 0;   border-bottom: 1px solid #d9d9d9; cursor: pointer;}
+.serviceCenterArea > .tabArea > li:hover{color: black; border-bottom:2px solid black;}
+.serviceCenterArea > .tabArea > li.active{color: black; border-bottom:2px solid black;}
+
+.serviceCenterArea > .QnAArea{display: none;}
+.serviceCenterArea > .QnAArea.active{display: block;}
