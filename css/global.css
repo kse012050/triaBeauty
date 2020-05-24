@@ -55,7 +55,7 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 메인관련 */
 /* header */
 header{position: relative;}
-header .menuArea{display: flex; position: relative;}
+header .menuArea{display: flex;}
 header .menuArea > *:not(nav){padding: 40px 0;}
 header .menuArea h1{margin-right: 50px;}
 header .menuArea nav{}
@@ -91,7 +91,7 @@ header .mainSliderArea .mainSliderNavigationArea{width: 100%; max-width: 1760px;
 header .mainSliderArea .mainSliderNavigationArea div{color: black; width: 30px; height: 30px; background-color: white; border-radius: 100%;}
 header .mainSliderArea .mainSliderNavigationArea div::after{font-size: 10px; font-weight: bold;}
 header .mainSliderArea .mainSliderNavigationArea .swiper-button-prev{left: auto; right: 60px;}
-header .menuArea .shoppingBasketIcon{font-size: 14px; font-weight: bold; padding: 60px 0; padding-left: 37px; background: url(../images/main/shoppingBasketIcon.png) no-repeat center left; position: absolute; right: 230px; top: 0;}
+header .menuArea .shoppingBasketIcon{display: none; font-size: 14px; font-weight: bold; padding: 60px 0; padding-left: 37px; background: url(../images/main/shoppingBasketIcon.png) no-repeat center left;right: 230px; top: 0;}
 
 /* sub header 공통*/
 .subHeader{background-repeat: no-repeat; background-position: center center; height: 400px; display: flex; flex-direction: column; justify-content: center;}
@@ -104,7 +104,9 @@ header .menuArea .shoppingBasketIcon{font-size: 14px; font-weight: bold; padding
 
 
 /* footer */
-footer{}
+
+body > div > hr{margin: 0; border: none; height: 1px; background-color:#e5e5e5; margin-top: 280px;}
+footer{padding-top: 60px;}
 footer > div:first-of-type{ margin-bottom: 45px;}
 footer > div:first-of-type h2{font-size: 18px; font-weight: 400; margin-bottom: 20px;}
 footer > div:first-of-type address{font-size: 36px; font-weight: bold; font-style: normal; margin-bottom: 30px; }
