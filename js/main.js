@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    mainTopBannerBtn();
     // header menu hover
     headerMenuHover();
     QnATab();
@@ -6,6 +7,12 @@ $(document).ready(function(){
     tab();
 });
 
+function mainTopBannerBtn(){
+    $('.mainTopBannerBtn').click(function(e){
+        e.stopPropagation();
+        $('.mainTopBannerArea').addClass('active');
+    });
+}
 
 function headerMenuHover(){
     var menuBg = $('header .menuArea .menuBgArea');
