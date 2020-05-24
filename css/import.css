@@ -18,8 +18,16 @@
 @import url(news.css);
 /* sub 소식 - 공지사항 */
 @import url(newsNotice.css);
+/* sub 소개 공통*/
+@import url(introduce.css);
+/* sub 소개 - 회사소개 */
+@import url(introduceAboutUs.css);
+/* sub 소개 - 코스메틱 */
+@import url(introduceCosmetic.css);
 
 
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 회사소개 영문 font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');

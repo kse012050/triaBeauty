@@ -15,10 +15,16 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .orderCompletedArea,
 /* 이용약관 , */
 .termsArea,
-/* 소식 뉴스 메거진 */
+/* 소식 - 뉴스 메거진 */
 .subHeader h2, .newsArea,
 /* 공지사항 - 게시판 , 내용*/
 .newsNoticeArea, .newsNoticeContentsArea,
+/* 소개 공통 */
+.introduceArea section:first-of-type,.introduceBannerArea > div,
+/* 소개 - 회사소개 */
+.aboutTriaBeautyArea,.medicalEquipmentArea,.introduceHistoryArea > div,
+/* 소개 - 코스메틱 */
+.calmingFormulaArea,.plantRecipeArea,.necessaryMomentArea,
  footer
 {width: 100%; max-width: 1200px; margin: 0 auto;}
 
@@ -68,6 +74,15 @@ header .mainSliderArea .mainSliderNavigationArea{width: 100%; max-width: 1760px;
 header .mainSliderArea .mainSliderNavigationArea div{color: black; width: 30px; height: 30px; background-color: white; border-radius: 100%;}
 header .mainSliderArea .mainSliderNavigationArea div::after{font-size: 10px; font-weight: bold;}
 header .mainSliderArea .mainSliderNavigationArea .swiper-button-prev{left: auto; right: 60px;}
+
+/* sub header 공통*/
+.subHeader{background-repeat: no-repeat; background-position: center center; height: 400px; display: flex; flex-direction: column; justify-content: center;}
+.subHeader h2{font-size: 80px; font-weight: 100; line-height: 1.25;  color: white; }
+
+/* sub header 소개*/
+.indroduceSubHeader{background-image: url(../images/indroduce/subHeaderBG.png);}
+/* sub header 소식*/
+.newsSubHeader{background-image: url(../images/news/subHeaderBG.png); }
 
 
 /* footer */

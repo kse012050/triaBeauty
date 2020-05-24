@@ -1,0 +1,31 @@
+/* 회사소개 공통 */
+.introduceAboutUsArea h2{font-size: 40px;}
+.introduceAboutUsArea P{font-size: 20px; /*line-height: 1.8;*/line-height: 36px; }
+.introduceAboutUsArea P:not(:last-of-type){margin-bottom: 25px;}
+
+/* 회사소개 - ABOUT TRIABEAUTY */
+.aboutTriaBeautyArea{height: 510px; display: flex; flex-direction: column; justify-content: flex-end; background: url(../images/indroduce/AboutUs/aboutTriaBeautyBG.png) no-repeat center center; padding: 60px; box-sizing: border-box; border-radius: 50px; margin-bottom: 100px;}
+.aboutTriaBeautyArea h2{color: white; margin-bottom: 20px;}
+.aboutTriaBeautyArea p{ font-weight: 300; color:rgba(255,255,255,0.5); }
+
+/* 회사소개 - 편리하고 경제적인 의료기기 */
+.medicalEquipmentArea{margin-bottom: 90px;}
+.medicalEquipmentArea h2{margin-bottom: 20px;}
+
+/* 회사소개 - 트리아뷰티 연혁 */
+.introduceHistoryArea{padding-top: 100px; padding-bottom:85px;  background-color: #f7f7f7;}
+.introduceHistoryArea > div{}
+.introduceHistoryArea > div h2{margin-bottom: 90px;}
+.introduceHistoryArea > div ul{margin-bottom: 70px;}
+.introduceHistoryArea > div ul li{}
+.introduceHistoryArea > div ul li:not(:last-of-type){margin-bottom: 100px;}
+.introduceHistoryArea > div ul li figure{display: flex; justify-content: space-between;}
+.introduceHistoryArea > div ul li figure > div{}
+.introduceHistoryArea > div ul li figure > div img{border-radius: 50%;}
+.introduceHistoryArea > div ul li figure figcaption{width: 750px; display: flex; flex-direction: column; justify-content: space-between;}
+.introduceHistoryArea > div ul li figure figcaption div{}
+.introduceHistoryArea > div ul li figure figcaption div h4{font-size: 20px; font-weight: bold; margin-bottom: 20px;}
+.introduceHistoryArea > div ul li figure figcaption div p{font-size: 18px; font-weight: 300; color: #757575;}
+.introduceHistoryArea > div ul li figure figcaption div select{width: 100%; height: 60px; font-size: 14px; font-weight: 500; padding: 0 30px;}
+
+.introduceHistoryArea > div > p{font-size: 50px; line-height: 1.485; color: #757575; text-align: center;}
