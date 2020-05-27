@@ -38,6 +38,7 @@
 /* sub 소개 - 레이저제모 베너02 */
 .laserBanner02{background-image: url(../images/indroduce/laser/laserBannerImg02.png);}
 .laserBanner02 > div > *{width: 50%; text-align: left; margin-left: auto;}
+.laserBanner02 > div h2{font-weight: 500;}
 
 /* sub 소개 - 레이저제모 제품구성 */
 .laserArea .productCompositionArea{}

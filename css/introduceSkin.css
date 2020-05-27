@@ -38,6 +38,7 @@
 /* sub 소개 - 피부개선 베너02 */
 .skinBanner02{background-image: url(../images/indroduce/laser/laserBannerImg02.png);}
 .skinBanner02 > div > *{width: 50%; text-align: left; margin-left: auto;}
+.skinBanner02 > div > h2{font-weight: 500;}
 
 /* sub 소개 - 피부개선 제품구성 */
 .SkinArea .productCompositionArea{}
