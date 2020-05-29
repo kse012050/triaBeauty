@@ -1,5 +1,7 @@
+@media screen and (min-width: 1100px){.mobileBR{display: none;}}
+
 /* 버튼 기본 설정 */
-.btn{width: 230px; height: 60px; padding: 0 30px; box-sizing: border-box; font-size: 18px; font-weight: 500; display: flex; justify-content: space-between; line-height: 60px; color: white; background-color: black; border-radius: 50px;}
+.btn{width: 100%; max-width: 230px; height: 60px; padding: 0 30px; box-sizing: border-box; font-size: 18px; font-weight: 500; display: flex; justify-content: space-between; line-height: 60px; color: white; background-color: black; border-radius: 50px;}
 .btn::after{content: '+'; font-size: 25px; text-align: right; }
 
 .mainTopBannerArea{height: 120px; background: url(../images/main/topBanner.png) no-repeat center center;}
@@ -20,14 +22,16 @@ section > p{font-size: 20px; font-weight: 500; }
 .technologyArea ol li{display: flex; justify-content: space-between;}
 .technologyArea ol li:not(:last-of-type){margin-bottom: 180px;}
 .technologyArea ol li div{position: relative;}
-.technologyArea ol li div:first-of-type{ display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
+.technologyArea ol li div:first-of-type{width: 50%;  display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
 .technologyArea ol li div:first-of-type h3{font-size: 30px; font-weight:700; margin-bottom: 60px}
 .technologyArea ol li div:first-of-type h3 span{display: block; font-size: 22px; font-weight: 800; margin-bottom: 25px;}
 .technologyArea ol li div:first-of-type p{font-size: 20px; line-height: 1.8; color: #9e9e9e; margin-bottom: 70px; }
+.technologyArea ol li div:first-of-type p br{display: none;}
 /* .technologyArea ol li div:first-of-type a{display: inline-block; align-self: flex-start; line-height: 60px; padding: 0 31px; color: white; background-color: black; border-radius: 50px;} */
-.technologyArea ol li div:nth-of-type(2){}
+.technologyArea ol li div:nth-of-type(2){width: 49%;}
+.technologyArea ol li div:nth-of-type(2) img{width: 100%;}
 .technologyArea ol li div:nth-of-type(2) img:nth-of-type(2){position: absolute;}
-.technologyArea ol li:nth-of-type(2) div:first-of-type{order: 1; flex-basis: 520px;}
+.technologyArea ol li:nth-of-type(2) div:first-of-type{order: 1; width: 49%; margin-right: 0; margin-left: 10px;}
 .technologyArea ol li:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){right: -75px; bottom: -95px;}
 .technologyArea ol li:nth-of-type(2) div:nth-of-type(2) img:nth-of-type(2){right: 0; bottom: -82px;}
 .technologyArea ol li:nth-of-type(3) div:nth-of-type(2) img:nth-of-type(2){right: 50px; bottom: -40px;}
@@ -43,7 +47,8 @@ section > p{font-size: 20px; font-weight: 500; }
 .wiseChoiceArea h2{margin-bottom: 23px;}
 .wiseChoiceArea > p{margin-bottom: 60px;}
 .wiseChoiceArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
-.wiseChoiceArea ul li{float: left; width: 23.50%; margin-bottom: 105px; }
+.wiseChoiceArea ul li{float: left; width: 23.50%;}
+.wiseChoiceArea ul li:nth-last-of-type(n+5){margin-bottom: 105px; }
 .wiseChoiceArea ul li:not(:nth-of-type(4n)){margin-right: 2%;}
 .wiseChoiceArea ul li figure{display: flex; flex-direction: column;}
 .wiseChoiceArea ul li figure img{width: 100%; margin-bottom: 25px;}
@@ -79,7 +84,7 @@ section > p{font-size: 20px; font-weight: 500; }
 .selfBeautyArea > p{margin-bottom: 60px;}
 .selfBeautyArea ul{padding-top: 0; margin-bottom: 70px;}
 .selfBeautyArea ul::after{content: ''; display: block; visibility: hidden; clear: both;}
-.selfBeautyArea ul li{float: left; width: 50%; max-width: 560px; text-align: left;}
+.selfBeautyArea ul li{float: left; width: 49%; max-width: 560px; text-align: left;}
 .selfBeautyArea ul li:nth-of-type(2){float: right;}
 .selfBeautyArea ul li img{width: 100%; border-top-left-radius: 50px; border-bottom-right-radius: 50px; margin-bottom: 20px; }
 .selfBeautyArea ul li span{display: block; font-style:italic; margin-bottom: 10px;}
@@ -102,6 +107,73 @@ section > p{font-size: 20px; font-weight: 500; }
 .instagramArea > ul li{float: left; width: 50%; line-height: 0;}
 .instagramArea > ul li a{line-height: 0;}
 .instagramArea > ul li img{width: 100%;}
+
+
+ @media screen and (max-width: 1370px){
+    /* .technologyArea ol li div:first-of-type{width: 100%; max-width: 535px; margin-right: 10px;} */
+    .technologyArea ol li:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){right: 0;}
+}
+
+@media screen and (max-width: 1000px){
+    .technologyArea ol li:nth-of-type(1) div:nth-of-type(2) img:nth-of-type(2){top: 0;}
+}
+
+@media screen and (max-width: 1100px){
+    *{word-break: break-all;}
+    .technologyArea{padding-top: 130px;}
+
+    section h2{font-size: 44px; line-height: 1.3636;}
+    section > p{width: 100%; font-size: 24px; line-height: 1.75;}
+    .technologyArea{width: calc(100% - 80px); margin: 0 auto;}
+    .technologyArea h2{margin-bottom: 10px;}
+    .technologyArea > p{margin-bottom: 50px;}
+    .technologyArea ol{margin-bottom: 140px;}
+    .technologyArea ol li{flex-direction: column; width: 100%; }
+    .technologyArea ol li div:first-of-type{order:1; max-width: 100%; width: 100%;}
+    .technologyArea ol li div:nth-of-type(2){width: 100%; margin-bottom: 60px;}
+    .technologyArea ol li:nth-of-type(2) div:first-of-type{max-width: 100%; width: 100%;}
+    .technologyArea ol li div:first-of-type p{font-size: 22px; margin-bottom: 40px;}
+    .technologyArea ol li:not(:last-of-type){margin-bottom: 120px;}
+    
+    
+    .wiseChoiceArea, .selfBeautyArea{width: calc(100% - 80px); margin: 0 auto;}
+    .wiseChoiceArea{margin-bottom: 110px;}
+    .wiseChoiceArea ul{justify-content: space-between;}
+    .wiseChoiceArea ul li{width: calc(50% - 20px);}
+    .wiseChoiceArea ul li:not(:nth-of-type(4n)){margin-right: 0;}
+    .wiseChoiceArea ul li:nth-of-type(2n + 1){margin-right: 40px;}
+    .wiseChoiceArea ul li:nth-last-of-type(n+3){margin-bottom: 80px;}
+    .wiseChoiceArea ul li figure figcaption h3{font-size: 22px;}
+
+
+    .reviewArea{
+        height: 1420px;
+        background-image: url(../images/m/main/reviewBG.png), url(../images/m/main/reviewBGImg.png);
+        background-repeat: no-repeat;
+        background-position: center top, center bottom -930px;
+        background-size: contain, 1100px;
+    }
+    .reviewArea .reviewContentsArea{justify-content: flex-end; align-items: stretch;}
+    .reviewArea .reviewContentsArea p{text-align: center;}
+    .reviewArea .reviewContentsArea > a{display: none;}
+    .reviewArea .reviewContentsArea .reviewSliderArea{margin: 0 auto;}
+    .reviewArea .reviewContentsArea .reviewSliderArea blockquote{padding: 0 30px;}
+    .reviewArea .reviewContentsArea .reviewPagination{margin: 0 auto; margin-bottom: 60px;}
+
+    .selfBeautyArea{margin-bottom: 140px;}
+    .selfBeautyArea ul{width: 100%;}
+    .selfBeautyArea ul li{width: 100%; max-width: 100%;}
+    .selfBeautyArea ul li:not(:last-of-type){margin-bottom: 60px;}
+
+    .instagramArea > div{width: 100%; margin-bottom: 40px;}
+    .instagramArea > ul{float: none; width: calc(100% - 80px); margin: 0 auto;}
+    .instagramArea > ul li{width: calc(50% - 2px);}
+    .instagramArea > ul li:nth-last-of-type(3n){margin-bottom: 4px;}
+    .instagramArea > ul li:nth-of-type(2n + 1){margin-right: 4px;}
+    .instagramArea > div > div > div{padding-left: 40px;}
+    
+}
+
 
 
 
