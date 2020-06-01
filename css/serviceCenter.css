@@ -6,3 +6,21 @@
 
 .serviceCenterArea > .QnAArea{display: none;}
 .serviceCenterArea > .QnAArea.active{display: block;}
+
+
+@media screen and (max-width: 800px){
+    .serviceCenterArea{width: 100%;}
+
+    .serviceCenterArea > .tabArea{width: calc(100% - 80px); flex-wrap: wrap; margin: 0 auto; margin-bottom: 80px;}
+    .serviceCenterArea > .tabArea > li{width: calc(100%/3); flex: none; font-size: 24px; font-weight: bold;}
+
+    .serviceCenterArea > .QnAArea{width: 100%;}
+    .serviceCenterArea > .QnAArea ul li h3{ padding: 24px 40px; box-sizing: border-box;}
+    
+}
+
+@media screen and (max-width: 640px){
+    .serviceCenterArea > .tabArea{margin-bottom: 12.5vw;}
+    .serviceCenterArea > .tabArea > li{font-size: 3.75vw;}
+    .serviceCenterArea > .QnAArea ul li h3{padding: 3.75vw 40px;}
+}

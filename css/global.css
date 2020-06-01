@@ -209,6 +209,13 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 
     .paperArea > div:nth-of-type(2n + 1){width: auto; margin: 0;}
 }
+
+@media screen and (max-width: 800px){
+    .QnAArea ul li h3{font-size: 22px;}
+    .QnAArea ul li h3::after{right: 40px;}
+    .QnAArea ul li div{font-size: 22px;}
+}
+
 @media screen and (max-width: 640px){
     /* header 메뉴 */
     /* 로고 */
@@ -229,5 +236,11 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
     header .menuArea > .menuContentsArea >nav ul > li > a{font-size: 4.0625vw; padding:4.375vw 0;}
     header .menuArea > .menuContentsArea >nav ul > li.active ol li{height: 9.6875vw;}
     header .menuArea > .menuContentsArea >nav ul > li.active ol li a{font-size: 3.7vw;}
+
+
+
+    .QnAArea ul li h3{font-size: 3.4375vw;}
+    .QnAArea ul li h3::after{right: 6.25vw;}
+    .QnAArea ul li div{font-size: 3.4375;}
     
 }
