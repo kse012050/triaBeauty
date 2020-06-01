@@ -1,7 +1,7 @@
 /* 이용약관, 개인정보취급방침 공통 */
 .termsArea{}
 .termsArea h2{font-size: 40px; margin-bottom: 30px;}
-.termsArea > div{height: 1050px; overflow-y: scroll; padding: 30px;}
+.termsArea > div{height: 1050px; overflow-y: scroll; padding: 30px; background-color: #fafafa;}
 .termsArea div *{font-size: 14px; font-weight: 400; line-height: 1.8571; color: rgba(0, 0, 0, 0.7); letter-spacing: -1px;}
 
 /* 이용약관 */
@@ -14,3 +14,24 @@
 .termsArea > div > ul > li:not(:last-of-type){margin-bottom: 25px;}
 .termsArea > div > ul > li div{display: flex;}
 .termsArea > div > ul > li div span{margin-right: 4px;}
+
+@media screen and (max-width: 800px){
+    .termsArea > div{padding: 30px 20px;}
+    .termsArea div *{font-size: 20px;}
+}
+
+@media screen and (max-width: 640px){
+    .termsArea h2{font-size: 6.25vw; margin-bottom: 4.6875vw;}
+
+    .termsArea > div{padding: 4.6875vw 3.125vw; height: 164.0625vw;}
+    .termsArea div *{font-size: 3.125vw;}
+
+    /* 이용약관 */
+    .termsArea > div > ol > li:not(:last-of-type){margin-bottom: 8.125vw;}
+    .termsArea > div > ol > li > ol > li:not(:last-of-type){margin-bottom: 4.0625vw;}
+
+    /* 개인정보 취급방침 */
+    .termsArea > div > ul > li:not(:last-of-type){margin-bottom: 3.90625vw;}
+    .termsArea > div > ul > li div span{margin-right: 0.625vw;}
+
+}
