@@ -7,6 +7,7 @@ $(document).ready(function(){
     tab();
     // 모바일 메뉴
     mobileMenu();
+
 });
 
 function mainTopBannerBtn(){

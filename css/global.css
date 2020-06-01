@@ -205,4 +205,29 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
     header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type){width: 163px; height: 60px; margin: 0;}
     header .menuArea > .menuContentsArea .loginArea ul li:last-of-type{margin-left: 18px;}
     header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type) a{font-size: 26px;}
+
+
+    .paperArea > div:nth-of-type(2n + 1){width: auto; margin: 0;}
+}
+@media screen and (max-width: 640px){
+    /* header 메뉴 */
+    /* 로고 */
+    header .menuArea h1{width: 22vw; height: 20vw;}
+    header .menuArea > .menuContentsArea{top: 20vw;}
+    
+    /* 햄버거 메뉴 */
+    header .menuArea .mobileMenuArea .hamburgerMenuArea{width: 7vw;}
+    header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type){margin-bottom: 2.187vw}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea span:nth-of-type(2){width: 5.4687vw}
+
+    /* 로그인 , 회원가입 버튼 */
+    header .menuArea > .menuContentsArea .loginArea{padding-top: 3.125vw; margin-bottom: 9.375vw;}
+    header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type){width: 25.4687vw ; height: 9.375vw;}
+    header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type) a{font-size: 4.0625vw;}
+
+    /* 모바일 메뉴 */
+    header .menuArea > .menuContentsArea >nav ul > li > a{font-size: 4.0625vw; padding:4.375vw 0;}
+    header .menuArea > .menuContentsArea >nav ul > li.active ol li{height: 9.6875vw;}
+    header .menuArea > .menuContentsArea >nav ul > li.active ol li a{font-size: 3.7vw;}
+    
 }

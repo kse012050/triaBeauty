@@ -29,3 +29,24 @@
 .introduceHistoryArea > div ul li figure figcaption div select{width: 100%; height: 60px; font-size: 14px; font-weight: 500; padding: 0 30px;}
 
 .introduceHistoryArea > div > p{font-size: 50px; line-height: 1.485; color: #757575; text-align: center;}
+
+@media screen and (max-width: 1100px){
+}
+
+@media screen and (max-width: 768px){
+    .aboutTriaBeautyArea{height: 910px; background: url(../images/m/introduce/introduceAboutUs/aboutTriaBeautyBG.png) no-repeat center top / cover;}
+    .introduceAboutUsArea P{font-size: 22px;}
+    .aboutTriaBeautyArea p br:nth-of-type(2){display: none;}
+
+    .introduceAboutUsArea h2{font-size: 36px; margin-bottom: 70px;}
+    .introduceAboutUsArea P{font-size: 24px;}
+    .introduceHistoryArea > div ul li figure{flex-direction: column; align-items: center;}
+    .introduceHistoryArea > div ul li figure > div{margin-bottom: 50px;}
+    .introduceHistoryArea > div ul li figure figcaption{width: 100%;}
+    .introduceHistoryArea > div ul li figure figcaption div h4{font-size: 24px; line-height: 40px;}
+    .introduceHistoryArea > div ul li figure figcaption div p{font-size: 24px;}
+
+    .introduceHistoryArea > div > p{font-size: 45px;}
+    .introduceHistoryArea > div > p br{display: none;}
+
+}

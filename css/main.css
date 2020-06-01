@@ -22,13 +22,13 @@ section > p{font-size: 20px; font-weight: 500; }
 .technologyArea ol li{display: flex; justify-content: space-between;}
 .technologyArea ol li:not(:last-of-type){margin-bottom: 180px;}
 .technologyArea ol li div{position: relative;}
-.technologyArea ol li div:first-of-type{width: 50%;  display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
+.technologyArea ol li div:first-of-type{width: 50%; flex: 1;  display: flex; flex-direction: column; justify-content: flex-end; letter-spacing: -1px;}
 .technologyArea ol li div:first-of-type h3{font-size: 30px; font-weight:700; margin-bottom: 60px}
 .technologyArea ol li div:first-of-type h3 span{display: block; font-size: 22px; font-weight: 800; margin-bottom: 25px;}
 .technologyArea ol li div:first-of-type p{font-size: 20px; line-height: 1.8; color: #9e9e9e; margin-bottom: 70px; }
 .technologyArea ol li div:first-of-type p br{display: none;}
 /* .technologyArea ol li div:first-of-type a{display: inline-block; align-self: flex-start; line-height: 60px; padding: 0 31px; color: white; background-color: black; border-radius: 50px;} */
-.technologyArea ol li div:nth-of-type(2){width: 49%;}
+.technologyArea ol li div:nth-of-type(2){width: 49%; flex: 1;}
 .technologyArea ol li div:nth-of-type(2) img{width: 100%;}
 .technologyArea ol li div:nth-of-type(2) img:nth-of-type(2){position: absolute;}
 .technologyArea ol li:nth-of-type(2) div:first-of-type{order: 1; width: 49%; margin-right: 0; margin-left: 10px;}
@@ -119,7 +119,7 @@ section > p{font-size: 20px; font-weight: 500; }
 }
 
 @media screen and (max-width: 1100px){
-    *{word-break: break-all;}
+    /* *{word-break: break-all;} */
     .technologyArea{padding-top: 130px;}
 
     section h2{font-size: 44px; line-height: 1.3636;}
@@ -172,6 +172,70 @@ section > p{font-size: 20px; font-weight: 500; }
     .instagramArea > ul li:nth-of-type(2n + 1){margin-right: 4px;}
     .instagramArea > div > div > div{padding-left: 40px;}
     
+}
+
+
+@media screen and (max-width: 640px){
+    /* 공통 */
+    .btn{max-width: 35.9375vw; height: 9.375vw; padding: 0 4.6875vw; font-size: 2.8125vw; line-height: 9.375vw;}
+    .btn::after{font-size: 3.90625vw;}
+    section h2{font-size: 6.875vw; margin-bottom: 3.59375vw;}
+    section > p{font-size: 3.75vw;}
+
+    /* 메인 슬라이더 */
+    header .mainSliderArea .swiper-slide div{padding-bottom: 18.75vw;}
+    header .mainSliderArea .swiper-slide div h2{font-size: 12.5vw; margin-bottom: 9.375vw;}
+    header .mainSliderArea .swiper-slide div p{font-size: 3.7vw; padding-top: 5.4687vw;}
+
+    header .mainSliderArea .mainSliderNavigationArea{bottom: 26.5vw;}
+    /* .swiper-button-next, .swiper-container-rtl .swiper-button-prev{left: 0; right: auto;} */
+
+    /* 메인 컨텐츠 */
+    .technologyArea{padding-top: 18.75vw;}
+    .technologyArea h2{font-size: 6.875vw; margin-bottom: 1.5625vw;}
+    .technologyArea > p{margin-bottom: 7.8125vw;}
+    .technologyArea ol{margin-bottom: 21.875vw;}
+    .technologyArea ol li:not(:last-of-type){margin-bottom: 18.75vw;}
+    .technologyArea ol li div:nth-of-type(2){margin-bottom: 9.375vw;}
+    .technologyArea ol li div:first-of-type h3{font-size: 4.6875vw; margin-bottom: 9.375vw;}
+    .technologyArea ol li div:first-of-type h3 span{font-size: 3.4375vw; margin-bottom: 3.90625vw;}
+    .technologyArea ol li div:first-of-type p{font-size: 3.4375vw; margin-bottom: 6.25vw;}
+    .technologyArea ol li:nth-of-type(2) div:nth-of-type(2) img:nth-of-type(2){bottom: 0;}
+    .technologyArea ol li:nth-of-type(3) div:nth-of-type(2) img:nth-of-type(2){right: 0; bottom: 0;}
+
+    .videoArea{}
+
+    .wiseChoiceArea{margin-bottom: 17.1875vw;}
+    .wiseChoiceArea h2{margin-bottom: 3.59375vw;}
+    .wiseChoiceArea > p{margin-bottom: 9.375vw;}
+    .wiseChoiceArea ul li{width: calc(50% - 3.125vw);}
+    .wiseChoiceArea ul li:nth-of-type(2n + 1){margin-right: 6.25vw; margin-bottom: 12.5vw;}
+    .wiseChoiceArea ul li figure img{margin-bottom: 3.90625vw;}
+    .wiseChoiceArea ul li figure figcaption{height: 28.125vw;}
+    .wiseChoiceArea ul li figure figcaption h3{font-size: 3.4375vw; margin-bottom: 1.5625vw;}
+    .wiseChoiceArea ul li figure figcaption p{font-size: 4.375vw;}
+    .wiseChoiceArea ul li figure figcaption a::before{width: 3.28125vw; background-size: contain;}
+
+    .reviewArea{height: 221.875vw; background-size: 100vw, 171.875vw; margin-bottom: 21.875vw;}
+    .reviewArea .reviewContentsArea p{font-size: 6vw; margin-top: 13.28125vw; margin-bottom: 7.8125vw;}
+    .reviewArea .reviewContentsArea .reviewSliderArea blockquote br{display: none;}
+    .reviewArea .reviewContentsArea .reviewSliderArea blockquote::before, .reviewArea .reviewContentsArea .reviewSliderArea blockquote::after{width: 5.625vw;}
+    .reviewArea .reviewContentsArea .reviewPagination{margin-bottom: 9.375vw;}
+    .reviewArea .reviewContentsArea .reviewPagination span{width: 2.34375vw; height: 2.34375vw;}
+
+    .selfBeautyArea{margin-bottom: 21.875vw;}
+    .selfBeautyArea h2{margin-bottom: 4.21875vw;}
+    .selfBeautyArea > p{margin-bottom: 9.375vw;}
+    .selfBeautyArea ul{margin-bottom: 10.9375vw;}
+    .selfBeautyArea ul li span{margin-bottom: 1.5625vw;}
+    .selfBeautyArea ul li h3{font-size: 3.75vw; margin-bottom: 4.6875vw;}
+    .selfBeautyArea ul li p{font-size: 2.5vw; height: 9.375vw;}
+
+    .instagramArea > div > div > div{padding-left: 6.25vw; max-width: 81.25vw; height: 28.125vw;}
+    .instagramArea > div > div > div h2{font-size: 4.6875vw; margin-bottom: 0;}
+    .instagramArea > div > div > div p{font-size: 6.25vw;}
+    
+
 }
 
 

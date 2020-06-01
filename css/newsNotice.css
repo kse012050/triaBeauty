@@ -26,3 +26,23 @@
 .newsNoticeContentsArea .noticeContentsArea p{font-size: 16px; line-height: 2.25; letter-spacing: -1px;}
 /* 공지사항 목록보기 링크 */
 .newsNoticeContentsArea a{display: inline-block; width: 150px; font-size: 16px; text-align: center; color: white; line-height: 50px; background-color: black;}
+
+
+@media screen and (max-width: 1100px){
+    .newsNoticeArea .noticeBoardTitleArea{display: none;}
+    .newsNoticeArea .noticeBoardArea{margin-bottom: 30px;}
+    .newsNoticeArea .noticeBoardArea li:first-of-type{border-top: 1px solid #e5e5e5;}
+    .newsNoticeArea .noticeBoardArea li a{padding: 37px 0;}
+    .newsNoticeArea .noticeBoardArea li a p:nth-of-type(1){width: 50px;}
+    .newsNoticeArea .noticeBoardArea li a p:nth-of-type(2){width: calc(100% - 50px);}
+    .newsNoticeArea .noticeBoardArea li a p:nth-of-type(3){display: none;}
+    
+
+    .newsNoticeContentsArea .noticeContentsTitleArea{padding: 20px 0;}
+    .newsNoticeContentsArea .noticeContentsArea{padding: 0; padding-bottom: 50px;}
+}
+
+@media screen and (max-width: 768px){
+    .newsNoticeContentsArea .noticeContentsTitleArea h2{font-size: 19px;}
+    .newsNoticeContentsArea .noticeContentsTitleArea span{display: none;}
+}
