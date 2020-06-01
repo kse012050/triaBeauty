@@ -48,9 +48,52 @@
 .procedureArea ol{display: flex; justify-content: space-between; margin-bottom: 40px;}
 .procedureArea ol li {width: calc(100%/3 - 30px);}
 .procedureArea ol li figure{height: 100%; display: flex; flex-direction: column; }
-.procedureArea ol li figure img{border-radius: 50%; margin-bottom: 40px; background-color: #f7f7f7}
+.procedureArea ol li figure img{width: 100%; border-radius: 50%; margin-bottom: 40px; background-color: #f7f7f7}
 .procedureArea ol li figure figcaption{padding-left: 30px; position: relative; flex: 1;}
 .procedureArea ol li figure figcaption::before{content: ''; display: block; width:2px; height: 100%; position: absolute; left: 0; top: 0;  background-color: #b41f77;}
 .procedureArea ol li figure figcaption h3{font-size: 20px; font-weight: 500; color: #b41f77; margin-bottom: 20px;}
 .procedureArea ol li figure figcaption p{font-size: 16px; color: #757575;}
+
+@media screen and (max-width: 1100px){
+    
+}
+
+@media screen and (max-width: 800px){
+    .introduceArea > *:not(:last-child){margin-bottom: 80px;}
+    
+    .introduceArea .introduceSubContentsArea *{font-size: 22px; line-height: 1.5454; }
+    .introduceArea .introduceSubContentsArea *:not(:last-child){ margin: 0;}
+    .introduceArea .introduceSubContentsArea a{letter-spacing: -1.5px;}
+
+    .introduceArea h2{font-size: 36px; margin-bottom: 40px; letter-spacing: -2px;}
+    .introduceArea section:first-of-type{margin-bottom: 140px;}
+    .introduceArea section:first-of-type{}
+    .introduceArea section:first-of-type h2{letter-spacing: -2px;}
+    .introduceArea p{font-size: 24px; letter-spacing: -1.5px;}
+
+    .introduceBannerArea > div{justify-content: flex-start;}
+    
+    .procedureArea ol{flex-wrap: wrap;}
+    .procedureArea ol li{width: 100%;}
+    .procedureArea ol li figure figcaption h3{font-size: 26px; font-weight: bold;}
+    .procedureArea ol li figure figcaption p{font-size: 22px;}
+
+    
+    
+}
+
+@media screen and (max-width: 640px){
+    .introduceArea > *:not(:last-child){margin-bottom: 12.5vw;}
+
+    .introduceArea .introduceSubContentsArea *{font-size: 3.4375vw;}
+
+    .introduceArea h2{font-size: 5.625vw; margin-bottom: 6.25vw;}
+    .introduceArea section:first-of-type{margin-bottom: 21.875vw;}
+    .introduceArea section:first-of-type h2{font-size: 6.25vw;}
+
+    .introduceArea p{font-size: 3.75vw;}
+
+    .procedureArea ol li figure figcaption h3{font-size: 4.0625vw;}
+    .procedureArea ol li figure figcaption p{font-size: 3.4375vw;}
+}
 

@@ -16,10 +16,10 @@
 .cosmeticArea .calmingFormulaArea{}
 .cosmeticArea .calmingFormulaArea h2{margin-bottom: 30px;}
 .cosmeticArea .calmingFormulaArea figure{height: 540px; display: flex; justify-content: space-between; align-items: flex-end; background: url(../images/indroduce/cosmetic/calmingFormulaBG.jpg) no-repeat center center; padding: 35px 40px; box-sizing: border-box;}
-.cosmeticArea .calmingFormulaArea figure figcaption{display: flex; flex-direction: column; align-items: flex-start;}
+.cosmeticArea .calmingFormulaArea figure figcaption{width: 450px; display: flex; flex-direction: column; align-items: flex-start;}
 .cosmeticArea .calmingFormulaArea figure figcaption p{display: inline-block; color: white; border-bottom: 1px solid rgba(255,255,255,0.5);}
 .cosmeticArea .calmingFormulaArea figure figcaption p:not(:last-of-type){margin-bottom: 10px;}
-.cosmeticArea .calmingFormulaArea figure > div{width: 50%; text-align: center;}
+.cosmeticArea .calmingFormulaArea figure > div{width: calc(100% - 450px); text-align: center;}
 
 /* sub 소개 - 코스메틱 식물 레시피 집약체 */
 .plantRecipeArea{margin-bottom: 65px;}
@@ -28,7 +28,7 @@
 .plantRecipeArea ul li {width: 50%;}
 .plantRecipeArea ul li:nth-last-of-type(n + 3){margin-bottom: 50px;}
 .plantRecipeArea ul li figure{}
-.plantRecipeArea ul li figure img{margin-bottom: 40px;}
+.plantRecipeArea ul li figure img{margin-bottom: 40px; width: 60%;}
 .plantRecipeArea ul li figure figcaption{padding-left: 30px; position: relative;}
 .plantRecipeArea ul li figure figcaption::before{content: ''; display: block; width:2px; height: 100%; position: absolute; left: 0; top: 0;  background-color: #b41f77;}
 .plantRecipeArea ul li figure figcaption h3{font-size: 20px; font-weight: 500; color: #b41f77; margin-bottom: 20px;}
@@ -47,7 +47,7 @@
 .necessaryMomentArea h2{}
 .necessaryMomentArea ul{display: flex; justify-content: space-between; margin-bottom: 130px;}
 .necessaryMomentArea ul li{width: calc(100%/3 - 60px); height: 330px; padding: 70px 0 50px; background-color: #f7f7f7; box-sizing: border-box; display: flex; justify-content: center;}
-.necessaryMomentArea ul li p{display: flex; align-items: flex-end; height: 100%; background-repeat: no-repeat; background-position: center top;}
+.necessaryMomentArea ul li p{display: flex; align-items: flex-end; height: 100%; text-align: center; background-repeat: no-repeat; background-position: center top;}
 .necessaryMomentArea ul li:nth-of-type(1) p{background-image: url(../images/indroduce/cosmetic/necessaryMomentIcon01.png);}
 .necessaryMomentArea ul li:nth-of-type(2) p{background-image: url(../images/indroduce/cosmetic/necessaryMomentIcon02.png);}
 .necessaryMomentArea ul li:nth-of-type(3) p{background-image: url(../images/indroduce/cosmetic/necessaryMomentIcon03.png);}
@@ -60,3 +60,46 @@
 /* .necessaryMomentArea figure figcaption a{display: inline-block; width: 230px; font-size:18px; font-weight: 500;  text-align: left; color: white;  padding: 21px 30px; background-color: black; border-radius: 50px; position: relative;}
 .necessaryMomentArea figure figcaption a::after{content: '+'; position: absolute; right: 30px; top: 15px; font-size: 30px;} */
 
+@media screen and (max-width: 800px){
+    .cosmeticArea .cosmeticBanner01{background-image: url(../images/m/introduce/cosmetic/cosmeticBannerImg01.png); background-size: cover;}
+    .cosmeticArea .cosmeticBanner01 > div{justify-content: center;}
+    .cosmeticArea .cosmeticBanner01 > div h2{font-size: 40px;}
+    .cosmeticArea .cosmeticBanner01 > div > *{width: 100%;}
+    .cosmeticArea .cosmeticBanner01 > div div a{width: 225px; font-size: 24px;}
+    .cosmeticArea .cosmeticBanner01 > div div a::after{width: 20px; height: 20px; background-size: contain;}
+    .cosmeticArea section:first-of-type h2 br{display: none;}
+
+    .cosmeticArea .calmingFormulaArea figure{flex-direction: column; justify-content: flex-end; align-items: center; position: relative;}
+    .cosmeticArea .calmingFormulaArea figure > div{width: auto; position: absolute; top: -55px; right: 40px;}
+    .cosmeticArea .calmingFormulaArea figure figcaption{order: 1; width: 100%;}
+
+    .plantRecipeArea ul li{width: 100%;}
+    .plantRecipeArea ul li figure img{display: block; margin: 0 auto; width: 250px; height: 250px; margin-bottom: 40px;}
+
+    .introduceBannerArea > div{justify-content: center;}
+    .cosmeticArea .cosmeticBanner02{height: 320px; background: url(../images/m/introduce/cosmetic/cosmeticBannerImg02.png) no-repeat center bottom / cover;}
+    .cosmeticArea .cosmeticBanner02 > div > div{margin-bottom: 0;}
+    
+    .necessaryMomentArea ul{flex-wrap: wrap;}
+    .necessaryMomentArea ul li{width: 100%;}
+    .necessaryMomentArea ul li:not(:last-of-type){margin-bottom: 20px;}
+
+    .necessaryMomentArea figure figcaption p{font-size: 36px;}
+}
+
+@media screen and (max-width: 640px){
+    .cosmeticArea .cosmeticBanner01 > div h2{font-size: 6.25vw;}
+    .cosmeticArea .cosmeticBanner01 > div div a{width: 35.15625vw; font-size: 3.75vw;}
+    .cosmeticArea .cosmeticBanner01 > div div a::after{width: 3.125vw; height: 3.125vw; background-size: contain;}
+
+    .cosmeticArea .calmingFormulaArea figure{padding: 5.46875vw 6.25vw;}
+    .cosmeticArea .calmingFormulaArea figure > div{top: -8.59375vw; right: 6.25vw;}
+
+    .plantRecipeArea ul li figure img{width: 39.0625vw; height: 39.0625vw; margin-bottom: 6.25vw;}
+
+    .cosmeticArea .cosmeticBanner02{height: 50vw;}
+
+    .necessaryMomentArea ul li:not(:last-of-type){margin-bottom: 3.125vw;}
+
+    .necessaryMomentArea figure figcaption p{font-size: 5.625vw;}
+}

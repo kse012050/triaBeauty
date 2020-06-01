@@ -44,6 +44,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
  footer
 {width: calc(100% - 80px); max-width: 1200px; margin: 0 auto;}
 
+.MobileImg{display: none !important;}
+
 /* .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul
 {padding-top: 140px;} */
 .technologyArea{padding-top: 140px;}
@@ -165,8 +167,10 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 .QnAArea ul{}
 .QnAArea ul li{ border-bottom: 1px solid #dfdfdf; cursor: pointer;}
 .QnAArea ul li:first-of-type{border-top: 1px solid #dfdfdf;}
-.QnAArea ul li h3{font-size: 18px; font-weight: 400; padding: 26px 0; color: black; width: 100%; max-width: 1140px; margin: 0 auto; position: relative;}
-.QnAArea ul li h3::after{content: '+'; font-size: 35px; line-height: 0.3; position: absolute; right: 0; top: 26px;}
+.QnAArea ul li h3{font-size: 18px; font-weight: 400; line-height: 1.4; padding: 22px 0; padding-right: 20px; box-sizing: border-box; color: black; width: 100%; max-width: 1140px; margin: 0 auto; position: relative;}
+.QnAArea ul li h3::after{content: '+'; font-size: 35px; line-height: 0.3; position: absolute; right: 0; top: 0px;
+    height: 100%; display: flex; align-items: center;
+}
 .QnAArea ul li div{display: none;font-size: 16px; line-height:1.625; color: #757575; padding: 25px 20px 25px 60px; background-color:#f7f7f7;  border-top: 1px solid #dfdfdf; margin: 0;}
 .QnAArea ul li.active div{display: block;}
 .QnAArea ul li.active h3::after{content: '-';}
@@ -211,12 +215,67 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 800px){
-    .QnAArea ul li h3{font-size: 22px;}
+    .calmingFormulaArea h2{width: calc(100% - 80px);}
+    .calmingFormulaArea{width: 100%;}
+
+    .PCImg{display: none !important;}
+    .MobileImg{display: block !important;}
+    
+    .QnAArea h2{width: calc(100% - 80px); margin: 0 auto;}
+    .QnAArea{width: 100%;}
+    .QnAArea ul li h3{font-size: 22px; line-height: 1.5454; padding-right: 53px; padding-left: 40px; box-sizing: border-box; letter-spacing: -1px;}
     .QnAArea ul li h3::after{right: 40px;}
     .QnAArea ul li div{font-size: 22px;}
 }
 
 @media screen and (max-width: 640px){
+
+/* 컨텐츠 최대 크기 지정 width 1760px*/
+.mainTopBannerArea > a > div, header.mainHeader .menuArea, .videoArea , footer.mainFooter 
+{width: calc(100% - 12.5vw);}
+/* 컨텐츠 크기 지정 width 1200px*/
+/* 메인 */
+header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul, 
+/* 회원가입 */
+.singUpArea,
+/* 로그인 */
+.loginArea,
+/* 장바구니 */
+.paymentProgressArea,.orderListTitleArea,.orderListArea,.shoppingBasketArea,
+/* 주문완료 */
+.orderCompletedArea,
+/* 이용약관 , */
+.termsArea,
+/* 소식 - 뉴스 메거진 */
+.subHeader h2, .newsArea,
+/* 공지사항 - 게시판 , 내용*/
+.newsNoticeArea, .newsNoticeContentsArea,
+/* 소개 공통 */
+.introduceArea section:first-of-type,.introduceBannerArea > div,.introduceArea .indroduceFigureArea,.characteristicArea,
+.productCompositionArea,
+/* 소개 - 회사소개 */
+.aboutTriaBeautyArea,.medicalEquipmentArea,.introduceHistoryArea > div,
+/* 소개 - 코스메틱 */
+.cosmeticArea .calmingFormulaArea h2,.plantRecipeArea,.necessaryMomentArea,
+/* 소개 - 여드름치료 */
+.acneCureArea .ourSkinlaArea,.acneCureArea .penetrationArea,.acneCureArea .portabilityArea,
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/
+/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea, 
+/* 소개 - 레이저제모 , 피부개선 공통 */
+.introduceArea > ul,
+/* 소개 - 레이저제모 */
+.heatEnergyArea02,.laserArea .laserRecommendationArea,
+/* 소개 - 피부개선 */
+.SkinArea .skinRecommendationArea ,
+/* 고객센터 */
+.serviceCenterArea,
+/* 공통 */
+.QnAArea h2,
+ footer
+{width: calc(100% - 12.5vw); margin: 0 auto; }
+
+
+
     /* header 메뉴 */
     /* 로고 */
     header .menuArea h1{width: 22vw; height: 20vw;}
@@ -239,8 +298,8 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 
 
 
-    .QnAArea ul li h3{font-size: 3.4375vw;}
+    .QnAArea ul li h3{font-size: 3.4375vw; padding-right: 8.28125vw; padding-left: 6.25vw; box-sizing: border-box; letter-spacing: -0.15625vw;}
     .QnAArea ul li h3::after{right: 6.25vw;}
-    .QnAArea ul li div{font-size: 3.4375;}
+    .QnAArea ul li div{font-size: 3.4375vw;}
     
 }
