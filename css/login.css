@@ -12,6 +12,7 @@
 
 /* 로그인 */
 .loginContentArea > div > form label{display: block; font-size: 16px;}
+.loginContentArea > div > form label[for="rememberID"]{color: #838383;}
 /* .loginContentArea > div > form input:not([type="checkbox"]):not([type="submit"]){width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black;} */
 .loginContentArea > div > form input[type="text"],.loginContentArea > div > form input[type="password"]{width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black; outline: none;}
 .loginContentArea > div > form input[type="text"]{margin-bottom: 38px;}
