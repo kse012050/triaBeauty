@@ -33,3 +33,21 @@
     .loginArea > section{width: 100%; max-width: 560px;}
     .loginArea > section:not(:last-of-type){margin-bottom: 100px;}
 }
+
+@media screen and (max-width: 800px){
+    .loginArea section p{font-size: 22px;}
+    .loginArea section p br{display: none;}
+    .loginContentArea > div > form label{font-size: 22px;}
+    .loginContentArea > div > form > div ul li a{font-size: 20px;}
+}
+
+@media screen and (max-width: 640px){
+    /* .loginContentArea > div, .signUpArea > div{height: 60.15625vw;} */
+    .loginContentArea > div, .signUpArea > div{padding: 0 1.5625vw; box-sizing: border-box;}
+
+    .loginArea section p{font-size: 3.4375vw;}
+    .loginArea section p br{display: none;}
+    .loginContentArea > div > form label{font-size: 3.4375vw;}
+    .loginContentArea > div > form > div ul li a{font-size: 3.125vw;}
+}
+

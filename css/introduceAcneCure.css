@@ -13,11 +13,11 @@
 
 
 /* sub 소개 - 여드름치료 첫번째 베너*/
-.acneCureArea .acneCureBanner01{background-image: url(../images/indroduce/acneCure/acneCureBannerImg01.png);}
+.acneCureArea .acneCureBanner01{background-image: url(../images/introduce/acneCure/acneCureBannerImg01.png);}
 .acneCureArea .acneCureBanner01 > div > *{width: 50%; color: white; text-align: center;}
 .acneCureArea .acneCureBanner01 > div h2{line-height: 1.5; font-weight: 300; margin-bottom: 50px; }
 .acneCureArea .acneCureBanner01 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
-.acneCureArea .acneCureBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
+.acneCureArea .acneCureBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/introduce/cosmetic/icon.png) no-repeat center center; }
 
 /* sub 소개 - 여드름치료 빛에 민감한 우리 피부 , 강화된 침투력 공통 */
 .acneCureArea .ourSkinlaArea img,
@@ -62,7 +62,7 @@
 
 
 @media screen and (max-width: 800px){
-    .acneCureArea .acneCureBanner01{background-image: url(../images/m/introduce/acneCure/acneCureBannerImg01.png);}
+    .acneCureArea .acneCureBanner01{background-image: url(../images/m/introduce/acneCure/acneCureBannerImg01.png); background-size: cover;}
 
     .introduceArea section:first-of-type h2{margin-bottom: 25px;}
 

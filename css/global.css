@@ -215,6 +215,9 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 800px){
+    .basicBtn{font-size: 30px; width: 325px; line-height: 100px;}
+
+
     .calmingFormulaArea h2{width: calc(100% - 80px);}
     .calmingFormulaArea{width: 100%;}
 
@@ -274,6 +277,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
  footer
 {width: calc(100% - 12.5vw); margin: 0 auto; }
 
+
+.basicBtn{font-size: 4.6875vw; width: 50.78125vw; line-height: 15.625vw;}
 
 
     /* header 메뉴 */

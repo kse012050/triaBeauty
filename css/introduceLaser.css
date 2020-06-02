@@ -1,6 +1,6 @@
 .laserArea > ul:first-child{}
-.laserArea > ul:first-child li:nth-of-type(1){background-image: url(../images/indroduce/laser/topImg01.png);}
-.laserArea > ul:first-child li:nth-of-type(2){background-image: url(../images/indroduce/laser/topImg02.png);}
+.laserArea > ul:first-child li:nth-of-type(1){background-image: url(../images/introduce/laser/topImg01.png);}
+.laserArea > ul:first-child li:nth-of-type(2){background-image: url(../images/introduce/laser/topImg02.png);}
 
 /* sub 소개 - 레이저제모 경계 */
 .laserArea hr{width: 100%; max-width: 1200px; margin: 0 auto; border:1px solid #d9d9d9; box-sizing: border-box;}
@@ -26,11 +26,11 @@
 .laserArea .laserRecommendationArea figure > div div img{width: 100%;}
 
 /* sub 소개 - 레이저제모 베너01*/
-.laserBanner01{background-image: url(../images/indroduce/laser/laserBannerImg01.png);}
+.laserBanner01{background-image: url(../images/introduce/laser/laserBannerImg01.png);}
 .laserBanner01 > div > *{width: 50%; color: white; text-align: center; margin-left: auto;}
 .laserBanner01 > div h2{font-size: 40px; line-height: 1.5; font-weight: 300; margin-bottom: 50px; }
 .laserBanner01 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
-.laserBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
+.laserBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/introduce/cosmetic/icon.png) no-repeat center center; }
 
 /* sub 소개 - 레이저제모 시술방법*/
 .laserArea .procedureArea > p{padding: 17px 0; text-align: center; background-color: #fbf0f6; border: 1px solid #ead6e2; margin-bottom: 50px;}
@@ -38,9 +38,10 @@
 .laserArea .procedureArea ul li:not(:last-of-type){margin-bottom: 25px;}
 
 /* sub 소개 - 레이저제모 베너02 */
-.laserBanner02{background-image: url(../images/indroduce/laser/laserBannerImg02.png);}
+.laserBanner02{background-image: url(../images/introduce/laser/laserBannerImg02.png);}
 .laserBanner02 > div > *{width: 50%; text-align: left; margin-left: auto;}
 .laserBanner02 > div h2{font-weight: 500;}
+
 
 /* sub 소개 - 레이저제모 제품구성 */
 .laserArea .productCompositionArea{}
@@ -52,11 +53,11 @@
 .laserArea .QnAArea ul{margin-bottom: 50px;}
 
 /* sub 소개 - 레이저제모 베너03*/
-.laserBanner03{background-image: url(../images/indroduce/laser/laserBannerImg03.png);}
+.laserBanner03{background-image: url(../images/introduce/laser/laserBannerImg03.png);}
 .laserBanner03 > div > *{width: 50%; color: white; text-align: center; }
 .laserBanner03 > div h2{font-size: 40px; line-height: 1.5; font-weight: 300; margin-bottom: 50px; }
 .laserBanner03 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
-.laserBanner03 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
+.laserBanner03 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/introduce/cosmetic/icon.png) no-repeat center center; }
 
 @media screen and (max-width: 800px){
     .introduceBannerArea.laserBanner01 > div{justify-content: flex-start;}

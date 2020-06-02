@@ -1,5 +1,5 @@
-.SkinArea > ul:first-child li:nth-of-type(1){background-image: url(../images/indroduce/skin/topImg01.png);}
-.SkinArea > ul:first-child li:nth-of-type(2){background-image: url(../images/indroduce/skin/topImg02.png);}
+.SkinArea > ul:first-child li:nth-of-type(1){background-image: url(../images/introduce/skin/topImg01.png);}
+.SkinArea > ul:first-child li:nth-of-type(2){background-image: url(../images/introduce/skin/topImg02.png);}
 
 /* sub 소개 - 피부개선 경계 */
 .SkinArea hr{width: 100%; max-width: 1200px; margin: 0 auto; border:1px solid #d9d9d9; box-sizing: border-box;}
@@ -25,11 +25,11 @@
 .SkinArea .skinRecommendationArea figure > div div img{width: 100%;}
 
 /* sub 소개 - 피부개선 베너01*/
-.skinBanner01{background-image: url(../images/indroduce/skin/skinBannerImg01.png);}
+.skinBanner01{background-image: url(../images/introduce/skin/skinBannerImg01.png);}
 .skinBanner01 > div > *{width: 50%; color: white; text-align: center; }
 .skinBanner01 > div h2{font-size: 40px; line-height: 1.5; font-weight: 300; margin-bottom: 50px; }
 .skinBanner01 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
-.skinBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
+.skinBanner01 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/introduce/cosmetic/icon.png) no-repeat center center; }
 
 /* sub 소개 - 피부개선 시술방법*/
 .SkinArea .procedureArea > div:not(.introduceSubContentsArea){padding: 25px 30px; background-color: #fbf0f6; border: 1px solid #ead6e2;}
@@ -38,7 +38,7 @@
 .SkinArea .procedureArea ol li figure img{width: 100%; max-width: 360px;}
 
 /* sub 소개 - 피부개선 베너02 */
-.skinBanner02{background-image: url(../images/indroduce/laser/laserBannerImg02.png);}
+.skinBanner02{background-image: url(../images/introduce/laser/laserBannerImg02.png);}
 .skinBanner02 > div > *{width: 50%; text-align: left; margin-left: auto;}
 .skinBanner02 > div > h2{font-weight: 500;}
 
@@ -52,11 +52,11 @@
 .SkinArea .QnAArea ul{margin-bottom: 50px;}
 
 /* sub 소개 - 피부개선 베너03*/
-.skinBanner03{background-image: url(../images/indroduce/skin/skinBannerImg03.png);}
+.skinBanner03{background-image: url(../images/introduce/skin/skinBannerImg03.png);}
 .skinBanner03 > div > *{color: white; text-align: center; }
 .skinBanner03 > div h2{font-size: 40px; line-height: 1.5; font-weight: 300; margin-bottom: 50px; }
 .skinBanner03 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
-.skinBanner03 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
+.skinBanner03 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/introduce/cosmetic/icon.png) no-repeat center center; }
 
 @media screen and (max-width: 800px){
     .skinBanner01{}
@@ -73,6 +73,12 @@
 
     .SkinArea .procedureArea > div:not(.introduceSubContentsArea) > *{font-size: 22px;}
 
+
+    .skinBanner03{background-image: url(../images/m/introduce/skin/skinBannerImg03.png); background-size: cover;}
+    .skinBanner03 > div h2{width: 200px; margin: 0 auto; margin-bottom: 30px;}
+    .skinBanner03 > div div a{width: 225px; font-size: 24px;}
+    .skinBanner03 > div div a::after{width: 20px; height: 20px; background-size: contain;}
+
 }
 @media screen and (max-width: 640px){
     .skinBanner01 > div h2{padding-top: 9.375vw; margin-bottom: 4.6875vw;}
@@ -81,4 +87,8 @@
 
     .SkinArea .procedureArea > div:not(.introduceSubContentsArea){padding: 3.90625vw 4.6875vw;}
     .SkinArea .procedureArea > div:not(.introduceSubContentsArea) > *{font-size: 3.4375vw;}
+
+    .skinBanner03 > div h2{width:31.25vw;  font-size: 6.25vw; margin-bottom: 4.6875vw;}
+    .skinBanner03 > div div a{width: 35.15625vw; font-size: 3.75vw;}
+    .skinBanner03 > div div a::after{width: 3.125vw; height: 3.125vw;}
 }

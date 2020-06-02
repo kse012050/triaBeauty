@@ -4,7 +4,7 @@
 .introduceAboutUsArea P:not(:last-of-type){margin-bottom: 25px;}
 
 /* 회사소개 - ABOUT TRIABEAUTY */
-.aboutTriaBeautyArea{height: 510px; display: flex; flex-direction: column; justify-content: flex-end; background: url(../images/indroduce/AboutUs/aboutTriaBeautyBG.png) no-repeat center center; padding: 60px; box-sizing: border-box; border-radius: 50px; margin-bottom: 100px;}
+.aboutTriaBeautyArea{height: 510px; display: flex; flex-direction: column; justify-content: flex-end; background: url(../images/introduce/AboutUs/aboutTriaBeautyBG.png) no-repeat center center; padding: 60px; box-sizing: border-box; border-radius: 50px; margin-bottom: 100px;}
 .aboutTriaBeautyArea h2{color: white; margin-bottom: 20px;}
 .aboutTriaBeautyArea p{ font-weight: 300; color:rgba(255,255,255,0.5); }
 
