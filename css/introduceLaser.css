@@ -58,7 +58,46 @@
 .laserBanner03 > div div a{display: inline-block; width: 205px; color: white; text-align: left; padding-bottom: 10px; border-bottom: 1px solid white; position: relative;}
 .laserBanner03 > div div a::after{content: ''; display: block; width:8px; height: 15px;  position: absolute; right: 0; top: 3px; background: url(../images/indroduce/cosmetic/icon.png) no-repeat center center; }
 
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 800px){
+    .introduceBannerArea.laserBanner01 > div{justify-content: flex-start;}
+    .laserBanner01 > div > *{width: 100%; text-align: left;}
+    .laserBanner01 > div h2{padding-top: 60px; margin-bottom: 30px;}
+    .laserBanner01 > div div a{width: 225px; font-size: 24px;}
+    .laserBanner01 > div div a::after{width: 20px; height: 20px; background-size: contain;}
+    .laserBanner01{background-image: url(../images/m/introduce/laser/laserBannerImg01.png); background-size: cover;}
 
+    .heatEnergyArea02 .introduceSubContentsArea a{word-break: break-all;}
+
+    .laserArea .procedureArea > p{text-align: left; font-size: 22px; padding: 17px 20px; box-sizing: border-box;}
+
+    .laserBanner02{height: 760px; background-image: url(../images/m/introduce/laser/laserBannerImg02.png); background-size: cover;}
+    .laserBanner02 > div{justify-content: flex-end;}
+    .laserBanner02 > div > *{width: 100%;}
+    .laserBanner02 > div > h2{width: 80%; margin-left: 0;}
+    .laserBanner02 > div > p{margin-bottom: 65px;}
+
+    .laserBanner03{background-image:url(../images/m/introduce/laser/laserBannerImg03.png); background-size: cover;}
+    .laserBanner03 > div{justify-content: flex-start;}
+    .laserBanner03 > div > *{text-align: left;}
+    .laserBanner03 > div h2{padding-top: 60px; margin-bottom: 30px;}
+    .laserBanner03 > div div a{width: 225px; font-size: 24px;}
+    .laserBanner03 > div div a::after{width: 20px; height: 20px; background-size: contain;}
+}
+
+@media screen and (max-width: 640px){
+    .laserArea .waxingArea > p{margin-bottom: 7.03125vw;}
+
+    .laserBanner01 > div h2{padding-top: 9.375vw; margin-bottom: 4.6875vw;}
+    .laserBanner01 > div div a{width: 35.15625vw; font-size: 3.75vw;}
+    .laserBanner01 > div div a::after{width: 3.125vw; height: 3.125vw;}
+
+    .laserArea .procedureArea > p{font-size: 3.4375vw; padding:2.65625vw 3.125vw; }
+
+    .laserBanner02{height: 118.75vw;}
+    .laserBanner02 > div > p{margin-bottom: 10.15625vw;}
+
+    .laserBanner03 > div h2{padding-top: 9.375vw; margin-bottom: 4.6875vw;}
+    .laserBanner03 > div div a{width: 35.15625vw; font-size: 3.75vw;}
+    .laserBanner03 > div div a::after{width: 3.125vw; height: 3.125vw;}
     
 }
