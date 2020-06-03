@@ -105,7 +105,7 @@
     .introduceBannerArea{height: 88.28125vw;}
 
     .introduceArea > ul > li:not(:last-of-type){margin-bottom: 6.25vw;}
-    .introduceArea > ul > li{height: 53.125vw;}
+    .introduceArea > ul > li{height: 53.125vw; border-radius: 10.9375vw;}
     .introduceArea > ul > li > a > p{font-size: 4.375vw; margin-bottom: 4.6875vw;}
     .introduceArea > ul > li > a > div{width: 9.0625vw;}
     .introduceArea > ul > li > a > div::after{width: 3.125vw;}

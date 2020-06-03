@@ -1,7 +1,7 @@
 /* 회사소개 공통 */
 .introduceAboutUsArea h2{font-size: 40px;}
 .introduceAboutUsArea P{font-size: 20px; /*line-height: 1.8;*/line-height: 36px; }
-.introduceAboutUsArea P:not(:last-of-type){margin-bottom: 25px;}
+.introduceAboutUsArea P{margin-bottom: 25px;}
 
 /* 회사소개 - ABOUT TRIABEAUTY */
 .aboutTriaBeautyArea{height: 510px; display: flex; flex-direction: column; justify-content: flex-end; background: url(../images/introduce/AboutUs/aboutTriaBeautyBG.png) no-repeat center center; padding: 60px; box-sizing: border-box; border-radius: 50px; margin-bottom: 100px;}
@@ -20,33 +20,69 @@
 .introduceHistoryArea > div ul li{}
 .introduceHistoryArea > div ul li:not(:last-of-type){margin-bottom: 100px;}
 .introduceHistoryArea > div ul li figure{display: flex; justify-content: space-between;}
-.introduceHistoryArea > div ul li figure > div{}
-.introduceHistoryArea > div ul li figure > div img{border-radius: 50%;}
+.introduceHistoryArea > div ul li figure > div{margin-right: 10px;}
+/* .introduceHistoryArea > div ul li figure > div img{border-radius: 50%;} */
 .introduceHistoryArea > div ul li figure figcaption{width: 750px; display: flex; flex-direction: column; justify-content: space-between;}
 .introduceHistoryArea > div ul li figure figcaption div{}
+.introduceHistoryArea > div ul li figure figcaption div:first-of-type{}
+.introduceHistoryArea > div ul li figure figcaption div:first-of-type.active{height: 100px; overflow: hidden;}
 .introduceHistoryArea > div ul li figure figcaption div h4{font-size: 20px; font-weight: bold; margin-bottom: 20px;}
-.introduceHistoryArea > div ul li figure figcaption div p{font-size: 18px; font-weight: 300; color: #757575;}
-.introduceHistoryArea > div ul li figure figcaption div select{width: 100%; height: 60px; font-size: 14px; font-weight: 500; padding: 0 30px;}
+.introduceHistoryArea > div ul li figure figcaption div > div > *{font-size: 18px; font-weight: 300; color: #757575;}
+.introduceHistoryArea > div ul li figure figcaption div > div > h5{font-weight: bold;}
+.introduceHistoryArea > div ul li figure figcaption div > div > div{margin-bottom: 25px;}
+.introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea01 img{width: 100%;}
+.introduceHistoryArea > div ul li figure figcaption div button{width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; font-weight: 500; text-align: left; padding: 0 30px; border: 1px solid; background-color: white}
+.introduceHistoryArea > div ul li figure figcaption div button::after{content: ''; display: inline-block; width: 18px; height: 10px; background-image: url(../images/introduce/AboutUs/downIcon.jpg); background-repeat: no-repeat; background-position: center center;}
+.introduceHistoryArea > div ul li figure figcaption div button.active::after{background-image: url(../images/introduce/AboutUs/upIcon.jpg);}
 
 .introduceHistoryArea > div > p{font-size: 50px; line-height: 1.485; color: #757575; text-align: center;}
 
 @media screen and (max-width: 1100px){
+    .introduceHistoryArea > div ul li figure{flex-direction: column; align-items: center;}
+    .introduceHistoryArea > div ul li figure figcaption{width: 100%;}
+    .introduceHistoryArea > div ul li figure > div{margin-right: 0; margin-bottom: 50px;}
+    .introduceHistoryArea > div ul li figure figcaption div:first-of-type{margin-bottom: 10px;}
+    
 }
 
-@media screen and (max-width: 768px){
-    .aboutTriaBeautyArea{height: 910px; background: url(../images/m/introduce/introduceAboutUs/aboutTriaBeautyBG.png) no-repeat center top / cover;}
+@media screen and (max-width: 800px){
+    .aboutTriaBeautyArea{height: 910px; justify-content: flex-start; padding: 90px 40px;  background: url(../images/m/introduce/introduceAboutUs/aboutTriaBeautyBG.png) no-repeat center bottom / cover; }
     .introduceAboutUsArea P{font-size: 22px;}
     .aboutTriaBeautyArea p br:nth-of-type(2){display: none;}
 
-    .introduceAboutUsArea h2{font-size: 36px; margin-bottom: 70px;}
     .introduceAboutUsArea P{font-size: 24px;}
+    .introduceHistoryArea{padding-top: 70px; padding-bottom: 130px;}
+    .introduceHistoryArea > div h2{font-weight: bold; margin-bottom: 70px; border-bottom: 1px solid #dedede;}
     .introduceHistoryArea > div ul li figure{flex-direction: column; align-items: center;}
     .introduceHistoryArea > div ul li figure > div{margin-bottom: 50px;}
+    .introduceHistoryArea > div ul li figure > div img{width: 292px}
     .introduceHistoryArea > div ul li figure figcaption{width: 100%;}
-    .introduceHistoryArea > div ul li figure figcaption div h4{font-size: 24px; line-height: 40px;}
-    .introduceHistoryArea > div ul li figure figcaption div p{font-size: 24px;}
+    .introduceHistoryArea > div ul li figure figcaption div:first-of-type.active{height: 120px;}
+    .introduceHistoryArea > div ul li figure figcaption div h4{font-size: 24px; line-height: 1.6666; margin-bottom: 45px;}
+    .introduceHistoryArea > div ul li figure figcaption div p{font-size: 24px; line-height: 1.6666;}
+    .introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea img{width: 163px; height: 163px;}
+    .introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea01 img{width: 100%;}
+    .introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea02 img{width: 320px;}
+    .introduceHistoryArea > div ul li figure figcaption div button{font-size: 22px;}
+    
 
-    .introduceHistoryArea > div > p{font-size: 45px;}
+    .introduceHistoryArea > div > p{font-size: 45px; margin: 0;}
     .introduceHistoryArea > div > p br{display: none;}
 
+}
+@media screen and (max-width: 640px){
+    .aboutTriaBeautyArea{height: 142.1875vw; justify-content: flex-start; padding: 14.0625vw 6.25vw;   }
+    .medicalEquipmentArea{margin-bottom: 14.0625vw;}
+    .introduceAboutUsArea h2{font-size: 6.25vw; margin-bottom: 3.125vw;}
+    .introduceAboutUsArea P{font-size: 3.75vw;}
+
+    .introduceHistoryArea{padding-top: 10.9375vw; padding-bottom: 20.3125vw;}
+    .introduceHistoryArea > div h2{margin-bottom: 10.9375vw;}
+    .introduceHistoryArea > div ul li figure > div{margin-bottom: 7.8125vw;}
+    .introduceHistoryArea > div ul li figure > div img{width: 45.625vw;}
+    .introduceHistoryArea > div ul li figure figcaption div h4{font-size: 3.75vw; margin-bottom: 7.03125vw;}
+    .introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea img{width: 25.46875vw; height: 25.46875vw;}
+    .introduceHistoryArea > div ul li figure figcaption div > div > div.yearContentArea02 img{width: 50vw;}
+
+    .introduceHistoryArea > div > p{font-size: 7.03125vw;}
 }

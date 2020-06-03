@@ -6,7 +6,7 @@
 
 .mainTopBannerArea{height: 120px; background: url(../images/main/topBanner.png) no-repeat center center;}
 .mainTopBannerArea.active{display: none;}
-.mainTopBannerArea > div {height: 100%; width: 100%; max-width: 1720px; margin: 0 auto; display: flex; justify-content: flex-end; align-items: center; position: relative;}
+.mainTopBannerArea > div {height: 100%; width: calc(100% - 80px); max-width: 1720px; margin: 0 auto; display: flex; justify-content: flex-end; align-items: center; position: relative;}
 .mainTopBannerArea > div a{display: block;width: 100%; height: 100%;  }
 .mainTopBannerArea > div > .mainTopBannerBtn{width: 33px; height: 33px; background: url(../images/main/topBannerBtn.png) no-repeat center center; position: absolute; right: 0; top: 44px; z-index: 1; cursor: pointer;}
 
@@ -145,6 +145,7 @@ section > p{font-size: 20px; font-weight: 500; }
     .wiseChoiceArea ul li:nth-last-of-type(n+3){margin-bottom: 80px;}
     .wiseChoiceArea ul li figure figcaption h3{font-size: 22px;}
 
+    .videoArea{width: 100%; height: 330px; border-radius: 0;}
 
     .reviewArea{
         height: 1420px;
@@ -203,7 +204,7 @@ section > p{font-size: 20px; font-weight: 500; }
     .technologyArea ol li:nth-of-type(2) div:nth-of-type(2) img:nth-of-type(2){bottom: 0;}
     .technologyArea ol li:nth-of-type(3) div:nth-of-type(2) img:nth-of-type(2){right: 0; bottom: 0;}
 
-    .videoArea{}
+    .videoArea{height: 51.5625vw;}
 
     .wiseChoiceArea{margin-bottom: 17.1875vw;}
     .wiseChoiceArea h2{margin-bottom: 3.59375vw;}
@@ -216,7 +217,7 @@ section > p{font-size: 20px; font-weight: 500; }
     .wiseChoiceArea ul li figure figcaption p{font-size: 4.375vw;}
     .wiseChoiceArea ul li figure figcaption a::before{width: 3.28125vw; background-size: contain;}
 
-    .reviewArea{height: 221.875vw; background-size: 100vw, 171.875vw; margin-bottom: 21.875vw;}
+    .reviewArea{height: 221.875vw; background-size: 100vw, 171.875vw; margin-bottom: 21.875vw; background-position: center top, center bottom -145.3125vw;}
     .reviewArea .reviewContentsArea p{font-size: 6vw; margin-top: 13.28125vw; margin-bottom: 7.8125vw;}
     .reviewArea .reviewContentsArea .reviewSliderArea blockquote br{display: none;}
     .reviewArea .reviewContentsArea .reviewSliderArea blockquote::before, .reviewArea .reviewContentsArea .reviewSliderArea blockquote::after{width: 5.625vw;}
@@ -230,6 +231,7 @@ section > p{font-size: 20px; font-weight: 500; }
     .selfBeautyArea ul li span{margin-bottom: 1.5625vw;}
     .selfBeautyArea ul li h3{font-size: 3.75vw; margin-bottom: 4.6875vw;}
     .selfBeautyArea ul li p{font-size: 2.5vw; height: 9.375vw;}
+    .selfBeautyArea ul li img{border-top-left-radius:7.8125vw ; border-bottom-right-radius: 7.8125vw;}
 
     .instagramArea > div > div > div{padding-left: 6.25vw; max-width: 81.25vw; height: 28.125vw;}
     .instagramArea > div > div > div h2{font-size: 4.6875vw; margin-bottom: 0;}

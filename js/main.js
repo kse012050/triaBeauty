@@ -8,6 +8,9 @@ $(document).ready(function(){
     // 모바일 메뉴
     mobileMenu();
 
+    // 연혁 버튼
+    aboutUsButton();
+
 });
 
 function mainTopBannerBtn(){
@@ -76,10 +79,24 @@ function mobileMenu(){
     });
 
     $('header .menuArea .mobileMenuArea .hamburgerMenuArea').click(function(){
+        $(this).toggleClass('active');
         if($('header .menuArea > .menuContentsArea').hasClass('active')){
             $('header .menuArea > .menuContentsArea').removeClass('active');
         }else{
             $('header .menuArea > .menuContentsArea').addClass('active');
+        }
+    });
+}
+
+function aboutUsButton(){
+    var aboutUsButton =  $('.introduceHistoryArea > div ul li figure figcaption div button');
+    aboutUsButton.click(function(){
+        $(this).parent().prev().children().toggleClass('active');
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).html('read ress');
+        }else{
+            $(this).html('read more');
         }
     });
 }

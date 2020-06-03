@@ -69,16 +69,16 @@
     .cosmeticArea .cosmeticBanner01 > div div a::after{width: 20px; height: 20px; background-size: contain;}
     .cosmeticArea section:first-of-type h2 br{display: none;}
 
-    .cosmeticArea .calmingFormulaArea figure{flex-direction: column; justify-content: flex-end; align-items: center; position: relative;}
+    .cosmeticArea .calmingFormulaArea figure{flex-direction: column; justify-content: flex-end; align-items: center; position: relative; background: url(../images/m/introduce/cosmetic/calmingFormulaBG.png) no-repeat left center / cover;}
     .cosmeticArea .calmingFormulaArea figure > div{width: auto; position: absolute; top: -55px; right: 40px;}
     .cosmeticArea .calmingFormulaArea figure figcaption{order: 1; width: 100%;}
 
     .plantRecipeArea ul li{width: 100%;}
     .plantRecipeArea ul li figure img{display: block; margin: 0 auto; width: 250px; height: 250px; margin-bottom: 40px;}
-
     .introduceBannerArea > div{justify-content: center;}
     .cosmeticArea .cosmeticBanner02{height: 320px; background: url(../images/m/introduce/cosmetic/cosmeticBannerImg02.png) no-repeat center bottom / cover;}
     .cosmeticArea .cosmeticBanner02 > div > div{margin-bottom: 0;}
+    .cosmeticArea .cosmeticBanner02 > div > div > *{font-size: 22px; line-height: 1.6363;}
     
     .necessaryMomentArea ul{flex-wrap: wrap;}
     .necessaryMomentArea ul li{width: 100%;}
@@ -98,6 +98,7 @@
     .plantRecipeArea ul li figure img{width: 39.0625vw; height: 39.0625vw; margin-bottom: 6.25vw;}
 
     .cosmeticArea .cosmeticBanner02{height: 50vw;}
+    .cosmeticArea .cosmeticBanner02 > div > div > *{font-size: 3.4375vw;}
 
     .necessaryMomentArea ul li:not(:last-of-type){margin-bottom: 3.125vw;}
 

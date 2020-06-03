@@ -28,8 +28,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 소개 - 코스메틱 */
 .calmingFormulaArea,.plantRecipeArea,.necessaryMomentArea,
 /* 소개 - 여드름치료 */
-.acneCureArea .ourSkinlaArea,.acneCureArea .penetrationArea,.acneCureArea .portabilityArea,
-.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/
+.acneCureArea .ourSkinlaArea,.acneCureArea .portabilityArea,
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/.penetrationArea,
 /*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea, 
 /* 소개 - 레이저제모 , 피부개선 공통 */
 .introduceArea > ul,
@@ -97,14 +97,14 @@ header .mainSliderArea .mainSliderNavigationArea{width: 100%; max-width: 1760px;
 header .mainSliderArea .mainSliderNavigationArea div{color: black; width: 30px; height: 30px; background-color: white; border-radius: 100%;}
 header .mainSliderArea .mainSliderNavigationArea div::after{font-size: 10px; font-weight: bold;}
 header .mainSliderArea .mainSliderNavigationArea .swiper-button-prev{left: auto; right: 60px;}
-header .menuArea .shoppingBasketIcon{ font-size: 14px; font-weight: bold; padding: 60px 0; padding-left: 37px; background: url(../images/main/shoppingBasketIcon.png) no-repeat center left;right: 230px; top: 0;}
+header .menuArea .shoppingBasketIcon{ font-size: 14px; font-weight: bold; padding: 20px 0; padding-left: 37px; background: url(../images/main/shoppingBasketIcon.png) no-repeat center left;right: 230px; top: 0;}
 
 /* sub header 공통*/
 .subHeader{background-repeat: no-repeat; background-position: center center; height: 400px; display: flex; flex-direction: column; justify-content: center;}
 .subHeader h2{font-size: 80px; font-weight: 100; line-height: 1.25;  color: white; }
 
 /* sub header 소개*/
-.indroduceSubHeader{background-image: url(../images/indroduce/subHeaderBG.png);}
+.introduceSubHeader{background-image: url(../images/introduce/subHeaderBG.png);}
 /* sub header 소식*/
 .newsSubHeader{background-image: url(../images/news/subHeaderBG.png); }
 
@@ -182,11 +182,16 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 
 
     header .menuArea{justify-content: space-between; align-items: center;}
-    header .menuArea .mobileMenuArea{display: block;}
-    header .menuArea .mobileMenuArea .hamburgerMenuArea{width: 45px;}
-    header .menuArea .mobileMenuArea .hamburgerMenuArea span{display: block; height: 3px; background-color: black;}
+    header .menuArea .mobileMenuArea{display: flex; align-items: center;}
+    header .menuArea .mobileMenuArea .shoppingBasketIcon{background-size: 35px; padding-left: 55px;}
+    header .menuArea .mobileMenuArea .shoppingBasketIcon span{font-size: 22px; font-weight: bold; display: flex; justify-content: center; align-items: center; width: 42px; height: 42px; background-color: black; color: white; border-radius: 100%;}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea{width: 45px; margin-left: 40px;}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea span{display: block; height: 3px; background-color: black; transition: 0.5s;}
     header .menuArea .mobileMenuArea .hamburgerMenuArea span:not(:last-of-type){margin-bottom: 14px;}
     header .menuArea .mobileMenuArea .hamburgerMenuArea span:nth-of-type(2){width: 35px; margin-left: auto;}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea.active span:nth-of-type(1){transform: translateY(17px) rotate(45deg);}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea.active span:nth-of-type(2){opacity: 0; transition: 0.1s;}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea.active span:nth-of-type(3){transform: translateY(-17px) rotate(135deg);}
     header .menuArea > .menuContentsArea{position: absolute; top: 130px; left: 0; z-index: 10; width: 100%; background-color: white; flex-direction: column; display: none;}
     header .menuArea > .menuContentsArea.active{display: flex;}
     header .menuArea > .menuContentsArea >.menuBgArea{display: none;}
@@ -215,6 +220,12 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 800px){
+    .productCompositionArea h2{width: calc(100% - 80px);}
+    .productCompositionArea{width: 100%;}
+
+    /* .acneCureArea .productCompositionArea h2{width: calc(100% - 80px); margin: 0 auto; margin-bottom: 40px;} */
+    /* .acneCureArea .productCompositionArea{width: 100%;} */
+
     .basicBtn{font-size: 30px; width: 325px; line-height: 100px;}
 
 
@@ -229,6 +240,9 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
     .QnAArea ul li h3{font-size: 22px; line-height: 1.5454; padding-right: 53px; padding-left: 40px; box-sizing: border-box; letter-spacing: -1px;}
     .QnAArea ul li h3::after{right: 40px;}
     .QnAArea ul li div{font-size: 22px;}
+
+
+    body > div > hr{margin-top: 140px;}
 }
 
 @media screen and (max-width: 640px){
@@ -238,7 +252,7 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 {width: calc(100% - 12.5vw);}
 /* 컨텐츠 크기 지정 width 1200px*/
 /* 메인 */
-header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul, 
+header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul, .mainTopBannerArea > div,
 /* 회원가입 */
 .singUpArea,
 /* 로그인 */
@@ -255,21 +269,21 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .newsNoticeArea, .newsNoticeContentsArea,
 /* 소개 공통 */
 .introduceArea section:first-of-type,.introduceBannerArea > div,.introduceArea .indroduceFigureArea,.characteristicArea,
-.productCompositionArea,
+.productCompositionArea h2,.introduceArea figure + .introduceSubContentsArea,
 /* 소개 - 회사소개 */
 .aboutTriaBeautyArea,.medicalEquipmentArea,.introduceHistoryArea > div,
 /* 소개 - 코스메틱 */
 .cosmeticArea .calmingFormulaArea h2,.plantRecipeArea,.necessaryMomentArea,
 /* 소개 - 여드름치료 */
-.acneCureArea .ourSkinlaArea,.acneCureArea .penetrationArea,.acneCureArea .portabilityArea,
-.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/
-/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea, 
+.acneCureArea .ourSkinlaArea h2,.acneCureArea .ourSkinlaArea figure figcaption, .acneCureArea .portabilityArea,
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea h2, .acneCureArea .recommendationArea figure figcaption,/*.acneCureArea .characteristicArea,*/
+/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea h2, 
 /* 소개 - 레이저제모 , 피부개선 공통 */
-.introduceArea > ul,
+.introduceArea > ul,.heatEnergyArea01 h2,.heatEnergyArea01 figure figcaption,
 /* 소개 - 레이저제모 */
 .heatEnergyArea02,.laserArea .laserRecommendationArea,
 /* 소개 - 피부개선 */
-.SkinArea .skinRecommendationArea ,
+.SkinArea .skinRecommendationArea ,.introduceFigureArea h2, .introduceFigureArea figure figcaption,
 /* 고객센터 */
 .serviceCenterArea,
 /* 공통 */
@@ -277,17 +291,28 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
  footer
 {width: calc(100% - 12.5vw); margin: 0 auto; }
 
+.productCompositionArea,
+.acneCureArea .productCompositionArea,
+.acneCureArea .ourSkinlaArea,
+.penetrationArea,
+.acneCureArea .recommendationArea{width: 100%;}
+
+.acneCureArea .productCompositionArea h2{margin-bottom: 5.625vw;}
+.acneCureArea .ourSkinlaArea h2,.acneCureArea .recommendationArea h2{margin-bottom: 6.25vw;}
 
 .basicBtn{font-size: 4.6875vw; width: 50.78125vw; line-height: 15.625vw;}
-
+.subHeader{height: 62.5vw;}
+.subHeader h2{font-size: 12.5vw; text-align: center;}
 
     /* header 메뉴 */
     /* 로고 */
     header .menuArea h1{width: 22vw; height: 20vw;}
     header .menuArea > .menuContentsArea{top: 20vw;}
     
+    header .menuArea .mobileMenuArea .shoppingBasketIcon{background-size: 5.46875vw; padding-left: 8.59375vw;}
+    header .menuArea .mobileMenuArea .shoppingBasketIcon span{font-size: 3.4375vw; width: 6.5625vw; height: 6.5625vw;}
     /* 햄버거 메뉴 */
-    header .menuArea .mobileMenuArea .hamburgerMenuArea{width: 7vw;}
+    header .menuArea .mobileMenuArea .hamburgerMenuArea{width: 7vw; margin-left: 6.25vw;}
     header .menuArea > .menuContentsArea .loginArea ul li:not(:first-of-type){margin-bottom: 2.187vw}
     header .menuArea .mobileMenuArea .hamburgerMenuArea span:nth-of-type(2){width: 5.4687vw}
 
@@ -306,5 +331,7 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
     .QnAArea ul li h3{font-size: 3.4375vw; padding-right: 8.28125vw; padding-left: 6.25vw; box-sizing: border-box; letter-spacing: -0.15625vw;}
     .QnAArea ul li h3::after{right: 6.25vw;}
     .QnAArea ul li div{font-size: 3.4375vw;}
+
+    body > div > hr{margin-top: 21.875vw;}
     
 }
