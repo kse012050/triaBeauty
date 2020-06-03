@@ -100,7 +100,7 @@
 @media screen and (max-width: 800px){
 
     .orderCompletedArea{width: 100%;}
-    .orderCompletedArea .paymentProgressArea h2,
+    .paymentProgressArea h2,
     .orderCompletedMessageArea,
     .orderInformationArea h2,
     .orderProductInformationTitleArea p,
@@ -144,7 +144,7 @@
 }
 
 @media screen and (max-width: 640px){
-    .orderCompletedArea .paymentProgressArea h2,
+    .paymentProgressArea h2,
     .orderCompletedMessageArea,
     .orderInformationArea h2,
     .orderProductInformationTitleArea p,

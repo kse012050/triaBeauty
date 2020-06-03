@@ -106,9 +106,34 @@
 
 @media screen and (max-width: 1280px){
     .paymentProgressArea ul li.progressIcon::before{left: -7.91666vw;}
+    .priceArea > div::before{left: -13.75vw;}
+}
+
+@media screen and (max-width: 1100px){
+    .orderListTitleArea ul{display: none;}
+    .orderListArea fieldset > div{flex-wrap: wrap;}
+    .orderListArea fieldset > div > div:nth-of-type(1){width: 55px;}
+    .orderListArea fieldset > div > div:nth-of-type(2){width: calc(100% - 415px); padding: 0;}
+    .orderListArea fieldset > div > div:nth-of-type(3){width: 90px; margin-right: 20px}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div{width: auto; }
+    .orderListArea fieldset > div > div:nth-of-type(3) > button{width: 100%; height: 30px;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div *{width: 30px; height: 30px; flex-basis: auto; border: 1px solid #ebebeb; box-sizing: border-box;} 
+    .orderListArea fieldset > div > div:nth-of-type(4){display: none;}
+    .orderListArea fieldset > div > div:nth-of-type(5){width: 150px; flex-direction: row; justify-content: space-between;}
+    .orderListArea fieldset > div > div:nth-of-type(5)::before{content: '합계 : '; display: inline-block; font-size: 17px; font-weight: 400;}
+    .orderListArea fieldset > div > div:nth-of-type(6){width: 80px; margin-left: 20px;}
+
+    .productPriceArea{flex-direction: column; align-items: flex-end;}
+    .productPriceArea > p{margin-bottom: 10px;}
 }
 
 @media screen and (max-width: 800px){
+    .shoppingBasketArea{width: 100%;}
+    /* .paymentProgressArea h2 */
+    .orderListTitleArea p, .productManagementArea,.shoppingBasketFinalArea{width: calc(100% - 80px); margin-left: auto; margin-right: auto;}
+
+    .orderListTitleArea p{font-size: 30px; line-height: 1; margin-bottom: 30px;}
+
     /* 결제 금액 */
     .priceArea{padding: 40px 0 25px 0; border-left: none; border-right: none; margin-bottom: 120px;}
     .priceArea > div{width: calc(100% - 80px); margin: 0 auto;}
@@ -122,10 +147,59 @@
     .priceArea > div:last-of-type{padding-top: 35px; border-top: 1px solid #cccccc;}
     .priceArea > div:last-of-type p{font-size: 34px;}
 
+
+    .orderListTitleArea h2{font-size: 22px; padding: 23px 40px;}
+    .orderListArea fieldset > div{padding: 30px 0 50px;}
+    .orderListArea fieldset > div > div:nth-of-type(1){width: 55px; margin-left: 40px;}
+    .orderListArea fieldset > div > div:nth-of-type(2){width: calc(100% - 95px); align-items: flex-start; margin-bottom: 30px;}
+    .orderListArea fieldset > div > div:nth-of-type(2) img{width: 125px; height: 125px; margin-right: 20px;}
+    .orderListArea fieldset > div > div:nth-of-type(2) div *{font-size: 22px;}
+    .orderListArea fieldset > div > div:nth-of-type(2) div h4{margin-top: 5px; margin-bottom: 15px;}
+    .orderListArea fieldset > div > div:nth-of-type(3){width: 100%; flex-direction: row; justify-content: flex-start; margin-left: 95px; margin-bottom: 30px;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div{margin-bottom: 0; margin-right: 10px;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div *{width: 60px; height: 60px;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > button{width: 115px; height: 60px;}
+    .orderListArea fieldset > div > div:nth-of-type(5){width: 100%; padding: 28px 40px; border-top: 1px solid #f2f2f2; margin-bottom: 7px;}
+    .orderListArea fieldset > div > div:nth-of-type(5) h5{font-size: 34px;}
+    .orderListArea fieldset > div > div:nth-of-type(5)::before{content: '합계'; font-size: 22px;}
+    .orderListArea fieldset > div > div:nth-of-type(6){width: 100%; flex-direction: row; justify-content: flex-end; margin-right: 40px;}
+    .orderListArea fieldset > div > div:nth-of-type(6) button{width: 115px; height: 60px;}
+    .orderListArea fieldset > div > div:nth-of-type(6) button:not(:first-of-type){margin-left: 10px;}
+
+    .productPriceArea{padding: 30px 40px 45px; margin-bottom: 30px;}
+    .productPriceArea > p{font-size: 20px; margin-bottom: 45px; letter-spacing: -1px;}
+    .productPriceArea > div{flex-wrap: wrap; justify-content: flex-end;}
+    .productPriceArea > div {font-size: 20px;}
+    .productPriceArea > div > p{font-size: 34px; width: 100%; text-align: right; margin-top: 15px;}
+    .productPriceArea > div > p > span{font-weight: 500;}
+
+    .productManagementArea{}
+    .productManagementArea *{font-size: 22px; }
+    .productManagementArea button{padding: 17px 10px; letter-spacing: -1.5px;}
+    .productManagementArea > div:first-of-type button{padding: 17px 26px;}
+
+    .shoppingBasketArea .priceArea{margin-bottom: 40px;}
+
+    .shoppingBasketFinalArea{flex-direction: column; }
+    .shoppingBasketFinalArea > a{order: 1; font-size: 22px; padding: 18px 30px; align-self: center;}
+    .shoppingBasketFinalArea div{margin-bottom: 40px;}
+    .shoppingBasketFinalArea div input{width: calc(50% - 5px); font-size: 30px; height: 100px;}
+
+    /* 이용안내 */
+    .informationUseArea{padding: 40px 40px 0;}
+    .informationUseArea > h2{font-size: 30px; margin-bottom: 45px;}
+    .informationUseArea *:not(h2){font-size: 20px; line-height: 1.5;}
+    .informationUseArea > h3{margin-bottom: 40px;}
+
 }
 
 @media screen and (max-width: 640px){
-    .priceArea > div{width: calc(100% - 12.5vw);}
+    .priceArea > div,
+    .paymentProgressArea h2,
+    .orderListTitleArea p, .productManagementArea,.shoppingBasketFinalArea{width: calc(100% - 12.5vw);}
+    
+    .orderListTitleArea p{font-size:4.6875vw;  margin-bottom: 4.6875vw;}
+
     /* 결제 진행 golbal */
     .paymentProgressArea h2{font-size: 6.25vw; margin-bottom: 6.25vw;}
     .paymentProgressArea ul{padding: 7.03125vw 0; margin-bottom: 8.59375vw;}
@@ -143,5 +217,46 @@
     .priceArea > div:not(:last-of-type) p{font-size: 4.0625vw;}
     .priceArea > div:last-of-type{padding-top: 5.46875vw;}
     .priceArea > div:last-of-type p{font-size: 5.3125vw;}
+
+    /* 주문리스트 */
+    .orderListTitleArea h2{font-size: 3.4375vw; padding: 3.59375vw 6.25vw;}
+    .orderListArea fieldset > div{padding: 4.6875vw 0 7.8125vw;}
+    .orderListArea fieldset > div > div:nth-of-type(1){width: 8.59375vw; margin-left: 6.25vw;}
+    .orderListArea fieldset > div > div:nth-of-type(2){width: calc(100% - 14.84375vw);  margin-bottom: 4.6875vw;}
+    .orderListArea fieldset > div > div:nth-of-type(2) img{width: 19.53125vw; height: 19.53125vw; margin-right: 3.125vw;}
+    .orderListArea fieldset > div > div:nth-of-type(2) div *{font-size: 3.4375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(2) div h4{margin-top: 0.78125vw; margin-bottom: 2.34375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(3){  margin-left: 14.84375vw; margin-bottom: 4.6875vw;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div{ margin-right: 1.5625vw;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > div *{width: 9.375vw; height: 9.375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(3) > button{width: 17.96875vw; height: 9.375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(5){ padding: 4.375vw 6.25vw;  margin-bottom: 1.09375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(5) h5{font-size: 5.3125vw;}
+    .orderListArea fieldset > div > div:nth-of-type(5)::before{content: '합계'; font-size: 3.4375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(6){  margin-right: 6.25vw;}
+    .orderListArea fieldset > div > div:nth-of-type(6) button{width: 17.96875vw; height: 9.375vw;}
+    .orderListArea fieldset > div > div:nth-of-type(6) button:not(:first-of-type){margin-left: 1.5625vw;}
+
+    .productPriceArea{padding: 4.6875vw 6.25vw 7.03125vw; margin-bottom: 4.6875vw;}
+    .productPriceArea > p{font-size: 3.125vw; margin-bottom: 7.03125vw; }
+    .productPriceArea > div {font-size: 3.125vw;}
+    .productPriceArea > div > p{font-size: 5.3125vw; margin-top: 2.34375vw;}
+
+    .productManagementArea{}
+    .productManagementArea *{font-size: 3.4375vw; }
+    .productManagementArea button{padding: 2.65625vw 1.5625vw; }
+    .productManagementArea > div:first-of-type button{padding: 2.65625vw 4.0625vw;}
+
+    .shoppingBasketArea .priceArea{margin-bottom: 6.25vw;}
+
+    .shoppingBasketFinalArea > a{font-size: 3.4375vw; padding: 2.8125vw 4.6875vw; }
+    .shoppingBasketFinalArea div{margin-bottom: 6.25vw;}
+    .shoppingBasketFinalArea div input{width: calc(50% - 0.78125vw); font-size: 4.6875vw; height: 15.625vw;}
+
+    /* 이용안내 */
+    .informationUseArea{padding: 6.25vw 6.25vw 0;}
+    .informationUseArea > h2{font-size: 4.6875vw; margin-bottom: 7.03125vw;}
+    .informationUseArea *:not(h2){font-size: 3.125vw;}
+    .informationUseArea > h3{margin-bottom: 6.25vw;}
 }
 

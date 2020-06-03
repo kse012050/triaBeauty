@@ -11,7 +11,10 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 로그인 */
 .loginArea,
 /* 장바구니 */
-.paymentProgressArea,.orderListTitleArea,.orderListArea,.shoppingBasketArea,
+/* .paymentProgressArea, */
+/* .orderListTitleArea, */
+/* .orderListArea, */
+.shoppingBasketArea,
 /* 주문완료 */
 .orderCompletedArea,
 /* 이용약관 , */
@@ -267,7 +270,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 로그인 */
 .loginArea,
 /* 장바구니 */
-.paymentProgressArea,.orderListTitleArea,.orderListArea,.shoppingBasketArea,
+/* .paymentProgressArea,.orderListTitleArea,.orderListArea, */
+.shoppingBasketArea,
 /* 주문완료 */
 .orderCompletedArea,
 /* 이용약관 , */
