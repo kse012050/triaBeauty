@@ -1,10 +1,12 @@
 /* 결제 진행 golbal */
-.paymentProgressArea h2{margin-bottom: 40px;}
+.paymentProgressArea h2{font-size: 40px; margin-bottom: 40px;}
 .paymentProgressArea ul{display: flex; justify-content: center; padding: 45px 0; background-color: #f7f7f7; margin-bottom: 55px;}
 .paymentProgressArea ul li{text-align: center;}
 .paymentProgressArea ul li:not(:last-of-type){margin-right: 12.5%;}
 .paymentProgressArea ul li img{margin-bottom: 25px;}
-.paymentProgressArea ul li p{font-size: 18px;}
+.paymentProgressArea ul li p{font-size: 18px; font-weight: 600;}
+.paymentProgressArea ul li.progressIcon{position: relative;}
+.paymentProgressArea ul li.progressIcon::before{content: ''; display: inline-block; width: 36px; height: 100%; position: absolute; left: -95px; top: 0; background: url(../images/paymentProgress/progressIcon.png) no-repeat center center / contain;}
 
 /* 진행 상황 글씨 색상 */
 .paymentProgressArea ul li:not(:first-of-type) p{color: #acacac; }
@@ -77,6 +79,7 @@
 .priceArea{display: flex; justify-content: space-around; text-align: center; border: 3px solid; padding: 52px 0; margin-bottom: 20px;}
 .priceArea h3, .priceArea h2{font-size: 16px; font-weight: 500; margin-bottom: 15px;}
 .priceArea p{font-size: 25px; font-weight: bold;}
+.priceArea p span{font-weight: bold;}
 .priceArea > div{position: relative;}
 .priceArea > div::before{content: ''; display: block; width: 30px; height:100%; background-image: url(../images/paymentProgress/plusIcon.png); background-repeat: no-repeat; background-position: center center; position: absolute; left: -165px; top: 0;}
 .priceArea > div:first-of-type::before{display: none;}
@@ -100,4 +103,45 @@
 .informationUseArea > ol:not(:last-of-type){margin-bottom: 30px;}
 .informationUseArea > h3{font-weight: 500;}
 
+
+@media screen and (max-width: 1280px){
+    .paymentProgressArea ul li.progressIcon::before{left: -7.91666vw;}
+}
+
+@media screen and (max-width: 800px){
+    /* 결제 금액 */
+    .priceArea{padding: 40px 0 25px 0; border-left: none; border-right: none; margin-bottom: 120px;}
+    .priceArea > div{width: calc(100% - 80px); margin: 0 auto;}
+    .priceArea > div::before{display: none;}
+    .priceArea{flex-direction: column;}
+    .priceArea > div{display: flex; justify-content: space-between; align-items: center;}
+    .priceArea h3, .priceArea h2{font-size: 22px; margin: 0;}
+    .priceArea h3{color: #747474;}
+    .priceArea > div:not(:last-of-type){margin-bottom: 25px;}
+    .priceArea > div:not(:last-of-type) p{font-size: 26px; font-weight: bold;}
+    .priceArea > div:last-of-type{padding-top: 35px; border-top: 1px solid #cccccc;}
+    .priceArea > div:last-of-type p{font-size: 34px;}
+
+}
+
+@media screen and (max-width: 640px){
+    .priceArea > div{width: calc(100% - 12.5vw);}
+    /* 결제 진행 golbal */
+    .paymentProgressArea h2{font-size: 6.25vw; margin-bottom: 6.25vw;}
+    .paymentProgressArea ul{padding: 7.03125vw 0; margin-bottom: 8.59375vw;}
+    .paymentProgressArea ul li.progressIcon::before{width: 5.625vw;}
+    .paymentProgressArea ul li img{width: 6.5625vw; height: 6.5625vw; margin-bottom: 3.90625vw;}
+    .paymentProgressArea ul li p{font-size: 2.8125vw;}
+
+
+    /* 결제 금액 */
+    .priceArea{padding: 6.25vw 0 3.90625vw 0; border-left: none; border-right: none; margin-bottom: 18.75vw;}
+    .priceArea > div{width: calc(100% - 12.5vw);}
+    .priceArea h3, .priceArea h2{font-size: 3.4375vw; }
+    .priceArea h3{color: #747474;}
+    .priceArea > div:not(:last-of-type){margin-bottom: 3.90625vw;}
+    .priceArea > div:not(:last-of-type) p{font-size: 4.0625vw;}
+    .priceArea > div:last-of-type{padding-top: 5.46875vw;}
+    .priceArea > div:last-of-type p{font-size: 5.3125vw;}
+}
 
