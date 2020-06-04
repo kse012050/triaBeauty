@@ -35,9 +35,13 @@
 
 
 /* 주문 리스트 */
-.shoppingBasketArea input[type='checkbox']{display: none;}
-.shoppingBasketArea input[type='checkbox'] + label{display: inline-block; width: 15px; height: 15px; border: 1px solid #e5e5e5;}
-.shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/paymentProgress/CKBtn.png) no-repeat center /cover;}
+/* .shoppingBasketArea input[type='checkbox']{display: none;} */
+/* .shoppingBasketArea input[type='checkbox'] + label{display: inline-block; width: 15px; height: 15px; border: 1px solid #e5e5e5;} */
+/* .shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/paymentProgress/CKBtn.png) no-repeat center /cover;} */
+input[type='checkbox']{display: none;}
+input[type='checkbox'] + label{display: inline-block; width: 15px; height: 15px; border: 1px solid #e5e5e5;}
+input[type='checkbox']:checked + label{background: url(../images/paymentProgress/CKBtn.png) no-repeat center /cover;}
+
 
 .orderListArea{}
 .orderListArea fieldset > div{display: flex; flex-wrap: nowrap; padding: 15px 0; border-bottom: 1px solid #f2f2f2;}
@@ -140,8 +144,11 @@
 
     .orderListTitleArea p{font-size: 30px; line-height: 1; margin-bottom: 30px;}
 
-    .shoppingBasketArea input[type='checkbox'] + label{width: 40px; height: 40px;}
-    .shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/m/shoppingBasket/CKBtn.png) no-repeat center /cover;}
+    /* .shoppingBasketArea input[type='checkbox'] + label{width: 40px; height: 40px;} */
+    /* .shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/m/shoppingBasket/CKBtn.png) no-repeat center /cover;} */
+
+    input[type='checkbox'] + label{width: 40px; height: 40px;}
+    input[type='checkbox']:checked + label{background: url(../images/m/shoppingBasket/CKBtn.png) no-repeat center /cover;}
 
     /* 결제 금액 */
     .priceArea{padding: 40px 0 25px 0; border-left: none; border-right: none; margin-bottom: 120px;}
@@ -210,6 +217,9 @@
     .orderListTitleArea p, .productManagementArea,.shoppingBasketFinalArea{width: calc(100% - 12.5vw);}
     
     .orderListTitleArea p{font-size:4.6875vw;  margin-bottom: 4.6875vw;}
+
+    /* .shoppingBasketArea input[type='checkbox'] + label{width: 6.25vw; height: 6.25vw;} */
+    input[type='checkbox'] + label{width: 6.25vw; height: 6.25vw;}
 
     /* 결제 진행 golbal */
     .paymentProgressArea h2{font-size: 6.25vw; margin-bottom: 6.25vw;}

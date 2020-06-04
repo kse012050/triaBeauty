@@ -141,6 +141,9 @@
     .orderProductInListArea .shoppingBasketFinalArea div{ display: flex;}
     .orderProductInListArea .shoppingBasketFinalArea div > *{flex: 1; font-size: 22px; font-weight: 400; height: 60px;}
     .orderProductInListArea .shoppingBasketFinalArea div > *:not(:first-child){margin: 0;}
+
+
+    .shoppingBasketFinalArea.OCSBArea div{margin-bottom: 0;}
 }
 
 @media screen and (max-width: 640px){
