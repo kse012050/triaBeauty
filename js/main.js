@@ -11,6 +11,8 @@ $(document).ready(function(){
     // 연혁 버튼
     aboutUsButton();
 
+    TOPBtn();
+
 });
 
 function mainTopBannerBtn(){
@@ -98,5 +100,20 @@ function aboutUsButton(){
         }else{
             $(this).html('read more');
         }
+    });
+}
+
+function TOPBtn(){
+    $(window).scroll(function(){
+        console.log($(document).scrollTop());
+        if($('section').eq(0).offset().top < $(document).scrollTop()){
+            $('.TOPBtn').addClass('active');
+        }else{
+            $('.TOPBtn').removeClass('active');
+        }
+    });
+
+    $('.TOPBtn').click(function(){
+        $('html,body').animate({scrollTop:'0'},1000);
     });
 }

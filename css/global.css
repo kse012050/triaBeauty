@@ -120,7 +120,8 @@ header .menuArea .shoppingBasketIcon{ font-size: 14px; font-weight: bold; paddin
 
 
 /* footer */
-
+.TOPBtn{position: fixed; right: 70px; bottom: 70px; display: none; cursor: pointer;}
+.TOPBtn.active{display: block;}
 body > div > hr{margin: 0; border: none; height: 1px; background-color:#e5e5e5; margin-top: 280px;}
 footer{padding-top: 60px;}
 footer > div:first-of-type{ margin-bottom: 45px;}
@@ -236,6 +237,8 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 800px){
+    .TOPBtn{}
+    
     .navigationArea{font-size: 22px;}
 
     .productCompositionArea h2,.introduceFigureArea h2, .introduceFigureArea figure figcaption{width: calc(100% - 80px); margin: 0 auto;}
@@ -265,10 +268,12 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 640px){
+    .TOPBtn{width: 10.9375vw; bottom: 10.9375vw; right: 10.9375vw;}
+
     .navigationArea{font-size: 3.4375vw; margin:4.6875vw auto 9.0625vw auto;}
 
 /* 컨텐츠 최대 크기 지정 width 1760px*/
-.mainTopBannerArea > a > div, header.mainHeader .menuArea, .videoArea , footer.mainFooter 
+.mainTopBannerArea > a > div, header.mainHeader .menuArea, .videoArea , footer.mainFooter ,header .menuArea > .menuContentsArea >nav
 {width: calc(100% - 12.5vw);}
 /* 컨텐츠 크기 지정 width 1200px*/
 /* 메인 */
