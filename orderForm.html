@@ -69,14 +69,14 @@
         <div class="orderFormArea">
             <section class="paymentProgressArea">
                 <h2>
-                    장바구니
+                    주문서 작성
                 </h2>
                 <ul>
                     <li>
                         <img src="images/paymentProgress/shoppingBasketIcon.png" alt="장바구니 icon">
                         <p>장바구니</p>
                     </li>
-                    <li>
+                    <li class="progressIcon">
                         <img src="images/paymentProgress/orderFormCKIcon.png" alt="주문서 작성 icon">
                         <p>주문서 작성</p>
                     </li>
@@ -268,7 +268,7 @@
                 </section>    
                 
 
-                <section class="orderInformationArea oderShippingInformationArea">
+                <section class="orderInformationArea oderShippingInformationArea deliveryArea">
                     <h2>배송 정보</h2>
                     <ul>
                         <li>
@@ -462,6 +462,44 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <div class="tableArea">
+                                        <div>
+                                            <h4>목적</h4>
+                                            <ol>
+                                                <li>
+                                                    ① 회원관리: 서비스 이용에 따른 본인확인, 개인식별, 불량 회원의 부정 이용 방지와 
+                                                    비인가 사용방지, 가입의사 확인, 연령확인, 불만처리, 고지사항 전달
+                                                </li>
+                                                <li>
+                                                    ② 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금 정산: 구매 및 요금 결제, 
+                                                    물품배송 또는 청구서 등 발송, 금융거래 본인인증 및 금융 서비스, 요금추심</li>
+                                                <li>
+                                                    ③ 마케팅 및 광고에 활용: 신규 제품(서비스) 개발 및 특화, 이벤트 등 광고성 정보 전달, 
+                                                    접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div>
+                                            <h4>항복</h4>
+                                            <ul>
+                                                <li>
+                                                    - 필수: 이름, ID(이메일주소), 비밀번호, 성별, 생년월일, 주소, 핸드폰 번호, 
+                                                    이메일 주소
+                                                </li>
+                                                <li>
+                                                    - 선택: 피부타입, 제품에 대한 관심도, 디바이스 소유 여부
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>보존기간</h4>
+                                            <ul>
+                                                <li>
+                                                    법령에 따른 보존기간
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -486,8 +524,8 @@
 
                 <div class="shoppingBasketFinalArea">
                     <div>
-                        <input type="button"" value="전체상품주문">
-                        <input type="button" value="선택상품주문">
+                        <input type="button"" value="결제하기">
+                        <input type="button" value="이전페이지">
                     </div>
                 </div>
             </form>

@@ -74,8 +74,10 @@
                     <li>
                         <label class="requiredInput" for="userId">아이디</label>
                         <div>
-                            <input type="text" id="userId">
-                            <button class="doubleCheckBtn">중복확인</button>
+                            <div>
+                                <input type="text" id="userId">
+                                <button class="doubleCheckBtn">중복확인</button>
+                            </div>
                             <div>
                                 <span class="requiredColor">필수 입력 사항입니다.</span>
                                 <span>※ 아이디는 4~12자 사이의 영문자,숫자를 입력해 주세요.</span>
@@ -84,7 +86,9 @@
                     </li>
                     <li>
                         <label class="requiredInput" for="userName">이름</label>
-                        <input type="text" id="userName">
+                        <div>
+                            <input type="text" id="userName">
+                        </div>
                     </li>
                     <li>
                         <label class="requiredInput" for="userPw">비밀번호</label>
@@ -106,12 +110,14 @@
                     </li>
                     <li>
                         <label class="requiredInput" for="userYear">생년월일</label>
-                        <input type="number" id="userYear" value="1990" >
-                        <span>년</span>
-                        <input type="number" id="userMonth" value="1" min="1" max="12">
-                        <span>월</span>
-                        <input type="number" id="userWork" value="10" min="1" max="30">
-                        <span>일</span>
+                        <div>
+                            <input type="number" id="userYear" value="1990" >
+                            <span>년</span>
+                            <input type="number" id="userMonth" value="1" min="1" max="12">
+                            <span>월</span>
+                            <input type="number" id="userWork" value="10" min="1" max="30">
+                            <span>일</span>
+                        </div>
                     </li>
                     <li>
                         <label class="requiredInput" for="genderWoman">성별</label>
@@ -124,20 +130,22 @@
                     </li>
                     <li>
                         <label class="requiredInput" for="userEmail">이메일</label>
-                        <input type="text" id="userEmail">
-                        <span>@</span>
-                        <input type="text">
-                        <select name="" id="userMail">
-                            <option value="">선택</option>
-                            <optgroup label="선택">
-                                <option value="naver.com">naver</option>
-                                <option value="gmail.com">gmail</option>
-                                <option value="nate.com">nate</option>
-                                <option value="daum.net">daum</option>
-                                <option value="hotmail.com">msn</option>
-                            </optgroup>
-                        </select>
-                        <button class="doubleCheckBtn">중복확인</button>
+                        <div>
+                            <input type="text" id="userEmail">
+                            <span>@</span>
+                            <input type="text">
+                            <select name="" id="userMail">
+                                <option value="">선택</option>
+                                <optgroup label="선택">
+                                    <option value="naver.com">naver</option>
+                                    <option value="gmail.com">gmail</option>
+                                    <option value="nate.com">nate</option>
+                                    <option value="daum.net">daum</option>
+                                    <option value="hotmail.com">msn</option>
+                                </optgroup>
+                            </select>
+                            <button class="doubleCheckBtn">중복확인</button>
+                        </div>
                     </li>
                     <li>
                         <label class="requiredInput" for="">휴대폰</label>
@@ -177,7 +185,7 @@
                         </div>
                     </li>
                     <li>
-                        <label for="">이메일수신여부</label>
+                        <label for="">이메일 수신여부</label>
                         <div>
                             <input type="radio" name="emailReception">
                             <label for="">예</label>

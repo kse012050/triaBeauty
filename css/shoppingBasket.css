@@ -7,6 +7,7 @@
 .paymentProgressArea ul li p{font-size: 18px; font-weight: 600;}
 .paymentProgressArea ul li.progressIcon{position: relative;}
 .paymentProgressArea ul li.progressIcon::before{content: ''; display: inline-block; width: 36px; height: 100%; position: absolute; left: -95px; top: 0; background: url(../images/paymentProgress/progressIcon.png) no-repeat center center / contain;}
+.paymentProgressArea ul li:not(:first-of-type).progressIcon p{color: black;}
 
 /* 진행 상황 글씨 색상 */
 .paymentProgressArea ul li:not(:first-of-type) p{color: #acacac; }
@@ -128,7 +129,7 @@
 }
 
 @media screen and (max-width: 800px){
-    .shoppingBasketArea{width: 100%;}
+    .shoppingBasketArea,.orderFormArea{width: 100%;}
     /* .paymentProgressArea h2 */
     .orderListTitleArea p, .productManagementArea,.shoppingBasketFinalArea{width: calc(100% - 80px); margin-left: auto; margin-right: auto;}
 
