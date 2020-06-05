@@ -106,7 +106,7 @@ function aboutUsButton(){
 function TOPBtn(){
     $(window).scroll(function(){
         console.log($(document).scrollTop());
-        if($('section').eq(0).offset().top < $(document).scrollTop()){
+        if($('header + *').eq(0).offset().top < $(document).scrollTop()){
             $('.TOPBtn').addClass('active');
         }else{
             $('.TOPBtn').removeClass('active');

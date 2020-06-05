@@ -187,10 +187,10 @@
                     <li>
                         <label for="">이메일 수신여부</label>
                         <div>
-                            <input type="radio" name="emailReception">
-                            <label for="">예</label>
-                            <input type="radio" name="emailReception">
-                            <label for="">아니오</label>
+                            <input type="radio" name="emailReception" id="emailReceptionYes">
+                            <label for="emailReceptionYes">예</label>
+                            <input type="radio" name="emailReception" id="emailReceptionNo">
+                            <label for="emailReceptionNo">아니오</label>
                             <div>
                                 <span>※ 이벤트정보, 기타 다양한 정보를 빠르게 만나실 수 있습니다. (주문, 배송내역은 수신여부와 상관 없이 기본 발송됩니다)</span>
                             </div>
@@ -201,6 +201,12 @@
             </fieldset>
 
             <fieldset class="termsOfServiceArea">
+                <div class="mobileAllCkArea">
+                    <div>
+                        <input type="checkbox" id="acceptAllTermsCK">
+                        <label for="acceptAllTermsCK">모든 약관 동의</label>
+                    </div>
+                </div>
                 <div class="legendArea">
                     <legend>이용약관</legend>
                     <div>
@@ -361,10 +367,10 @@
                         <li><a href="#">문의</a></li>
                     </ul>
                 </nav>
-                <div>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                <div class="SNSArea">
+                    <a href="#"><img src="images/main/InstagramIcon.png" alt="인스타그램 img"></a>
+                    <a href="#"><img src="images/main/facebookIcon.png" alt="페이스북 img"></a>
+                    <a href="#"><img src="images/main/youtubeIcon.png" alt="유뷰트 img"></a>
                 </div>
             </div>
         </footer>

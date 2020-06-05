@@ -46,7 +46,7 @@
 .requiredInputArea li:nth-of-type(8) input{max-width: 130px;}
 .requiredInputArea li:nth-of-type(8) > div{width: 500%; max-width: 800px; display: flex; align-items: center;}
 .requiredInputArea li:nth-of-type(9) > div > input{max-width: 200px;}
-.requiredInputArea li:nth-of-type(9) > div > div{top: 60px;}
+.requiredInputArea li:nth-of-type(9) > div > div{top: 60px; flex-direction: column;}
 .requiredInputArea li:nth-of-type(9) > div > div input{width: 650px;}
 .requiredInputArea li:nth-of-type(10) > div > div,.requiredInputArea li:nth-of-type(11) > div > div
  {top: 35px;}
@@ -64,6 +64,9 @@
 .legendArea legend{margin-bottom: 30px;}
 .legendArea div{position: absolute; right: 0; top: 70px;}
 .termsOfServiceArea > ol , .privacyStatementArea table{height: 250px; background-color: #fafafa; }
+
+/* 모든 약관 동의 */
+.mobileAllCkArea{display: none;}
 
 /* 이용약관 */
 .termsOfServiceArea{margin-bottom: 65px;}
@@ -139,6 +142,7 @@
     .requiredInputArea select{margin-left: 0; max-width: calc(100% - 160px); }
     .doubleCheckBtn{flex-shrink: 0;}
 
+    .mobileAllCkArea{display: block;}
     .termsOfServiceArea{margin: 0;}
     .termsOfServiceArea .legendArea{padding-top: 0;}
     .termsOfServiceArea .legendArea legend{display: none;}
@@ -146,8 +150,9 @@
     .privacyStatementArea{margin-bottom: 65px;}
     .privacyStatementArea .legendArea legend{display: none;}
     .privacyStatementArea table{display: none;}
-    .legendArea div{position: static; font-size: 22px; width: 100%; padding: 24px 40px; display: flex; align-items: center; box-sizing: border-box; border-bottom: 1px solid #dfdfdf;}
-    .legendArea div label{margin-left: 20px;}
+    .mobileAllCkArea div,.legendArea div{position: static; font-size: 22px; width: 100%; padding: 24px 40px; display: flex; align-items: center; box-sizing: border-box; border-bottom: 1px solid #dfdfdf;}
+    .mobileAllCkArea div{border-top: 1px solid #dfdfdf; border-bottom: none;}
+    .mobileAllCkArea div label,.legendArea div label{margin-left: 20px;}
 }
 
 
@@ -175,7 +180,7 @@
     .requiredInputArea select{margin-left: 0; max-width: calc(100% - 25vw); }
 
     .privacyStatementArea{margin-bottom: 10.15625vw;}
-    .legendArea div{position: static; font-size: 3.4375vw; width: 100%; padding: 3.75vw 6.25vw;}
-    .legendArea div label{margin-left: 3.125vw;}
+    .mobileAllCkArea div ,.legendArea div{position: static; font-size: 3.4375vw; width: 100%; padding: 3.75vw 6.25vw;}
+    .mobileAllCkArea div label,.legendArea div label{margin-left: 3.125vw;}
 }
 

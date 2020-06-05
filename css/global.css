@@ -148,6 +148,8 @@ footer div:nth-of-type(3) nav{}
 footer div:nth-of-type(3) nav ul{display: flex;}
 footer div:nth-of-type(3) nav ul li:not(:last-of-type){ margin-right: 30px;}
 footer div:nth-of-type(3) nav ul li a{display: block; padding: 35px 0;}
+footer div .SNSArea{display: flex; align-items: center;}
+footer div .SNSArea a:not(:last-of-type){margin-right: 15px;}
 
 
 /* 장바구니 , 주문서작성, 주문완료 */
@@ -237,6 +239,8 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 }
 
 @media screen and (max-width: 800px){
+
+
     .TOPBtn{}
     
     .navigationArea{font-size: 22px;}
@@ -265,6 +269,10 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 
 
     body > div > hr{margin-top: 140px;}
+
+    footer div:nth-of-type(3){flex-direction: column;}
+    footer div .SNSArea a{padding: 20px 0;}
+    footer div .SNSArea a img{width: 100%;}
 }
 
 @media screen and (max-width: 640px){
@@ -356,6 +364,7 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 
     .paperArea *{font-size: 3.4375vw;}
     .paperArea > div:nth-of-type(2n + 1){width: 8.59375vw; margin: 0;}
+    .paperArea > div:nth-of-type(2) a{width: 5vw;}
 
 
     .QnAArea ul li h3{font-size: 3.4375vw; padding-right: 8.28125vw; padding-left: 6.25vw; box-sizing: border-box; letter-spacing: -0.15625vw;}
@@ -364,5 +373,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
     .QnAArea ul li div::before{width: 2.65625vw; height: 2.65625vw; left: 6.25vw; top: 5.46875vw;}
 
     body > div > hr{margin-top: 21.875vw;}
+
+    footer div .SNSArea a{padding: 3.125vw 0;}
+    footer div .SNSArea a:not(:last-of-type){margin-right: 2.34375vw;}
     
 }

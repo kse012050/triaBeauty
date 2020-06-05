@@ -36,19 +36,30 @@
 }
 
 @media screen and (max-width: 800px){
+    .loginArea > section:not(:last-of-type){margin-bottom: 60px;}
     .loginArea section p{font-size: 22px;}
     .loginArea section p br{display: none;}
     .loginContentArea > div > form label{font-size: 22px;}
     .loginContentArea > div > form > div ul li a{font-size: 20px;}
+
+    .loginContentArea > div, .signUpArea > div{height: 425px;}
 }
 
 @media screen and (max-width: 640px){
+    .loginArea > section:not(:last-of-type){margin-bottom: 9.375vw;}
+    .loginArea section h2{font-size: 6.25vw; margin-bottom: 3.125vw;}
+    
     /* .loginContentArea > div, .signUpArea > div{height: 60.15625vw;} */
-    .loginContentArea > div, .signUpArea > div{padding: 0 1.5625vw; box-sizing: border-box;}
-
+    .loginContentArea > div, .signUpArea > div{height: 66.40625vw; padding: 0 1.5625vw; box-sizing: border-box;}
+    
     .loginArea section p{font-size: 3.4375vw;}
     .loginArea section p br{display: none;}
+    .loginContentArea > div > form, .signUpArea > div > div{width: calc(100% - 3.125vw);}
     .loginContentArea > div > form label{font-size: 3.4375vw;}
+    .loginContentArea > div > form input[type="text"]{margin-bottom:5.9375vw; }
+    .loginContentArea > div > form input[type="password"]{margin-bottom: 4.6875vw;}
+    .loginContentArea > div > form > div{margin-bottom: 6.25vw;}
     .loginContentArea > div > form > div ul li a{font-size: 3.125vw;}
+    .signUpArea > div div img{width: 13.90625vw; margin-bottom: 7.8125vw;}
 }
 

@@ -69,7 +69,7 @@
     .cosmeticArea .cosmeticBanner01 > div div a::after{width: 20px; height: 20px; background-size: contain;}
     .cosmeticArea section:first-of-type h2 br{display: none;}
 
-    .cosmeticArea .calmingFormulaArea figure{flex-direction: column; justify-content: flex-end; align-items: center; position: relative; background: url(../images/m/introduce/cosmetic/calmingFormulaBG.png) no-repeat left center / cover;}
+    .cosmeticArea .calmingFormulaArea figure{flex-direction: column; justify-content: flex-end; align-items: center; position: relative; background: url(../images/m/introduce/cosmetic/calmingFormulaBG.png) no-repeat right center / cover;}
     .cosmeticArea .calmingFormulaArea figure > div{width: auto; position: absolute; top: -55px; right: 40px;}
     .cosmeticArea .calmingFormulaArea figure figcaption{order: 1; width: 100%;}
 
@@ -92,11 +92,11 @@
     .cosmeticArea .cosmeticBanner01 > div div a{width: 35.15625vw; font-size: 3.75vw;}
     .cosmeticArea .cosmeticBanner01 > div div a::after{width: 3.125vw; height: 3.125vw; background-size: contain;}
 
-    .cosmeticArea .calmingFormulaArea figure{padding: 5.46875vw 6.25vw;}
-    .cosmeticArea .calmingFormulaArea figure > div{top: -8.59375vw; right: 6.25vw;}
+    .cosmeticArea .calmingFormulaArea figure{height: 84.375vw; padding: 5.46875vw 6.25vw;}
+    .cosmeticArea .calmingFormulaArea figure > div{top: -8.59375vw; right: 6.25vw; width: 24.375vw;}
+    .cosmeticArea .calmingFormulaArea figure > div img{width: 100%;}
 
     .plantRecipeArea ul li figure img{width: 39.0625vw; height: 39.0625vw; margin-bottom: 6.25vw;}
-
     .cosmeticArea .cosmeticBanner02{height: 50vw;}
     .cosmeticArea .cosmeticBanner02 > div > div > *{font-size: 3.4375vw;}
 
