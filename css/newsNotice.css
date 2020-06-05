@@ -37,7 +37,6 @@
     .newsNoticeArea .noticeBoardArea li a p:nth-of-type(1){width: 70px; text-align: left;}
     .newsNoticeArea .noticeBoardArea li a p:nth-of-type(2){width: calc(100% - 190px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
     .newsNoticeArea .noticeBoardArea li a p:nth-of-type(3){width: 120px; text-align: right;}
-    /* .newsNoticeArea .noticeBoardArea li a p:nth-of-type(3){display: none;} */
     
 
     .newsNoticeContentsArea .noticeContentsTitleArea{padding: 20px 0;}
@@ -53,9 +52,6 @@
 
     .newsNoticeContentsArea a{display: block; width: 100%; font-size: 30px; line-height: 80px;}
 
-    /* .newsNoticeArea .noticeBoardArea li a p:nth-of-type(1){width: 70px; text-align: left;} */
-    /* .newsNoticeArea .noticeBoardArea li a p:nth-of-type(2){width: calc(100% - 190px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} */
-    /* .newsNoticeArea .noticeBoardArea li a p:nth-of-type(3){width: 120px; text-align: right;} */
 }
 
 @media screen and (max-width: 640px){

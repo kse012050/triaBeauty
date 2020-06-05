@@ -29,18 +29,13 @@
 .orderListTitleArea ul li h3{font-size: 16PX; font-weight: 400; line-height: 50px;}
 
 .orderInformationArea > ul{border-top: 1px solid black; border-bottom: 1px solid #cccccc;}
-/* 
-.orderInformationArea h2{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
-.orderInformationArea ul li{display: flex;} */
+
 
 
 /* 주문 리스트 */
 .shoppingBasketArea input[type='checkbox']{display: none;}
 .shoppingBasketArea input[type='checkbox'] + label{display: inline-block; width: 15px; height: 15px; border: 1px solid #e5e5e5;}
 .shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/paymentProgress/CKBtn.png) no-repeat center /cover;}
-/* input[type='checkbox']{display: none;} */
-/* input[type='checkbox'] + label{display: inline-block; width: 15px; height: 15px; border: 1px solid #e5e5e5;} */
-/* input[type='checkbox']:checked + label{background: url(../images/paymentProgress/CKBtn.png) no-repeat center /cover;} */
 
 
 .orderListArea{}
@@ -50,7 +45,6 @@
 .orderListArea fieldset > div > div h5{font-size: 17px; font-weight: 500;}
 .orderListArea fieldset > div > div p{font-size: 14px; color: rgba(0,0,0,0.5);}
 .orderListArea fieldset > div > div:nth-of-type(1){width: 4.5%;}
-/* .orderListArea fieldset > div > div:nth-of-type(2){width: 7.5%} */
 .orderListArea fieldset > div > div:nth-of-type(2){width: 35.5%; display: flex; flex-direction: row; justify-content: flex-start; padding: 0 20px; box-sizing: border-box;}
 .orderListArea fieldset > div > div:nth-of-type(2) img{width: 90px; height: 90px; margin-right: 20px;}
 .orderListArea fieldset > div > div:nth-of-type(2) div{display: flex; flex-direction: column;}
@@ -66,7 +60,6 @@
 .orderListArea fieldset > div > div:nth-of-type(6) button{width: 100%; font-size: 16px; padding: 8px;}
 .orderListArea fieldset > div > div:nth-of-type(6) button:nth-of-type(1){color: black; border: 1px solid #d6d6d6; background-color: white;}
 .orderListArea fieldset > div > div:nth-of-type(6) button:nth-of-type(2){color: white; border: none; background-color: black;}
-/* .orderListArea fieldset div:nth-of-type(1) img{width: 100%;} */
 
 /* 장바구니 상품 가격 정보 */
 .productPriceArea{display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #cccccc; margin-bottom: 20px;}
@@ -147,8 +140,6 @@
     .shoppingBasketArea input[type='checkbox'] + label{width: 40px; height: 40px;}
     .shoppingBasketArea input[type='checkbox']:checked + label{background: url(../images/m/shoppingBasket/CKBtn.png) no-repeat center /cover;}
 
-    /* input[type='checkbox'] + label{width: 40px; height: 40px;} */
-    /* input[type='checkbox']:checked + label{background: url(../images/m/shoppingBasket/CKBtn.png) no-repeat center /cover;} */
 
     /* 결제 금액 */
     .priceArea{padding: 40px 0 25px 0; border-left: none; border-right: none; margin-bottom: 120px;}
@@ -219,7 +210,6 @@
     .orderListTitleArea p{font-size:4.6875vw;  margin-bottom: 4.6875vw;}
 
     .shoppingBasketArea input[type='checkbox'] + label{width: 6.25vw; height: 6.25vw;}
-    /* input[type='checkbox'] + label{width: 6.25vw; height: 6.25vw;} */
 
     /* 결제 진행 golbal */
     .paymentProgressArea h2{font-size: 6.25vw; margin-bottom: 6.25vw;}

@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     // 연혁 버튼
     aboutUsButton();
-
+    // top btn
     TOPBtn();
 
 });
@@ -105,7 +105,6 @@ function aboutUsButton(){
 
 function TOPBtn(){
     $(window).scroll(function(){
-        console.log($(document).scrollTop());
         if($('header + *').eq(0).offset().top < $(document).scrollTop()){
             $('.TOPBtn').addClass('active');
         }else{

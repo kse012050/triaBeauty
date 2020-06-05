@@ -63,18 +63,6 @@
 .orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div:nth-of-type(3){margin-bottom: 30px;}
 
 /* 주문서 작성(비회원)  결제정보 및 할인 혜택 - 결제수단 테이블*/
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea > div > div:last-of-type > div:first-of-type{display: none;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table{border: 1px solid #e1e1e1;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table th:not(:last-of-type){border-right: 1px solid #e1e1e1;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table td:not(:last-of-type){border-right: 1px solid #e1e1e1;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th{font-size: 13px; font-weight: 300; text-align: center; padding: 14px 0; border-bottom: 1px solid #e1e1e1;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(1){width: 47%;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(2){width: 32%;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table thead tr th:nth-of-type(3){width: 21%;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td{padding: 20px 15px;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td li{font-size: 13px; font-weight: 300; line-height: 1.6923; color: #747474; }
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td:nth-of-type(2) li:not(:last-of-type){margin-bottom: 28px;}
-.orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div table tbody tr td:last-of-type li{text-align: center;}
 .orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.tableArea{border: 1px solid #e1e1e1; width: 100%; display: flex; margin-bottom: 25px;}
 .orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.tableArea div{align-self: stretch; flex-shrink: 0; margin-bottom: 0;}
 .orderFormArea .oderPIDiscountArea ul li.oderPIDiscountMethodOfPaymentArea div div.tableArea div:nth-of-type(1){width: 47%;}
@@ -114,7 +102,6 @@
     .orderInformationArea >ul > li.orderEmailArea > div > div:first-of-type select{width: 100%;}
     .orderInformationArea >ul > li.orderEmailArea > div > div:not(:first-of-type) p{display: block; font-size: 20px; line-height: 1.8; letter-spacing: -1px;}
 
-    /* .orderInformationArea >ul > li.orderEmailArea ~ li{align-items: center;} */
     .orderInformationArea >ul > li.orderEmailArea + li > div > div:not(:first-of-type) p{display: block; font-size: 20px; line-height: 1.8; letter-spacing: -1px;}
     .orderInformationArea >ul > li.orderEmailArea + li + li{align-items: center;}
 
@@ -128,7 +115,6 @@
     .orderInformationArea.oderShippingInformationArea.deliveryArea ul li:last-of-type > div > div > textarea{width: 100%;}
     .orderInformationArea.oderShippingInformationArea.deliveryArea ul li:last-of-type > div > div p{display: block; font-size: 20px; line-height: 1.8; letter-spacing: -1px;}
 
-    /* .oderPIDiscountArea .orderInformationArea > ul > li:first-of-type > div > div > p{display: block; } */
     .orderFormArea .orderInformationArea > ul > li > div > div > p.priceColorPointArea{display: block; font-size: 30px;}
     .orderFormArea .oderPIDiscountArea ul li:first-of-type div{ display: flex; align-items: center;}
     .orderFormArea .oderPIDiscountArea ul li:first-of-type div div:nth-of-type(1){margin-bottom: 0;}
@@ -169,7 +155,6 @@
     .orderInformationArea >ul > li.orderEmailArea > div > div:first-of-type span{margin-bottom: 3.125vw;}
     .orderInformationArea >ul > li.orderEmailArea > div > div:not(:first-of-type) p{ font-size: 3.125vw;}
 
-    /* .orderInformationArea >ul > li.orderEmailArea ~ li{align-items: center;} */
     .orderInformationArea >ul > li.orderEmailArea + li > div > div:not(:first-of-type) p{font-size: 3.125vw;}
 
     .orderInformationArea >ul > li.oderAddressArea > div > div:not(:last-of-type){margin-bottom: 1.5625vw;}
@@ -179,7 +164,6 @@
     .orderInformationArea.oderShippingInformationArea.deliveryArea ul li:first-of-type > div > div label{ background-size: 3.125vw; padding-left: 3.90625vw; }
     .orderInformationArea.oderShippingInformationArea.deliveryArea ul li:last-of-type > div > div p{font-size: 3.125vw; }
 
-    /* .oderPIDiscountArea .orderInformationArea > ul > li:first-of-type > div > div > p{display: block; } */
     .orderFormArea .orderInformationArea{margin-bottom: 7.8125vw;}
     .orderFormArea .orderInformationArea > ul > li > div > div > p.priceColorPointArea{font-size: 4.6875vw;}
     .orderFormArea .orderInformationArea > ul > li > div > div dl dt{font-size: 3.4375vw;}

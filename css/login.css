@@ -13,7 +13,6 @@
 /* 로그인 */
 .loginContentArea > div > form label{display: block; font-size: 16px;}
 .loginContentArea > div > form label[for="rememberID"]{color: #838383;}
-/* .loginContentArea > div > form input:not([type="checkbox"]):not([type="submit"]){width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black;} */
 .loginContentArea > div > form input[type="text"],.loginContentArea > div > form input[type="password"]{width: 100%; background:#f7f7f7;  border: none; border-bottom: 1px solid black; outline: none;}
 .loginContentArea > div > form input[type="text"]{margin-bottom: 38px;}
 .loginContentArea > div > form input[type="password"]{margin-bottom: 30px;}
@@ -49,7 +48,6 @@
     .loginArea > section:not(:last-of-type){margin-bottom: 9.375vw;}
     .loginArea section h2{font-size: 6.25vw; margin-bottom: 3.125vw;}
     
-    /* .loginContentArea > div, .signUpArea > div{height: 60.15625vw;} */
     .loginContentArea > div, .signUpArea > div{height: 66.40625vw; padding: 0 1.5625vw; box-sizing: border-box;}
     
     .loginArea section p{font-size: 3.4375vw;}

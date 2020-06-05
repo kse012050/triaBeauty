@@ -57,8 +57,6 @@
 .necessaryMomentArea figure figcaption{}
 .necessaryMomentArea figure figcaption p{font-size: 30px; font-weight: 500; margin-bottom: 40px;}
 .necessaryMomentArea figure figcaption a{margin: 0 auto;}
-/* .necessaryMomentArea figure figcaption a{display: inline-block; width: 230px; font-size:18px; font-weight: 500;  text-align: left; color: white;  padding: 21px 30px; background-color: black; border-radius: 50px; position: relative;}
-.necessaryMomentArea figure figcaption a::after{content: '+'; position: absolute; right: 30px; top: 15px; font-size: 30px;} */
 
 @media screen and (max-width: 800px){
     .cosmeticArea .cosmeticBanner01{background-image: url(../images/m/introduce/cosmetic/cosmeticBannerImg01.png); background-size: cover;}

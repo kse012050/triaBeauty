@@ -11,9 +11,6 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 로그인 */
 .loginArea,
 /* 장바구니 */
-/* .paymentProgressArea, */
-/* .orderListTitleArea, */
-/* .orderListArea, */
 .shoppingBasketArea,
 /* 주문완료 */
 .orderCompletedArea,
@@ -34,8 +31,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .calmingFormulaArea,.plantRecipeArea,.necessaryMomentArea,
 /* 소개 - 여드름치료 */
 .acneCureArea .ourSkinlaArea,.acneCureArea .portabilityArea,
-.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,/*.acneCureArea .characteristicArea,*/.penetrationArea,
-/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea, 
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea,.penetrationArea,
+.procedureArea,.acneCureArea .productCompositionArea, 
 /* 소개 - 레이저제모 , 피부개선 공통 */
 .introduceArea > ul,
 /* 소개 - 레이저제모 */
@@ -55,8 +52,7 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 
 .MobileImg{display: none !important;}
 
-/* .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsArea, .selfBeautyArea ul
-{padding-top: 140px;} */
+
 .technologyArea{padding-top: 140px;}
 
 /* 네이베이션 */
@@ -181,9 +177,7 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
 .QnAArea ul li{ border-bottom: 1px solid #dfdfdf; cursor: pointer;}
 .QnAArea ul li:first-of-type{border-top: 1px solid #dfdfdf;}
 .QnAArea ul li h3{font-size: 18px; font-weight: 400; line-height: 1.4; padding: 22px 0; padding-right: 20px; box-sizing: border-box; color: black; width: 100%; max-width: 1140px; margin: 0 auto; position: relative;}
-/* .QnAArea ul li h3::after{content: '+'; font-size: 35px; line-height: 0.3; position: absolute; right: 0; top: 0px;
-    height: 100%; display: flex; align-items: center;
-} */
+
 .QnAArea ul li h3::after{content: '';  position: absolute; right: 0; top: 0px;
     height: 100%; display: flex; align-items: center;
     width: 18px; background-image: url(../images/introduce/plusIcon.png); background-repeat: no-repeat; background-position: center; background-size: contain;
@@ -248,9 +242,6 @@ p.priceColorPointArea{font-size: 18px; font-weight: 500; color: #ba005f; }
     .productCompositionArea h2,.introduceFigureArea h2, .introduceFigureArea figure figcaption{width: calc(100% - 80px); margin: 0 auto;}
     .productCompositionArea{width: 100%;}
 
-    /* .acneCureArea .productCompositionArea h2{width: calc(100% - 80px); margin: 0 auto; margin-bottom: 40px;} */
-    /* .acneCureArea .productCompositionArea{width: 100%;} */
-
     .basicBtn{font-size: 30px; width: 325px; line-height: 100px;}
 
 
@@ -291,7 +282,6 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 /* 로그인 */
 .loginArea,
 /* 장바구니 */
-/* .paymentProgressArea,.orderListTitleArea,.orderListArea, */
 .shoppingBasketArea,
 /* 주문완료 */
 .orderCompletedArea,
@@ -310,8 +300,8 @@ header .menuArea, .technologyArea, .wiseChoiceArea,.reviewArea .reviewContentsAr
 .cosmeticArea .calmingFormulaArea h2,.plantRecipeArea,.necessaryMomentArea,
 /* 소개 - 여드름치료 */
 .acneCureArea .ourSkinlaArea h2,.acneCureArea .ourSkinlaArea figure figcaption, .acneCureArea .portabilityArea,
-.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea h2, .acneCureArea .recommendationArea figure figcaption,/*.acneCureArea .characteristicArea,*/
-/*.acneCureArea .procedureArea*/.procedureArea,.acneCureArea .productCompositionArea h2, 
+.acneCureArea .acneCureBanner02 > figure,.acneCureArea .recommendationArea h2, .acneCureArea .recommendationArea figure figcaption,
+.procedureArea,.acneCureArea .productCompositionArea h2, 
 /* 소개 - 레이저제모 , 피부개선 공통 */
 .introduceArea > ul,.heatEnergyArea01 h2,.heatEnergyArea01 figure figcaption,
 /* 소개 - 레이저제모 */

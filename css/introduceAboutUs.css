@@ -1,6 +1,6 @@
 /* 회사소개 공통 */
 .introduceAboutUsArea h2{font-size: 40px;}
-.introduceAboutUsArea P{font-size: 20px; /*line-height: 1.8;*/line-height: 36px; }
+.introduceAboutUsArea P{font-size: 20px; line-height: 36px; }
 .introduceAboutUsArea P{margin-bottom: 25px;}
 
 /* 회사소개 - ABOUT TRIABEAUTY */
@@ -21,7 +21,6 @@
 .introduceHistoryArea > div ul li:not(:last-of-type){margin-bottom: 100px;}
 .introduceHistoryArea > div ul li figure{display: flex; justify-content: space-between;}
 .introduceHistoryArea > div ul li figure > div{margin-right: 10px;}
-/* .introduceHistoryArea > div ul li figure > div img{border-radius: 50%;} */
 .introduceHistoryArea > div ul li figure figcaption{width: 750px; display: flex; flex-direction: column; justify-content: space-between;}
 .introduceHistoryArea > div ul li figure figcaption div{}
 .introduceHistoryArea > div ul li figure figcaption div:first-of-type{}
